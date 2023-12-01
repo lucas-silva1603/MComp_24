@@ -46,16 +46,18 @@ fg	%   ver o vector global e verificar, por favor
 %--------------------------------------------------------------------------
 %	Tarefas 22+23+24 : adicionar aqui condicoes de fronteira de Neumann
 %	nao nulas
-gama = 1
-fg(5) = fg(5) + gama/2
-fg(6) = fg(6) + gama/2
+gama = 1;
+a = [1 5 6 1 1];
+[Kg, fg] = Projeto_Robin_Bound(Kg, fg, a);
+% fg(5) = fg(5) + gama/2
+% fg(6) = fg(6) + gama/2
 %--------------------------------------------------------------------------
 %	Tarefa 23+24: adicionar condicoes de fronteira naturais de Robin
-p=1
-Kg(5,5) = Kg(5,5) + p/3
-Kg(5,6) = Kg(5,6) + p/6
-Kg(6,5) = Kg(6,5) + p/6
-Kg(6,6) = Kg(6,6) + p/3
+% p=1;
+% Kg(5,5) = Kg(5,5) + p/3
+% Kg(5,6) = Kg(5,6) + p/6
+% Kg(6,5) = Kg(6,5) + p/6
+% Kg(6,6) = Kg(6,6) + p/3
 %--------------------------------------------------------------------------
 %	Atencao: Guardar uma copia do sistema ja com as condicoes naturais
 %   antes de o modificar com as condicoes de fronteira essenciais
@@ -69,22 +71,28 @@ fr= fg
 %--------------------------------------------------------------------------
 %	aplicar condicoes de fronteira essenciais a seguir
 %----------------- Tarefas 24 tambem aqui ------------------------------
-boom = 1.0e+16
-for i=1:Nnds
-    if (i ~= 3) %   exclui o no interior
-    %   Tarefas 24: impor condicoes de fronteira essenciais aqui
-        if (i==1)
-        Kr (i,i) = boom
-        fr(i) = boom *2		% o valor pretendido aqui e 2
-     %   fr(i) = boom *1		% o valor pretendido aqui e 1        
-        end
-        if (i==4)
-        Kr (i,i) = boom
-        fr(i) = boom *3		% o valor pretendido aqui e 3
-    %    fr(i) = boom *0		% o valor pretendido aqui e 0
-        end
-    end
-end
+boom = 1.0e+16;
+a = [1 2; 4 3];
+[Kr, fr] = Projeto_Essential_Bound(Kr,fr,a);
+
+% for i=1:Nnds
+%     if (i ~= 3) %   exclui o no interior
+%     %   Tarefas 24: impor condicoes de fronteira essenciais aqui
+%         if (i==1)
+%         Kr (i,i) = boom
+%         fr(i) = boom *2		% o valor pretendido aqui e 2
+%      %   fr(i) = boom *1		% o valor pretendido aqui e 1        
+%         end
+%         if (i==4)
+%         Kr (i,i) = boom
+%         fr(i) = boom *3		% o valor pretendido aqui e 3
+%     %    fr(i) = boom *0		% o valor pretendido aqui e 0
+%         end
+%     end
+% end
+Kr
+fr
+
 %-------------------- fim das Tarefas 24 aqui --------------------------
 %	solucao do sistema modificado por backslash
 u=Kr\fr

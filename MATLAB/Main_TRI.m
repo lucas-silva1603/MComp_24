@@ -18,13 +18,9 @@ fg=zeros(Nnds,1)	% declarado como vector coluna
 %--------------------------------------------------------------------------
 %   ciclo para os elementos
 for i=1:Nelt
-    no1 = TRI(i,1)
-    no2 = TRI(i,2)
-    no3 = TRI(i,3)
-  edofs =[no1 no2 no3]  %   guardar a conectividade deste triangulo
-
-  %     calculos neste elemento i, P15b)
-  [Ke fe]= Elem_TRI (x(no1),y(no1),x(no2),y(no2),x(no3),y(no3),1.0)   % <- carregamento unitario aqui
+    [Ke fe edofs]= Projeto_Elem_Ke_Fe(x,y,TRI(i,:),'Tri3')
+     %     calculos neste elemento i, P15b)
+  
 
   %     assemblagem do elemento P15c)
   Kg(edofs,edofs)= Kg(edofs,edofs) + Ke  % 
