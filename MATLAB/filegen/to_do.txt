@@ -1,0 +1,16 @@
+filegen:
+
+pega nos dados do nx e transforma num ficheiro do tipo pedido
+
+falta: 
+ler os dados do ficheiro do nx
+arranjar forma de os dividir nas partes relevantes (maybe dividir por linhas e depois estrair as informações relevantes)
+distribuir os dados nas listas correspodentes
+juntar tudo no ficheiro
+
+
+filereader:
+
+pega no ficheiro dados.txt gerado pelo filegen e exporta os dados com o formato que o richie entender - é para ser usado dentro do main() do projeto
+
+should be easy, a informação está mais ou menos condensada, tenho é de me livrar as cenas useless que o stor manda por no meio  (isto é uma cadeira de FEM, nao de programaçao lmao)
