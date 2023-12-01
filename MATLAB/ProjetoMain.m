@@ -44,25 +44,33 @@ end
 
     % Condições fronteira
     % Forças pontuais
-    [Kg, fg] = Projeto_Applied_Forces(Kg,fg,boundary(2));
+[Kg, fg] = Projeto_Applied_Forces(Kg,fg,boundary(2));
 
     % Condições Neumman
-    [Kg, fg] = Projeto_Neumann_Bound(Kg,fg,boundary(3));
+[Kg, fg] = Projeto_Neumann_Bound(Kg,fg,boundary(3));
 
     % Condições Robin
-    [Kg, fg] = Projeto_Robin_Bound(Kg,fg,boundary(4));
+[Kg, fg] = Projeto_Robin_Bound(Kg,fg,boundary(4));
     
-
     % Guardar uma copia do sistema já com as condicoes naturais
     % antes de o modificar com as condicoes de fronteira essenciais
-    Kr= Kg;
-    fr= fg;
+Kr= Kg;
+fr= fg;
 
     % Condições essenciais
-    [Kr, fr] = Projeto_Essential_Bound(Kr,fr,boundary(1));
+[Kr, fr] = Projeto_Essential_Bound(Kr,fr,boundary(1));
   
 % -------------------------------------------------------------------------
 % Obter solução
+u=Kr\fr;
+
+% Representação potencial
+
+% Representação gradiente
+
+% Representaçao Isolinhas
+
+% Representação Pressão
 
 % -------------------------------------------------------------------------
 % Se com solução exata comparar erro

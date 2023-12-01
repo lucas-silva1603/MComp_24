@@ -10,6 +10,9 @@ if EType == 'Tri3'
 
     % Matriz de rigidez e vetor de forças do elemento
     [Ke, fe] = Elem_TRI (x(no1),y(no1),x(no2),y(no2),x(no3),y(no3),elem(end));
+    
+    % Gradiente
+    
 end
 
 end
