@@ -16,6 +16,7 @@ for i = 1:num_nos
     nos(end+1,1) = i;
     nos(end,2) = x_no(i);
     nos(end, 3) = y_no(i)
+end
     
     
    
