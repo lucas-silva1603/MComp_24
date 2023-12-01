@@ -1,0 +1,62 @@
+
+*** 16:13:05 *** 
+Starting Nastran Exporter
+
+*** 16:13:05 *** 
+Writing file C:\Users\User\Documents\GitHub\MComp_24\bulk.dat
+
+*** 16:13:05 *** 
+Writing SIMCENTER NASTRAN 2212.0 compatible deck
+
+*** 16:13:05 *** 
+ERROR : At least one element in mesh 2d_mesh(1) referencing property PSHELL1 
+        has no inherited material
+ 
+*** 16:13:05 *** 
+Writing Bulk Data section
+
+*** 16:13:05 *** 
+Writing Nodes
+
+*** 16:13:05 *** 
+Writing Elements
+
+*** 16:13:05 *** 
+WARNING : No thickness defined for mesh 2d_mesh(1). Thickness will be specified 
+          by associated physical property.
+ 
+*** 16:13:05 *** 
+Writing Physical Properties
+
+*** 16:13:05 *** 
+ERROR : Shell property PSHELL1 has no assigned material
+
+*** 16:13:05 *** 
+Writing Materials
+
+*** 16:13:05 *** 
+Writing Degree-of-Freedom Sets
+
+*** 16:13:05 *** 
+Writing Coordinate Systems
+
+*** 16:13:05 *** 
+Summary of Bulk Data cards written
+
++----------+----------+
+|   NAME   |  NUMBER  |
++----------+----------+
+| CTRIA3   | 156      |
+| GRID     | 98       |
+| PSHELL   | 1        |
++----------+----------+
+
+*** 16:13:05 *** 
+1 warning issued
+
+*** 16:13:05 *** 
+2 errors issued
+
+*** 16:13:05 *** 
+Error writing Nastran file
+

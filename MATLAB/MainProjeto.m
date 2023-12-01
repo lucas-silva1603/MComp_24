@@ -1,9 +1,10 @@
 clear all
+
 % Ler a malha
 x,y,elem,boundary = read(file)
 % x - Coordenada x dos nós
 % y - Coordenada y do nós
-% elem Lista de todos elementos 
+% elem lista de todos elementos 
 % elem = [tipo de elemento no1 no2 no3 fe; tipo de elemento ...]
 % boundary = [elemento aplicado tipo de fronteira valores]
 
