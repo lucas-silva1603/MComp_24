@@ -1,31 +1,63 @@
 clear
-clc all
+clc
 
 % Importa ficheiro de dados do NX
 
-% Lê dados do ficheiro do NX e extrai informção, guardando em listas para
-% analise posterior
+node_file = fopen('Nodes.txt' ,'r');
+element_file = fopen('Elements.txt', 'r');
+formatspec = '%c';'%d"';
 
-numero_nos = [1;1];
-x_nos = [2;2];
-y_nos =  [3;3];
+% Lê dados do ficheiro do NX e extrai informaçao relevante
+%
+% Nos:
 
-nos = [numero_nos x_nos y_nos];
+nos = splitlines(fscanf(node_file), formatspec);
 
-for i = 1:num_nos
-    nos(end+1,1) = i;
-    nos(end,2) = x_no(i);
-    nos(end, 3) = y_no(i)
+filt_nos = [];
+
+for i=11:6:length(nos)
+
+    filt_nos = [filt_nos, nos(i)];
+
 end
-    
-    
-   
+
+col = split(filt_nos);
+c1=[];
+c2=[];
+x=[];
+y=[];
+n_out=[];
+
+for i=1:1:length(col)
+
+    c1=[c1;col(i,5)];
+    x=[x;str2double(c1(i))];
+    c2=[c2;col(i,6)];    
+    y=[y;str2double(c2(i))];
+    n_out=[n_out;i,x(i),y(i)];
+
+end
+
+% n_out contem informção sobre o numero de cada nó e as suas respetivas
+% coordenadas
+
+% Elementos:
+
+elementos = splitlines(fscanf(element_file), formatspec); 
+
+filt_elem = [];
 
 
 
 
 
-% 3 colunas, #linhas linhas
+
+
+
+
+
+
+
 
 
 
@@ -40,8 +72,8 @@ fprintf(dados, '# - Escoamento_Potencial de velocidade\n');
 % Adiciona coordenadas dos nós
 
 fprintf(dados, '#Coordenadas dos nos\n');
-[l,c] = size(nos_array);
-fprinft(dados, l)
+
+%fprinft(dados, l)
 
 
 
