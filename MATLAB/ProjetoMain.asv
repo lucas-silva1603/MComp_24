@@ -1,5 +1,6 @@
-clear all
+clear
 close all
+
 % -------------------------------------------------------------------------
 % Dados
 
@@ -19,6 +20,7 @@ close all
     % [Condições Robin]= numero do elemento, numero do nó 1, numero do
     % nó2, constante convecção(gama), Temperatura longe da parede(p)
 
+    % teste
 x=[0 1 1 0 2 2 1]';
 y=[1 2 1 0 2 1 0]';
 
@@ -39,13 +41,13 @@ EType = elem(1,1);
 
     % Matriz para desenho dos resultados
 if EType == 33
-    edofs_draw = zeros(Nelt,3);
+    Connectivity = zeros(Nelt,3);
 elseif EType == 36
-    edofs_draw = zeros(Nelt,6);
+    Connectivity = zeros(Nelt,6);
 elseif EType == 44
-    edofs_draw = zeros(Nelt,4);
+    Connectivity = zeros(Nelt,4);
 elseif EType == 48
-    edofs_draw = zeros(Nelt,8);
+    Connectivity = zeros(Nelt,8);
 end
 % -------------------------------------------------------------------------
 % Cálculo das matrizes rigizez e vetores de força
@@ -59,7 +61,7 @@ for i=1:Nelt
     [Ke, fe, edofs] = Projeto_Elem_Ke_Fe(x,y,elem(i,:),elem(i,1));
 
     % Guardar conectividade do triângulo
-    edofs_draw(i,:) = edofs;
+    Connectivity(i,:) = edofs;
     % Assemblagem 
     Kg(edofs,edofs)= Kg(edofs,edofs) + Ke; 
     fg(edofs,1)= fg(edofs,1) + fe;       
@@ -89,34 +91,84 @@ fr= fg;
 % -------------------------------------------------------------------------
 % Obter solução
 u=Kr\fr;
+R = Kg*u-fg;
 
-% Representação potencial
+% -------------------------------------------------------------------------
+% Representação dos resultados
+
+    % Representação potencial
+
 figure(1);
-patch('Faces', edofs_draw, 'Vertices', [x,y], 'FaceVertexCData', u, 'FaceColor', 'interp', 'EdgeColor', 'k'); hold on;
-title('FEM Result Visualization in 2D');
+title('Potencial em 2D');
 xlabel('X');
 ylabel('Y');
-colorbar;  % Display color legend
-plot(x,y,'ro')
+colorbar;  % Legenda de cor
 
-% Representação gradiente
+patch('Faces', Connectivity, 'Vertices', [x,y], 'FaceVertexCData', u, 'FaceColor', 'interp', 'EdgeColor', 'k');hold;
+plot(x,y,'ro');
+
+
+
+
+    % Representação gradiente
 [xm,ym,um,vm] = Projeto_Grad(x,y,elem,u);
 
-% figure (2)
+figure (2);
+title('Gradiente');
+xlabel('X');
+ylabel('Y');
+
+plot (x,y,'ro');hold
+quiver (xm,ym,um,vm,'k');
+if elem(1,1) == 33 
+    triplot([elem(:,2),elem(:,3),elem(:,4)], x, y);
+end
+
+    % Representação gradiente com potencial
+figure(3);
+title('Escoamento');
+xlabel('X');
+ylabel('Y');
+colorbar;  % Legenda de cor
+
+patch('Faces', Connectivity, 'Vertices', [x,y], 'FaceVertexCData', u, 'FaceColor', 'interp', 'EdgeColor', 'k');hold;
+quiver (xm,ym,um,vm,'k');
+
+
+
+% Pressão
+P = elem(:,end)' - 0.5*(um.^2 + vm.^2); 
+
+%     % Representaçao Isolinhas
+% figure(4);
+% title('Isolinhas de pressão');
+% xlabel('X');
+% ylabel('Y');
 % plot (x,y,'ro'); hold
-% quiver (xm,ym,um,vm,'k')
-
-% if elem(1,1) == 33 
-%     triplot([elem(:,2),elem(:,3),elem(:,4)], x, y);
-% end
-
-% Representaçao Isolinhas
-
-% Representação Pressão
+% 
+% [CS,h] = tricont(xm,ym,Connectivity,P); 
+% clabel(CS,h);
+%     % Representação Pressão(opcional)
 
 % -------------------------------------------------------------------------
 % Se com solução exata comparar erro
-
+if exact == 1
+    erru=zeros(Nnds,1);	
+    
+        % solucao exacta
+    uex=1-x.^2-y.^2 ;  
+        % Cálculo do erro
+    erru = abs(u - uex);
+    
+    figure(4)
+    trisurf(Connectivity, x, y, erru); grid on
+    
+    umex = 2*xm;
+    vmex = 2*ym;
+    errux= um-umex;
+    erruy = vm-vmex;
+    ergrad =sqrt(errux.^2+erruy.^2);
+end
 % -------------------------------------------------------------------------
 % Obter gráfico e dados pedidos
 

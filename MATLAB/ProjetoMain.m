@@ -1,6 +1,7 @@
-clear all
+clear
 close all
 clc
+
 % -------------------------------------------------------------------------
 % Dados
 
@@ -21,6 +22,11 @@ clc
     % nó2, constante convecção(gama), Temperatura longe da parede(p)
 
     % teste
+% -------------------------------------------------------------------------
+% Tem solução exata? 0 - não, 1 - sim
+exact = 0;
+% -------------------------------------------------------------------------
+
 x=[0 1 1 0 2 2 1]';
 y=[1 2 1 0 2 1 0]';
 
@@ -44,10 +50,6 @@ if EType == 33
     Connectivity = zeros(Nelt,3);
 elseif EType == 36
     Connectivity = zeros(Nelt,6);
-elseif EType == 44
-    Connectivity = zeros(Nelt,4);
-elseif EType == 48
-    Connectivity = zeros(Nelt,8);
 end
 % -------------------------------------------------------------------------
 % Cálculo das matrizes rigizez e vetores de força
@@ -91,48 +93,92 @@ fr= fg;
 % -------------------------------------------------------------------------
 % Obter solução
 u=Kr\fr;
+R = Kg*u-fg;
 
 % -------------------------------------------------------------------------
 % Representação dos resultados
+
     % Representação potencial
+
 figure(1);
-patch('Faces', Connectivity, 'Vertices', [x,y], 'FaceVertexCData', u, 'FaceColor', 'interp', 'EdgeColor', 'k'); hold on;
 title('Potencial em 2D');
 xlabel('X');
 ylabel('Y');
 colorbar;  % Legenda de cor
-plot(x,y,'ro')
+
+patch('Faces', Connectivity, 'Vertices', [x,y], 'FaceVertexCData', u, 'FaceColor', 'interp', 'EdgeColor', 'k');hold;
+plot(x,y,'ro');
+
+
+
 
     % Representação gradiente
 [xm,ym,um,vm] = Projeto_Grad(x,y,elem,u);
 
-figure (2)
-plot (x,y,'ro'); hold on
-quiver (xm,ym,um,vm,'k')
-title('gradiente');
+figure (2);
+title('Gradiente');
 xlabel('X');
 ylabel('Y');
 
+plot (x,y,'ro');hold
+quiver (xm,ym,um,vm,'k');
 if elem(1,1) == 33 
     triplot([elem(:,2),elem(:,3),elem(:,4)], x, y);
 end
 
+
     % Representação gradiente com potencial
 figure(3);
-patch('Faces', Connectivity, 'Vertices', [x,y], 'FaceVertexCData', u, 'FaceColor', 'interp', 'EdgeColor', 'k'); hold on;
 title('Escoamento');
 xlabel('X');
 ylabel('Y');
 colorbar;  % Legenda de cor
-quiver (xm,ym,um,vm,'k')
 
-% Representaçao Isolinhas
+patch('Faces', Connectivity, 'Vertices', [x,y], 'FaceVertexCData', u, 'FaceColor', 'interp', 'EdgeColor', 'k');hold;
+quiver (xm,ym,um,vm,'k');
 
-% Representação Pressão(opcional)
+
+
+% Pressão
+P = elem(:,end)' - 0.5*(um.^2 + vm.^2); 
+
+%     % Representaçao Isolinhas
+% figure(4);
+% title('Isolinhas de pressão');
+% xlabel('X');
+% ylabel('Y');
+% plot (x,y,'ro'); hold
+% 
+% [CS,h] = tricont(xm,ym,Connectivity,P); 
+% clabel(CS,h);
+%     % Representação Pressão(opcional)
 
 % -------------------------------------------------------------------------
 % Se com solução exata comparar erro
-
-% -------------------------------------------------------------------------
-% Obter gráfico e dados pedidos
+if exact == 1
+    erru=zeros(Nnds,1);	
+    
+        % solucao exacta
+    uex=1-x.^2-y.^2 ;  
+        % Cálculo do erro
+    erru = abs(u - uex);
+    
+    figure(4)
+    title('Erro de potencial');
+    trisurf(Connectivity, x, y, erru); grid on
+    
+    umex = 2*xm;
+    vmex = 2*ym;
+    errux= um-umex;
+    erruy = vm-vmex;
+    ergrad =sqrt(errux.^2+erruy.^2);
+    
+    disp(['Erro máximo de potencial: ', num2str(max(erru))]);
+    disp(['Erro máximo de velocidade: ', num2str(max(ergrad))]);
+end
+% 
+% figure(5)
+% Vel = delaunay(xm,ym);
+% Vel_abs = sqrt(xm.^2 + ym.^2);
+% patch('Faces', Vel, 'Vertices', [xm',ym'], 'FaceVertexCData', Vel_abs', 'FaceColor', 'interp', 'EdgeColor', 'k');hold;
 

@@ -30,7 +30,7 @@ function [varargout]=tricont(varargin);
 
 
 
-error(nargchk(4,7,nargin,'struct'));
+narginchk(4,7);
 [cax,args,nargs] = axescheck(varargin{:});
 
 cax = newplot(cax);
