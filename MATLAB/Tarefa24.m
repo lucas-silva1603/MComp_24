@@ -139,6 +139,8 @@ R = Kg*u-fg
  figure (1)
  plot (x,y,'ro'); hold
  quiver (xm,ym,um,vm,'k')
- triplot(TRI, x, y);
+ TRI = [33 1 3 2 1;33 3 1 4 1;33 5 2 3 1;33 4 7 3 1;33 6 3 7 1;33 3 6 5 1];
+
+ triplot([TRI(:,2),TRI(:,3),TRI(:,4)], x, y);
 %---------------------- fim da Tarefa 21 da Aula 6 -----------------------
 %   

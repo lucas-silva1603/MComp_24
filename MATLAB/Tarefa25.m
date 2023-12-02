@@ -92,35 +92,38 @@ R = Kg*u-fg
 %
 %-------------------------- Tarefa 21 da Aula 6 ---------------------------
 %
- for i=1:Nelt;
-    no1 = TRI(i,1);
-    no2 = TRI(i,2);
-    no3 = TRI(i,3);
-    %   copia coordenadas
-    x1=x(no1);
-    x2=x(no2);
-    x3=x(no3);
-    y1=y(no1);
-    y2=y(no2);
-    y3=y(no3);
-    %   calcula centroide
-    xm(i) = (x1+x2+x3)/3.;
-    ym(i) = (y1+y2+y3)/3.;
-    %
-    %   calcula vector gradiente no elemento   
-    Ae2 = (x2 -x1)*(y3 -y1) -(y2 -y1)*(x3 -x1);
-    %   derivadas parciais das funcoes de forma
-    d1dx = (y2-y3)/Ae2;
-    d1dy = (x3-x2)/Ae2;
-    d2dx = (y3-y1)/Ae2;
-    d2dy = (x1-x3)/Ae2;
-    d3dx = (y1-y2)/Ae2;
-    d3dy = (x2-x1)/Ae2;
-    %   interpolacao e derivadas
-    um(i) = -(d1dx*u(no1)+d2dx*u(no2)+d3dx*u(no3));
-    vm(i) = -(d1dy*u(no1)+d2dy*u(no2)+d3dy*u(no3));
-    %   sinal negativo para o fluxo
- end
+TRI = [33 1 3 2;33 3 1 4;33 5 2 3;33 4 7 3;33 6 3 7;33 3 6 5]
+[xm,ym,um,vm] = Projeto_Grad(x,y,TRI,u);
+TRI = [1 3 2;3 1 4;5 2 3;4 7 3;6 3 7;3 6 5]
+ % for i=1:Nelt;
+ %    no1 = TRI(i,1);
+ %    no2 = TRI(i,2);
+ %    no3 = TRI(i,3);
+ %    %   copia coordenadas
+ %    x1=x(no1);
+ %    x2=x(no2);
+ %    x3=x(no3);
+ %    y1=y(no1);
+ %    y2=y(no2);
+ %    y3=y(no3);
+ %    %   calcula centroide
+ %    xm(i) = (x1+x2+x3)/3;
+ %    ym(i) = (y1+y2+y3)/3;
+ %    %
+ %    %   calcula vector gradiente no elemento   
+ %    Ae2 = (x2 -x1)*(y3 -y1) -(y2 -y1)*(x3 -x1);
+ %    %   derivadas parciais das funcoes de forma
+ %    d1dx = (y2-y3)/Ae2;
+ %    d1dy = (x3-x2)/Ae2;
+ %    d2dx = (y3-y1)/Ae2;
+ %    d2dy = (x1-x3)/Ae2;
+ %    d3dx = (y1-y2)/Ae2;
+ %    d3dy = (x2-x1)/Ae2;
+ %    %   interpolacao e derivadas
+ %    um(i) = -(d1dx*u(no1)+d2dx*u(no2)+d3dx*u(no3));
+ %    vm(i) = -(d1dy*u(no1)+d2dy*u(no2)+d3dy*u(no3));
+ %    %   sinal negativo para o fluxo
+ % end
  figure (1)
  plot (x,y,'ro'); hold
  quiver (xm,ym,um,vm,'k')
