@@ -21,15 +21,19 @@ for i=11:6:length(nos)
 
 end
 
-col = str2double((filt_nos));  % Separa o ficheiro dos nós em colunas
+col = split(filt_nos);  % Separa o ficheiro em colunasa
+c1=[];
+c2=[];
 x=[];
 y=[];
 n_out=[];
 
 for i=1:1:length(col)
-    
-    x=[x;col(i,5)];        
-    y=[y;col(i,6)];
+
+    c1=[c1;col(i,5)];
+    x=[x;str2double(c1(i))];
+    c2=[c2;col(i,6)];    
+    y=[y;str2double(c2(i))];
     n_out=[n_out;i,x(i),y(i)];
 
 end
@@ -39,28 +43,17 @@ end
 
 % Elementos:
 
-elementos = splitlines(fscanf(element_file), formatspec); % Separa o element_file em linhas
+elementos = splitlines(fscanf(element_file), formatspec); 
 
 filt_elem = [];
 
 
 for i=11:6:length(elementos)
 
-    filt_elem = [filt_elem, elementos(i)]; % Separa o ficheiro dos elementos em colunas
+    filt_elem = [filt_elem, elementos(i)];
 
 end
 
-
-% Calculo matriz conectividades
-
-
-% Propridades do material
-
-
-% Extração das condições fronteira do ficheiro do NX
-
-
-% Extração das forças/cargas/fluxo impostos
 
 
 
@@ -74,50 +67,17 @@ end
 
 % Cria (ou abre se já existente) ficheiro dados.txt no diretorio atual
 
-
 dados = fopen('dados.txt', 'w');
 
 fprintf(dados, '# - Escoamento_Potencial de velocidade\n');
 
-
 % Adiciona dados extraídos do fichiero do NX ao ficheiro dados.txt
 
-
-
-% Escreve as coordenadas dos nós
+% Adiciona coordenadas dos nós
 
 fprintf(dados, '#Coordenadas dos nos\n');
 
 %fprinft(dados, l)
-
-
-
-
-
-% Escreve a matriz de conectividades
-
-% Escreve as propriedades do material
-
-% Escreve as fontes e carregamentos distriubidos
-
-% Escreve as condições de fronteira esseciais
-
-% Escreve as fontes e cargas pontuais
-
-% Escreve o fluxo imposto na fronteira (condição de fronteira naturail)
-
-% Escreve a condição de fronteira mista
-
-    
-
-
-
-
-
-
-
-
-
 
 
 
