@@ -2,6 +2,7 @@ function [xm,ym,um,vm] = Projeto_Grad(x,y,elem,u)
 
 n = size(elem,1);
 
+% Inicializar posição e valores do vetor
 xm = zeros(1,n);
 ym = zeros(1,n);
 um = zeros(1,n);
@@ -10,6 +11,7 @@ vm = zeros(1,n);
 for i=1:n
 
     % verificar tipo de elemento
+
     if elem(i,1) == 33
         % 33 - Triangular de 3 nós
 
@@ -43,6 +45,34 @@ for i=1:n
         %   interpolacao e derivadas
         um(i) = -(d1dx*u(no1)+d2dx*u(no2)+d3dx*u(no3));
         vm(i) = -(d1dy*u(no1)+d2dy*u(no2)+d3dy*u(no3));
-        
-    end
-end
+% -------------------------------------------------------------------------
+
+    elseif elem(i,1) == 36
+        no1 = elem(i,1); 
+        no2 = elem(i,2); 
+        no3 = elem(i,3); 
+        no4 = elem(i,4); 
+        no5 = elem(i,5); 
+        no6 = elem(i,6); 
+
+        edofs =[no1 no2 no3 no4 no5 no6];  %   conectividade deste triangulo
+        XN(1:6,1)=x(edofs); 
+        XN(1:6,2)=y(edofs);  
+        csi=1/3 ; 
+        eta=1/3 ; 
+        %----------------------------------------------------------------
+        [B, psi, Detj]=Shape_N_Der6 (XN,csi,eta) ; 
+        %----------------------------------------------------------------
+        xpint = XN'*psi ; 
+        uint = psi'*u(edofs) ; 
+        uexi =1.-xpint(1)^2-xpint(2)^2 ; 
+        erri(i)= abs(uint-uexi)	 ; 	%	calcular erro absoluto no centroide
+        gradu = B'*u(edofs) ; 
+        fluxu = -gradu ; 
+        plot(xpint(1),xpint(2),'bx');hold on
+        quiver(xpint(1),xpint(2),fluxu(1),fluxu(2));hold on
+    end 
+
+end % Fim do loop
+
+end % Fim da função

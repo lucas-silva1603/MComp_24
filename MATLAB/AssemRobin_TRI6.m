@@ -1,4 +1,4 @@
-clear all
+% clear all
 close all
 %--------------------------------------------------------------------------
 %       Demonstra condicoes de Robin num circulo de raio 1
@@ -27,6 +27,8 @@ for i=1:Nelt
   %     calculos no elemento
 fL= 4.0
 [Ke fe]=Elem_TRI6 (XN,fL)
+% elem = [36 1 3 13 2 10 9 4;36 5 13 3 11 10 4 4;36 5 7 13 6 12 11 4;36 7 1 13 8 9 12 4];
+% [Ke, fe, edofs] = Projeto_Elem_Ke_Fe(x,y,elem(i,:),elem(i,1));
 
   %     assemblagem
   Kg(edofs,edofs)= Kg(edofs,edofs) + Ke ;  % 

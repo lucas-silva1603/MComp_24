@@ -72,7 +72,6 @@ end
 % -------------------------------------------------------------------------
 % Aplicação das condições fronteira
 
-    % Condições fronteira
     % Forças pontuais
 [Kg, fg] = Projeto_Applied_Forces(Kg,fg,Applied_Forces);
 
@@ -97,9 +96,8 @@ R = Kg*u-fg;
 
 % -------------------------------------------------------------------------
 % Representação dos resultados
-
+% -------------------------------------------------------------------------
     % Representação potencial
-
 figure(1);
 title('Potencial em 2D');
 xlabel('X');
@@ -109,10 +107,9 @@ colorbar;  % Legenda de cor
 patch('Faces', Connectivity, 'Vertices', [x,y], 'FaceVertexCData', u, 'FaceColor', 'interp', 'EdgeColor', 'k');hold;
 plot(x,y,'ro');
 
-
-
-
+% -------------------------------------------------------------------------
     % Representação gradiente
+
 [xm,ym,um,vm] = Projeto_Grad(x,y,elem,u);
 
 figure (2);
@@ -120,24 +117,29 @@ title('Gradiente');
 xlabel('X');
 ylabel('Y');
 
-plot (x,y,'ro');hold
-quiver (xm,ym,um,vm,'k');
+% Desenho da malha
+plot (x,y,'ro');hold 
 if elem(1,1) == 33 
     triplot([elem(:,2),elem(:,3),elem(:,4)], x, y);
 end
+quiver (xm,ym,um,vm,'k'); %Desenho do gradiente
 
-
+% -------------------------------------------------------------------------
     % Representação gradiente com potencial
+
 figure(3);
 title('Escoamento');
 xlabel('X');
 ylabel('Y');
 colorbar;  % Legenda de cor
 
+        % Desenho do potencial
 patch('Faces', Connectivity, 'Vertices', [x,y], 'FaceVertexCData', u, 'FaceColor', 'interp', 'EdgeColor', 'k');hold;
+
+        % Desenho do gradiente
 quiver (xm,ym,um,vm,'k');
 
-
+% -------------------------------------------------------------------------
 
 % Pressão
 P = elem(:,end)' - 0.5*(um.^2 + vm.^2); 
@@ -176,9 +178,5 @@ if exact == 1
     disp(['Erro máximo de potencial: ', num2str(max(erru))]);
     disp(['Erro máximo de velocidade: ', num2str(max(ergrad))]);
 end
-% 
-% figure(5)
-% Vel = delaunay(xm,ym);
-% Vel_abs = sqrt(xm.^2 + ym.^2);
-% patch('Faces', Vel, 'Vertices', [xm',ym'], 'FaceVertexCData', Vel_abs', 'FaceColor', 'interp', 'EdgeColor', 'k');hold;
+
 

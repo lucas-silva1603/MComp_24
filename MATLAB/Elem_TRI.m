@@ -14,6 +14,7 @@ d2dx = (y3-y1)/Ae2;
 d2dy = (x1-x3)/Ae2;
 d3dx = (y1-y2)/Ae2;
 d3dy = (x2-x1)/Ae2;
+
 %--------------------------------------------------------------------------
 % Coeficientes do triangulo superior da matriz
 Ke(1,1) = (d1dx*d1dx + d1dy*d1dy)*Ae;
@@ -28,7 +29,7 @@ Ke(3,1)= Ke(1,3);
 Ke(3,2)= Ke(2,3);
 
 %--------------------------------------------------------------------------
-% Acrescentar o vector de forcas a seguir
+% Acrescentar o vector de forcas
 % Vector de forcas:   declarar como vector coluna
 fe(1:3,1)= el*Ae/3;     % Para uma carga uniforme de intensidade el
 

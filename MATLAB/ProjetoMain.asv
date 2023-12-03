@@ -1,5 +1,6 @@
 clear
 close all
+clc
 
 % -------------------------------------------------------------------------
 % Dados
@@ -21,6 +22,11 @@ close all
     % nó2, constante convecção(gama), Temperatura longe da parede(p)
 
     % teste
+% -------------------------------------------------------------------------
+% Tem solução exata? 0 - não, 1 - sim
+exact = 0;
+% -------------------------------------------------------------------------
+
 x=[0 1 1 0 2 2 1]';
 y=[1 2 1 0 2 1 0]';
 
@@ -44,10 +50,6 @@ if EType == 33
     Connectivity = zeros(Nelt,3);
 elseif EType == 36
     Connectivity = zeros(Nelt,6);
-elseif EType == 44
-    Connectivity = zeros(Nelt,4);
-elseif EType == 48
-    Connectivity = zeros(Nelt,8);
 end
 % -------------------------------------------------------------------------
 % Cálculo das matrizes rigizez e vetores de força
@@ -70,7 +72,6 @@ end
 % -------------------------------------------------------------------------
 % Aplicação das condições fronteira
 
-    % Condições fronteira
     % Forças pontuais
 [Kg, fg] = Projeto_Applied_Forces(Kg,fg,Applied_Forces);
 
@@ -97,7 +98,6 @@ R = Kg*u-fg;
 % Representação dos resultados
 
     % Representação potencial
-
 figure(1);
 title('Potencial em 2D');
 xlabel('X');
@@ -108,8 +108,6 @@ patch('Faces', Connectivity, 'Vertices', [x,y], 'FaceVertexCData', u, 'FaceColor
 plot(x,y,'ro');
 
 
-
-
     % Representação gradiente
 [xm,ym,um,vm] = Projeto_Grad(x,y,elem,u);
 
@@ -118,11 +116,13 @@ title('Gradiente');
 xlabel('X');
 ylabel('Y');
 
-plot (x,y,'ro');hold
-quiver (xm,ym,um,vm,'k');
+% Desenho da malha
+plot (x,y,'ro');hold 
 if elem(1,1) == 33 
     triplot([elem(:,2),elem(:,3),elem(:,4)], x, y);
 end
+quiver (xm,ym,um,vm,'k'); %Desenho do gradiente
+
 
     % Representação gradiente com potencial
 figure(3);
@@ -131,9 +131,11 @@ xlabel('X');
 ylabel('Y');
 colorbar;  % Legenda de cor
 
+        % Desenho do potencial
 patch('Faces', Connectivity, 'Vertices', [x,y], 'FaceVertexCData', u, 'FaceColor', 'interp', 'EdgeColor', 'k');hold;
-quiver (xm,ym,um,vm,'k');
 
+        % Desenho do gradiente
+quiver (xm,ym,um,vm,'k');
 
 
 % Pressão
@@ -161,6 +163,7 @@ if exact == 1
     erru = abs(u - uex);
     
     figure(4)
+    title('Erro de potencial');
     trisurf(Connectivity, x, y, erru); grid on
     
     umex = 2*xm;
@@ -168,7 +171,9 @@ if exact == 1
     errux= um-umex;
     erruy = vm-vmex;
     ergrad =sqrt(errux.^2+erruy.^2);
+    
+    disp(['Erro máximo de potencial: ', num2str(max(erru))]);
+    disp(['Erro máximo de velocidade: ', num2str(max(ergrad))]);
 end
-% -------------------------------------------------------------------------
-% Obter gráfico e dados pedidos
+
 
