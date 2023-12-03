@@ -1,8 +1,8 @@
 clear all
 close all
 %---------------------------------------------------------------------------
-%	Tarefa 63 : Representacao grafica de triangulos de 6-nos
-%	com lados curvos atendendo a curvatura de cada lado
+% Representacao grafica de triangulos de 6-nos
+% com lados curvos atendendo a curvatura de cada lado
 %       Autor: Prof. J. L. M. Fernandes
 %---------------------------------------------------------------------------
 x=[1 0.7071 0 -0.7071 -1 -0.7071 0 0.7071 0.5 0 -0.5 0 0]'

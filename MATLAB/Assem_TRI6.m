@@ -27,6 +27,8 @@ for i=1:Nelt
   %     calculos no elemento
 fL= 4.0 ; 
 [Ke fe]=Elem_TRI6 (XN,fL) ; 
+% elem = [36 1 3 13 2 10 9 4;36 5 13 3 11 10 4 4;36 5 7 13 6 12 11 4;36 7 1 13 8 9 12 4];
+% [Ke, fe, edofs] = Projeto_Elem_Ke_Fe(x,y,elem(i,:),elem(i,1));
 
   %     assemblagem
   Kg(edofs,edofs)= Kg(edofs,edofs) + Ke  ;  % 
@@ -68,7 +70,7 @@ plot(x(edofs),y(edofs),'b');hold on
 end
 plot(x,y,'ro');
 
-figure(12)
+figure(2)
 Nelt=size(tri6,1)
 for i=1:Nelt
     no1=tri6(i,1) ; 
@@ -88,7 +90,7 @@ plot(x(edofs),y(edofs),'r');hold on
 end
 plot(x,y,'ro');
 
-figure
+figure(3)
 Nelt=size(tri6,1) ; 
 for i=1:Nelt
     no1=tri6(i,1) ; 
@@ -106,7 +108,7 @@ plot(x(edofs),y(edofs),'b');hold on
 end
 plot(x,y,'ro');
 
-figure
+figure(4)
 Nelt=size(tri6,1)
 for i=1:Nelt
     no1=tri6(i,1) ; 
@@ -128,9 +130,12 @@ plot(x,y,'ro');
 %----------------------------------------------------------------------
 %	Tarefa 58 : Calcular (gradiente) fluxo nos centroides
 %----------------------------------------------------------------------
+figure(5)
+plot(x,y,'ro');hold on
+
 Nelt=size(tri6,1) ; 
 psi=zeros(6,1) ; 
-figure
+figure(5)
 plot(x,y,'ro');hold on
 for i=1:Nelt
     no1=tri6(i,1) ; 
@@ -156,8 +161,17 @@ gradu = B'*u(edofs) ;
 fluxu = -gradu ; 
 plot(xpint(1),xpint(2),'bx');hold on
 quiver(xpint(1),xpint(2),fluxu(1),fluxu(2));hold on
+XM(i,:) = xpint;
+UM(i,:) = fluxu;
 end
+%% 
+% -------------------------------------------------------------------------
+elem = [36 1 3 13 2 10 9 4;36 5 13 3 11 10 4 4;36 5 7 13 6 12 11 4;36 7 1 13 8 9 12 4];
+[xm,ym,um,vm] = Projeto_Grad(x,y,elem,u);
+plot(xm,ym,'bx');hold on
+quiver(xm,ym,um,vm);
+% -------------------------------------------------------------------------
 
-maxeri =max(erri)	%	calcular maximo erro absoluto nos centroides
-errumx=max(erru)    %	calcular maximo erro absoluto nos nos
-erms= rms(erru)
+% maxeri =max(erri)	%	calcular maximo erro absoluto nos centroides
+% errumx=max(erru)    %	calcular maximo erro absoluto nos nos
+% erms= rms(erru)

@@ -45,13 +45,19 @@ end %for i
 %   Tarefa 62 : Assemblagem de H e P, condicoes de Robin, lados curvos
 %--------------------------------------------------------------------------
 % Atencao: so os lados quadraticos sobre a fronteira
+%--------------------------------------------------------------------------
 p=100
 gama=-2
-[He Pe]=Robin_quadr (x(1),y(1),x(2),y(2),x(3),y(3),p,gama)
-edofs =[1 2 3]  %   conectividade deste lado quadratico
-%     assemblagem
-  Kg(edofs,edofs)= Kg(edofs,edofs) + He  % 
-  fg(edofs,1)= fg(edofs,1) + Pe          % 
+% [He Pe]=Robin_quadr (x(1),y(1),x(2),y(2),x(3),y(3),p,gama)
+% 
+% edofs =[1 2 3]  %   conectividade deste lado quadratico
+% %     assemblagem
+%   Kg(edofs,edofs)= Kg(edofs,edofs) + He  % 
+%   fg(edofs,1)= fg(edofs,1) + Pe          % 
+Robin_Bound = [1 1 2 3 -2 100];
+[Kg, fg] = Projeto_Robin_Bound(Kg, fg, Robin_Bound,x,y, 36);
+
+%--------------------------------------------------------------------------
 [He Pe]=Robin_quadr (x(3),y(3),x(4),y(4),x(5),y(5),p,gama)
 edofs =[3 4 5]  %   conectividade deste lado quadratico
 %     assemblagem
@@ -101,7 +107,6 @@ uint = psi'*u(edofs)
 xpint = XN'*psi
 gradu = B'*u(edofs)
 fluxu = -gradu
-
 plot(xpint(1),xpint(2),'bx');hold on
 quiver(xpint(1),xpint(2),fluxu(1),fluxu(2));hold on
 end
@@ -124,40 +129,40 @@ end
 plot(x,y,'ro');
 umx
 
-function [He Pe]=Robin_quadr (x1,y1,x2,y2,x3,y3,p,gama)
-%------------- Inicializacoes --------------------------
-b=zeros(3,1)
-He=zeros(3,3)
-Pe=zeros(3,1)
-%-------------------------------------------------------
-nip=3
-[xi wi]=Genip1D (nip)   %   regras 1D Gauss-Legendre
-%-------------------------------------------------------
-%
-for ip=1:nip
-    csi=xi(ip)
-    %   calcula funcoes de forma
-    b(1)=0.5*csi*(csi-1)
-    b(2)=1-csi*csi
-    b(3)=0.5*csi*(csi+1)
-        %   calcula derivadas das funcoes de forma
-    db(1)= csi-0.5
-    db(2)=-2*csi
-    db(3)= csi+0.5
-        %   calcula derivadas de x e de y
-xx= db(1)*x1+db(2)*x2+db(3)*x3
-yy= db(1)*y1+db(2)*y2+db(3)*y3
-%-------------------------------------------------------
-jaco = sqrt(xx^2+yy^2)      %   jacobiano
-%-------------------------------------------------------
-wip =jaco*wi(ip)
-wipp =wip*p
-wipg =wip*gama
-%-------------------------------------------------------
-He = He + wipp*b*b'
-Pe = Pe + wipg*b
-end
-end
+% function [He Pe]=Robin_quadr (x1,y1,x2,y2,x3,y3,p,gama)
+% %------------- Inicializacoes --------------------------
+% b=zeros(3,1)
+% He=zeros(3,3)
+% Pe=zeros(3,1)
+% %-------------------------------------------------------
+% nip=3
+% [xi wi]=Genip1D (nip)   %   regras 1D Gauss-Legendre
+% %-------------------------------------------------------
+% %
+% for ip=1:nip
+%     csi=xi(ip)
+%     %   calcula funcoes de forma
+%     b(1)=0.5*csi*(csi-1)
+%     b(2)=1-csi*csi
+%     b(3)=0.5*csi*(csi+1)
+%         %   calcula derivadas das funcoes de forma
+%     db(1)= csi-0.5
+%     db(2)=-2*csi
+%     db(3)= csi+0.5
+%         %   calcula derivadas de x e de y
+% xx= db(1)*x1+db(2)*x2+db(3)*x3
+% yy= db(1)*y1+db(2)*y2+db(3)*y3
+% %-------------------------------------------------------
+% jaco = sqrt(xx^2+yy^2)      %   jacobiano
+% %-------------------------------------------------------
+% wip =jaco*wi(ip)
+% wipp =wip*p
+% wipg =wip*gama
+% %-------------------------------------------------------
+% He = He + wipp*b*b'
+% Pe = Pe + wipg*b
+% end
+% end
 
 function [xi wi]=Genip1D (nip)
 %----------------------------------------------------------------
