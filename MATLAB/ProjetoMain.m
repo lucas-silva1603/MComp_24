@@ -180,17 +180,10 @@ quiver (xm,ym,um,vm,'k');
 % -------------------------------------------------------------------------
 
 % Pressão
-P = elem(:,end)' - 0.5*(um.^2 + vm.^2); 
+ro = 1000;
 
-%     % Representaçao Isolinhas
-% figure(4);
-% title('Isolinhas de pressão');
-% xlabel('X');
-% ylabel('Y');
-% plot (x,y,'ro'); hold
-% 
-% [CS,h] = tricont(xm,ym,Connectivity,P); 
-% clabel(CS,h);
+P = elem(:,end)' - 0.5*ro*(um.^2 + vm.^2); 
+
 %     % Representação Pressão(opcional)
 
 % -------------------------------------------------------------------------
