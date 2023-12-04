@@ -24,38 +24,42 @@ clc
     % teste
 % -------------------------------------------------------------------------
 % Tem solução exata? 0 - não, 1 - sim
-exact = 0;
+exact = 1;
+EType = 33;
 % -------------------------------------------------------------------------
 % teste tri 3
-% x=[0 1 1 0 2 2 1]';
-% y=[1 2 1 0 2 1 0]';
-% 
-% elem = [33 1 3 2 1; 33 3 1 4 1;33 5 2 3 1;33 4 7 3 1;33 6 3 7 1;33 3 6 5 1];
-% Essential_Boundary = [1 2; 4 3];
-% Neumann_Bound = 0;
-% Applied_Forces = 0;
-% Robin_Bound = [1 5 6 1 1];
+if EType == 33
+    x=[0 1 1 0 2 2 1]';
+    y=[1 2 1 0 2 1 0]';
+    
+    elem = [33 1 3 2 1; 33 3 1 4 1;33 5 2 3 1;33 4 7 3 1;33 6 3 7 1;33 3 6 5 1];
+    Essential_Boundary = [1 2; 4 3];
+    Neumann_Bound = 0;
+    Applied_Forces = 0;
+    Robin_Bound = [1 5 6 1 1];
+end
 % -------------------------------------------------------------------------
-x=[1 0.7071 0 -0.7071 -1 -0.7071 0 0.7071 0.5 0 -0.5 0 0]';
-y=[0 0.7071 1 0.7071 0 -0.7071 -1 -0.7071 0 0.5 0 -0.5 0]';
-elem = [36 1 3 13 2 10 9 4;36 5 13 3 11 10 4 4;36 5 7 13 6 12 11 4;36 7 1 13 8 9 12 4];
-
-Essential_Boundary = 0;
-% Essential_Boundary = zeros(8,2);
-% for i = 1:8
-%     Essential_Boundary(i,1) = i;
-% end
-Neumann_Bound = 0;
-Applied_Forces = 0;
-p=100;
-gama=-2;
-Robin_Bound = [
-    1 1 2 3 gama p;
-    2 3 4 5 gama p; 
-    3 5 6 7 gama p; 
-    4 7 8 1 gama p;
-    ];
-   
+if EType == 36
+    x=[1 0.7071 0 -0.7071 -1 -0.7071 0 0.7071 0.5 0 -0.5 0 0]';
+    y=[0 0.7071 1 0.7071 0 -0.7071 -1 -0.7071 0 0.5 0 -0.5 0]';
+    elem = [36 1 3 13 2 10 9 4;36 5 13 3 11 10 4 4;36 5 7 13 6 12 11 4;36 7 1 13 8 9 12 4];
+    
+    Essential_Boundary = 0;
+    % Essential_Boundary = zeros(8,2);
+    % for i = 1:8
+    %     Essential_Boundary(i,1) = i;
+    % end
+    Neumann_Bound = 0;
+    Applied_Forces = 0;
+    p=100;
+    gama=-2;
+    Robin_Bound = [
+        1 1 2 3 gama p;
+        2 3 4 5 gama p; 
+        3 5 6 7 gama p; 
+        4 7 8 1 gama p;
+        ];
+end
 
 
 % -------------------------------------------------------------------------
@@ -127,12 +131,15 @@ xlabel('X');
 ylabel('Y');
 colorbar;  % Legenda de cor
 
-draw =[Connectivity(:,1) Connectivity(:,4) Connectivity(:,2) Connectivity(:,5) Connectivity(:,3) Connectivity(:,6)] ; 
-fill (x(draw),y(draw),u(draw));hold on
-plot(x(draw),y(draw),'b');hold on
+if EType == 33
+    patch('Faces', Connectivity, 'Vertices', [x,y], 'FaceVertexCData', u, 'FaceColor', 'interp', 'EdgeColor', 'k');hold;
+    plot(x,y,'ro');
+end
 
-% patch('Faces', Connectivity, 'Vertices', [x,y], 'FaceVertexCData', u, 'FaceColor', 'interp', 'EdgeColor', 'k');hold;
-% plot(x,y,'ro');
+if EType == 36
+    draw =[Connectivity(:,1) Connectivity(:,4) Connectivity(:,2) Connectivity(:,5) Connectivity(:,3) Connectivity(:,6)] ; 
+    patch('Faces', draw, 'Vertices', [x,y], 'FaceVertexCData', u, 'FaceColor', 'interp', 'EdgeColor', 'k');hold;
+end
 
 % -------------------------------------------------------------------------
     % Representação gradiente
@@ -160,9 +167,13 @@ xlabel('X');
 ylabel('Y');
 colorbar;  % Legenda de cor
 
+if EType == 33
         % Desenho do potencial
-patch('Faces', Connectivity, 'Vertices', [x,y], 'FaceVertexCData', u, 'FaceColor', 'interp', 'EdgeColor', 'k');hold;
-
+    patch('Faces', Connectivity, 'Vertices', [x,y], 'FaceVertexCData', u, 'FaceColor', 'interp', 'EdgeColor', 'k');hold;
+end
+if EType == 36
+    patch('Faces', draw, 'Vertices', [x,y], 'FaceVertexCData', u, 'FaceColor', 'interp', 'EdgeColor', 'k');hold;
+end
         % Desenho do gradiente
 quiver (xm,ym,um,vm,'k');
 
@@ -195,7 +206,14 @@ if exact == 1
     
     figure(4)
     title('Erro de potencial');
-    trisurf(Connectivity, x, y, erru); grid on
+    
+    if EType == 33
+        trisurf(Connectivity, x, y, erru); grid on
+    end
+
+    if EType == 36
+        trisurf(draw, x, y, erru); grid on
+    end
     
     umex = 2*xm;
     vmex = 2*ym;
