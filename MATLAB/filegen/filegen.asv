@@ -8,7 +8,7 @@ element_file = fopen('Elements.txt', 'r');
 formatspec = '%c';'%d"';
 
 % Lê dados do ficheiro do NX e extrai informaçao relevante
-%
+
 % Nos:
 
 nos = splitlines(fscanf(node_file, formatspec)); % Separa o node_file em linhas
@@ -65,7 +65,8 @@ el_col = str2double(split(filt_elem));  % Separa o ficheiro dos nós em colunas
 
 % Inicialização de variáveis
 
-material = 1;
+material = 1; % Não definido no propósito deste programa, apenas como placeholder
+
 element_num=[];
 element_material=[];
 element_type=[];
@@ -78,6 +79,7 @@ n6=[];
 el_out=[];
 
 % Verificação do tipo de elemento  (Apenas elmentos triangulares de 3 e 6 nós)
+
 for i=1:1:length(check)
         
         if isequal(string(check(i,4)), 'CTRIA6') == true
@@ -87,6 +89,11 @@ for i=1:1:length(check)
             
         end
 end
+
+% Calculo matriz conectividades
+
+% Loop de criação da matriz de conectividades para elementos triangulares
+% de 3 nós
 
 if isequal(el_col(1,4), 3)
 
@@ -100,8 +107,13 @@ if isequal(el_col(1,4), 3)
     n3=[n3;el_col(i,13)];   
 
     end
-    
-    el_out=cat(2,element_num',element_material', element_type,n1,n2,n3);
+
+    % -----------------------------
+    el_out=cat(2,element_num',element_material', element_type,n1,n2,n3); % Output da matriz de conectividades com informação sobre cada elemento
+    % -----------------------------
+
+% Loop de criação da matriz de conectividades para elementos triangulares
+% de 6 nós
 
 elseif isequal(el_col(1,4), 6) == true
     
@@ -119,35 +131,26 @@ elseif isequal(el_col(1,4), 6) == true
 
     end
 
-    el_out=cat(2,element_num,element_material', element_type',n1,n2,n3,n4,n5,n6);  % MM
-
+    % -----------------------------
+    el_out=cat(2,element_num,element_material', element_type',n1,n2,n3,n4,n5,n6);  % Output da matriz de conectividades com informação sobre cada elemento
+    % -----------------------------
+ 
+% Mensagem de erro para elementos não suportados
 else
     errordlg('Malha com elementos não suportados. Utilize unicamente malhas com elementos triangulares de 3 ou 6 nós','Erro - Tipo de elemento inválido');    
 end
 
 
-       
+% Propriedades do material
 
+% -----------------------------------------------------------------------
+% Fora da area de abrangimento deste programa, pelo que apenas serve para
+% compatibilidade com o formato de ficheiro de dados pretendido
+% -----------------------------------------------------------------------
 
-
-
-%{
-for i=1:1:length(el_col)
-    
-    n1=[n1;col(i,5)];        
-    n2=[y;col(i,6)];
-    n_out=[n_out;i,x(i),y(i)];
-
-end
-
-%}
-
-
-% Calculo matriz conectividades
-
-
-% Propridades do material
-
+numero_materiais = 1;
+ident_mat = 1;
+prop_material = double(1);
 
 % Extração das condições fronteira do ficheiro do NX
 
@@ -172,18 +175,25 @@ dados = fopen('dados.txt', 'w');
 fprintf(dados, '# - Escoamento_Potencial de velocidade\n');
 
 
+% ----------------------------------------------------------------
 % Adiciona dados extraídos do fichiero do NX ao ficheiro dados.txt
-
-
+% ----------------------------------------------------------------
 
 % Escreve as coordenadas dos nós
 
-fprintf(dados, '#Coordenadas dos nos\n');
+fprintf(dados, '# Coordenadas dos nos\n');
 numnos=length(n_out);
 fprintf(dados, num2str(numnos));
 fprintf(dados, '\n');
+ffli
+writematrix(n_out, 'dados.txt','Delimiter', 'space', 'WriteMode', 'append');
 
 % Escreve a matriz de conectividades
+fprintf(dados, '# Matriz de incidências/conectividades\n');
+fprintf(dados, string(length(el_out)));
+writematrix(el_out,'dados.txt', 'Delimiter', 'space', 'WriteMode', 'append');
+
+
 
 % Escreve as propriedades do material
 

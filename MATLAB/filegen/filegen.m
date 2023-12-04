@@ -142,8 +142,15 @@ end
 
 
 % Propriedades do material
+
+% -----------------------------------------------------------------------
 % Fora da area de abrangimento deste programa, pelo que apenas serve para
 % compatibilidade com o formato de ficheiro de dados pretendido
+% -----------------------------------------------------------------------
+
+numero_materiais = 1;
+ident_mat = 1;
+prop_material = double(1);
 
 % Extração das condições fronteira do ficheiro do NX
 
@@ -168,18 +175,24 @@ dados = fopen('dados.txt', 'w');
 fprintf(dados, '# - Escoamento_Potencial de velocidade\n');
 
 
+% ----------------------------------------------------------------
 % Adiciona dados extraídos do fichiero do NX ao ficheiro dados.txt
-
-
+% ----------------------------------------------------------------
 
 % Escreve as coordenadas dos nós
 
-fprintf(dados, '#Coordenadas dos nos\n');
+fprintf(dados, '# Coordenadas dos nos\n');
 numnos=length(n_out);
 fprintf(dados, num2str(numnos));
 fprintf(dados, '\n');
+writematrix(n_out, 'dados.txt','Delimiter', 'space', 'WriteMode', 'append');
 
 % Escreve a matriz de conectividades
+fprintf(dados, '# Matriz de incidências/conectividades\n');
+fprintf(dados, string(length(el_out)));
+writematrix(el_out,'dados.txt', 'Delimiter', 'space', 'WriteMode', 'append');
+
+
 
 % Escreve as propriedades do material
 
