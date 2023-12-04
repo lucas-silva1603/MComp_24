@@ -34,7 +34,6 @@ ELEMENT INFORMATION
   18                   | CTRIA6         | 2d_mesh(1)     | Thin Shell(1)  | 1 42 43 25 47 26
   19                   | CTRIA6         | 2d_mesh(1)     | Thin Shell(1)  | 49 1 43 7 26 27
   20                   | CTRIA6         | 2d_mesh(1)     | Thin Shell(1)  | 49 43 55 27 48 51
-  21                   | CTRIA6         | 2d_mesh(1)     | Thin Shell(1)  | 49 43 55 27 48 51
  
 ------------------------------------------------------------
  

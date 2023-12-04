@@ -32,7 +32,7 @@ n_out=[];
 
 for i=1:1:length(col)
     
-    n_num=[n_num;int64(i)];
+    n_num=[n_num;i];
     x=[x;col(i,5)];        
     y=[y;col(i,6)];
     %n_out=[n_out;i,x(i),y(i)];
@@ -181,11 +181,11 @@ fprintf(dados, '# - Escoamento_Potencial de velocidade\n');
 
 % Escreve as coordenadas dos nós
 
+writematrix()
 fprintf(dados, '# Coordenadas dos nos\n');
 numnos=length(n_out);
 fprintf(dados, num2str(numnos));
 fprintf(dados, '\n');
-ffli
 writematrix(n_out, 'dados.txt','Delimiter', 'space', 'WriteMode', 'append');
 
 % Escreve a matriz de conectividades

@@ -32,7 +32,7 @@ n_out=[];
 
 for i=1:1:length(col)
     
-    n_num=[n_num;int64(i)];
+    n_num=[n_num;i];
     x=[x;col(i,5)];        
     y=[y;col(i,6)];
     %n_out=[n_out;i,x(i),y(i)];
@@ -172,7 +172,7 @@ prop_material = double(1);
 
 dados = fopen('dados.txt', 'w');
 
-fprintf(dados, '# - Escoamento_Potencial de velocidade\n');
+fprintf(dados, '# - Escoamento_Potencial de velocidade');
 
 
 % ----------------------------------------------------------------
@@ -181,15 +181,19 @@ fprintf(dados, '# - Escoamento_Potencial de velocidade\n');
 
 % Escreve as coordenadas dos nós
 
-fprintf(dados, '# Coordenadas dos nos\n');
+writematrix('# Coordenadas dos nos', 'dados.txt','WriteMode', 'append');
+%fprintf(dados, '# Coordenadas dos nos\n');
 numnos=length(n_out);
-fprintf(dados, num2str(numnos));
-fprintf(dados, '\n');
+%fprintf(dados, num2str(numnos));
+writematrix(num2str(numnos), 'dados.txt','WriteMode', 'append')
+%fprintf(dados, '\n');
 writematrix(n_out, 'dados.txt','Delimiter', 'space', 'WriteMode', 'append');
 
 % Escreve a matriz de conectividades
-fprintf(dados, '# Matriz de incidências/conectividades\n');
-fprintf(dados, string(length(el_out)));
+%fprintf(dados, '# Matriz de incidências/conectividades\n');
+writematrix('# Matriz de incidências/conectividades','dados.txt','WriteMode', 'append' );
+%fprintf(dados, string(length(el_out)));
+writematrix(string(length(el_out)), 'dados.txt', 'WriteMode', 'append');
 writematrix(el_out,'dados.txt', 'Delimiter', 'space', 'WriteMode', 'append');
 
 
