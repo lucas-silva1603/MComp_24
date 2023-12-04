@@ -190,6 +190,7 @@ writematrix(num2str(numnos), 'dados.txt','WriteMode', 'append')
 writematrix(n_out, 'dados.txt','Delimiter', 'space', 'WriteMode', 'append');
 
 % Escreve a matriz de conectividades
+
 %fprintf(dados, '# Matriz de incidências/conectividades\n');
 writematrix('# Matriz de incidências/conectividades','dados.txt','WriteMode', 'append' );
 %fprintf(dados, string(length(el_out)));
@@ -197,8 +198,14 @@ writematrix(string(length(el_out)), 'dados.txt', 'WriteMode', 'append');
 writematrix(el_out,'dados.txt', 'Delimiter', 'space', 'WriteMode', 'append');
 
 
-
 % Escreve as propriedades do material
+
+writematrix('# Propriedades do material', 'dados.txt','WriteMode', 'append');
+writematrix(numero_materiais, 'dados.txt','WriteMode', 'append');
+mat_=cat(2,material,prop_material);
+writematrix(mat_, 'dados.txt', 'Delimiter', 'space', 'WriteMode', 'append');
+
+% writematrix(  , 'dados.txt','WriteMode', 'append');
 
 % Escreve as fontes e carregamentos distriubidos
 
