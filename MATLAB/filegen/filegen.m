@@ -38,17 +38,41 @@ end
 % coordenadas
 
 % Elementos:
-%{
-elementos = splitlines(fscanf(element_file), formatspec); % Separa o element_file em linhas
+
+elementos = splitlines(fscanf(element_file, formatspec)); % Separa o element_file em linhas
 
 filt_elem = [];
 
-
-for i=11:6:length(elementos)
+len = length(elementos) - 4;
+for i=17:1:len
 
     filt_elem = [filt_elem, elementos(i)]; % Separa o ficheiro dos elementos em colunas
 
 end
+
+filt_elem = filt_elem';
+
+
+
+
+el_col = str2double(split(filt_elem'));  % Separa o ficheiro dos nós em colunas
+n1=[];
+n2=[];
+n3=[];
+n4=[];
+n5=[];
+n6=[];
+el_out=[];
+
+%{
+for i=1:1:length(el_col)
+    
+    n1=[n1;col(i,5)];        
+    n2=[y;col(i,6)];
+    n_out=[n_out;i,x(i),y(i)];
+
+end
+
 %}
 
 
