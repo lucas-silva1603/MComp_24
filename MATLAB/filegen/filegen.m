@@ -11,7 +11,7 @@ formatspec = '%c';'%d"';
 %
 % Nos:
 
-nos = splitlines(fscanf(node_file), formatspec); % Separa o node_file em linhas
+nos = splitlines(fscanf(node_file, formatspec)); % Separa o node_file em linhas
 
 filt_nos = [];
 
@@ -21,7 +21,7 @@ for i=11:6:length(nos)
 
 end
 
-col = str2double((filt_nos));  % Separa o ficheiro dos nós em colunas
+col = str2double(split(filt_nos'));  % Separa o ficheiro dos nós em colunas
 x=[];
 y=[];
 n_out=[];
@@ -38,7 +38,7 @@ end
 % coordenadas
 
 % Elementos:
-
+%{
 elementos = splitlines(fscanf(element_file), formatspec); % Separa o element_file em linhas
 
 filt_elem = [];
@@ -49,6 +49,7 @@ for i=11:6:length(elementos)
     filt_elem = [filt_elem, elementos(i)]; % Separa o ficheiro dos elementos em colunas
 
 end
+%}
 
 
 % Calculo matriz conectividades
@@ -87,12 +88,9 @@ fprintf(dados, '# - Escoamento_Potencial de velocidade\n');
 % Escreve as coordenadas dos nós
 
 fprintf(dados, '#Coordenadas dos nos\n');
-
-%fprinft(dados, l)
-
-
-
-
+numnos=length(n_out);
+fprintf(dados, num2str(numnos));
+fprintf(dados, '\n');
 
 % Escreve a matriz de conectividades
 
