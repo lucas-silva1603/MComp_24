@@ -94,15 +94,16 @@ n5=[];
 n6=[];
 el_out=[];
 
-% Verificação do tipo de elemento  (Apenas elmentos triangulares de 3 e 6 nós)
+% Verificação do tipo de elemento  (Apenas elementos triangulares de 3 e 6 nós)
 
 for i=1:1:length(check)
         
-        if isequal(string(check(i,4)), 'CTRIA6') == true
+        if isequal(string(check(i,4)), 'CTRIA6') == true  
+            % Triangulo de 6 nos
             el_col(i,4) = 6;
         elseif isequal(string(check(i,4)), 'CTRIA3') == true
-            el_col(i,4) = 3;
-            
+            % Triangulo de 3 nos
+            el_col(i,4) = 3;            
         end
 end
 
