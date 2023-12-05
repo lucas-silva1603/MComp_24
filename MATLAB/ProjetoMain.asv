@@ -24,8 +24,8 @@ clc
     % teste
 % -------------------------------------------------------------------------
 % Tem solução exata? 0 - não, 1 - sim
-exact = 0;
-EType = 33;
+exact = 1;
+EType = 36;
 % -------------------------------------------------------------------------
 % teste tri 3
 if EType == 33
@@ -176,7 +176,7 @@ quiver (xm,ym,um,vm,'k');
 % -------------------------------------------------------------------------
 % Pressão
 ro = 1000;
-p = -(elem(:,end)' - 0.5*ro*(um.^2 + vm.^2)); 
+p = elem(:,end)' - 0.5*ro*(um.^2 + vm.^2); 
 
     % Representação Pressão(opcional)
 figure(4)
@@ -207,15 +207,14 @@ p_max_location = (p==pmax);
 pmin = min(p);
 p_min_location = (p==pmin);
 
-    % Imprimir resultados
 disp(['Velocidade máxima: ', num2str(vmax), ' em: (', ...
     num2str(xm(v_max_location)), ', ', num2str(ym(v_max_location)), ')']);
-disp(['Velocidade mínima: ', num2str(vmin), ' em: (', ...
-    num2str(xm(v_min_location)), ', ', num2str(ym(v_min_location)), ')']);
-disp(['Pressão máxima: ', num2str(pmax), ' em: (', ...
-    num2str(xm(p_max_location)), ', ', num2str(ym(p_max_location)), ')']);
-disp(['Pressão mínima: ', num2str(pmin), ' em: (', ...
-    num2str(xm(p_min_location)), ', ', num2str(ym(p_min_location)), ')']);
+disp(['Velocidade mínima: ', num2str(vmax), ' em: (', ...
+    num2str(xm(v_max_location)), ', ', num2str(ym(v_max_location)), ')']);
+disp(['Pressão máxima: ', num2str(vmax), ' em: (', ...
+    num2str(xm(v_max_location)), ', ', num2str(ym(v_max_location)), ')']);
+disp(['pressão m: ', num2str(vmax), ' em: (', ...
+    num2str(xm(v_max_location)), ', ', num2str(ym(v_max_location)), ')']);
 
 
 % -------------------------------------------------------------------------
@@ -243,7 +242,7 @@ if exact == 1
     ergrad =sqrt(errux.^2+erruy.^2);
     
     % Cálculo da pressão exata
-    pex = -(elem(:,end)' - 0.5*ro*(umex.^2 + vmex.^2));
+    pex = elem(:,end)' - 0.5*ro*(umex.^2 + vmex.^2);
 
     % Cálculo do erro da pressão
     errp = abs(p - pex);

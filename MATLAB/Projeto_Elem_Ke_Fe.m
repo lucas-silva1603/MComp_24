@@ -1,7 +1,6 @@
 function [Ke, fe, edofs] = Projeto_Elem_Ke_Fe(x,y,elem,EType)
 
 % verificar tipo de elemento
-display(EType)
 if EType == 33
     % Triângulo de 3 nós
     no1 = elem(2);
