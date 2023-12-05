@@ -1,5 +1,16 @@
 clear
-clc
+clc 
+
+% -------
+% Filegen
+% -------
+
+% --------------------------------------------------------------------------
+% Esta função importa os ficheiros 'Nodes.txt', 'Elements.txt' e (boundaries
+% and shit) e converte para um ficheiro 'dados.txt', com o formato de dados
+% necessário para a função principal da simulação
+% --------------------------------------------------------------------------
+
 
 % Importa ficheiro de dados do NX
 
@@ -39,12 +50,17 @@ for i=1:1:length(col)
 
 end
  
+% ---------------------------------------------------------------------
+% Matriz output com as informações sobre os nós
+
 % -----------------------------
-n_out=cat(2,n_num,x,y);  % Matriz output com as informações sobre os nós
+n_out=cat(2,n_num,x,y);  
 % -----------------------------
 
 % n_out contem informção sobre o numero de cada nó e as suas respetivas
 % coordenadas
+% ---------------------------------------------------------------------
+
 
 % Elementos:
 
@@ -108,8 +124,9 @@ if isequal(el_col(1,4), 3)
 
     end
 
+    % Output da matriz de conectividades com informação sobre cada elemento
     % -----------------------------
-    el_out=cat(2,element_num',element_material', element_type,n1,n2,n3); % Output da matriz de conectividades com informação sobre cada elemento
+    el_out=cat(2,element_num',element_material', element_type,n1,n2,n3); 
     % -----------------------------
 
 % Loop de criação da matriz de conectividades para elementos triangulares
@@ -131,8 +148,9 @@ elseif isequal(el_col(1,4), 6) == true
 
     end
 
+    % Output da matriz de conectividades com informação sobre cada elemento
     % -----------------------------
-    el_out=cat(2,element_num,element_material', element_type',n1,n2,n3,n4,n5,n6);  % Output da matriz de conectividades com informação sobre cada elemento
+    el_out=cat(2,element_num,element_material', element_type',n1,n2,n3,n4,n5,n6);  
     % -----------------------------
  
 % Mensagem de erro para elementos não suportados
