@@ -1,0 +1,2563 @@
+﻿Listagem de informações criada por	PC
+Data	05-Dec-2023 00:11:42
+Peça de trabalho atual	C:\Users\PC\Desktop\nx\geometria final_fem1.fem
+Nome do nó	HP
+
+
+INFORMAÇÕES DO NÓ
+Etiqueta 1 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2261.8015  744.3506  0.0000  
+    Elementos conectados                : 2 29 30 221 222 223 263 
+ 
+Etiqueta 2 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2261.8015  855.6494  0.0000  
+    Elementos conectados                : 1 2 4 221 224 225 226 
+ 
+Etiqueta 3 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2216.5341  957.3201  0.0000  
+    Elementos conectados                : 3 4 6 224 227 228 229 
+ 
+Etiqueta 4 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2133.8253  1031.7924  0.0000  
+    Elementos conectados                : 5 6 8 227 230 231 232 
+ 
+Etiqueta 5 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2027.9761  1066.1841  0.0000  
+    Elementos conectados                : 7 8 10 230 233 234 235 
+ 
+Etiqueta 6 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1917.2930  1054.5514  0.0000  
+    Elementos conectados                : 9 10 12 233 236 237 238 
+ 
+Etiqueta 7 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1820.9055  998.9021  0.0000  
+    Elementos conectados                : 11 12 14 236 239 240 241 
+ 
+Etiqueta 8 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1755.4897  908.8640  0.0000  
+    Elementos conectados                : 13 14 16 239 242 243 244 
+ 
+Etiqueta 9 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1732.3492  800.0000  0.0000  
+    Elementos conectados                : 15 16 18 242 245 246 247 
+ 
+Etiqueta 10 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1755.4898  691.1360  0.0000  
+    Elementos conectados                : 17 18 20 245 248 249 250 
+ 
+Etiqueta 11 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1820.9055  601.0979  0.0000  
+    Elementos conectados                : 19 20 22 248 251 252 253 
+ 
+Etiqueta 12 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1917.2930  545.4486  0.0000  
+    Elementos conectados                : 21 22 24 251 254 255 256 
+ 
+Etiqueta 13 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2027.9761  533.8159  0.0000  
+    Elementos conectados                : 23 24 26 254 257 258 259 
+ 
+Etiqueta 14 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2133.8253  568.2076  0.0000  
+    Elementos conectados                : 25 26 28 257 260 261 262 
+ 
+Etiqueta 15 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2216.5341  642.6800  0.0000  
+    Elementos conectados                : 27 28 30 260 263 264 265 
+ 
+Etiqueta 16 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3864.0733  1201.0654  0.0000  
+    Elementos conectados                : 32 213 214 410 411 412 
+ 
+Etiqueta 17 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3870.2721  1036.0402  0.0000  
+    Elementos conectados                : 31 32 34 411 413 414 
+ 
+Etiqueta 18 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3874.7508  877.5033  0.0000  
+    Elementos conectados                : 33 34 36 266 267 413 
+ 
+Etiqueta 19 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3874.5295  720.8246  0.0000  
+    Elementos conectados                : 35 36 38 266 268 269 
+ 
+Etiqueta 20 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3869.8753  562.4749  0.0000  
+    Elementos conectados                : 37 38 40 268 270 271 
+ 
+Etiqueta 21 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3863.7980  397.8956  0.0000  
+    Elementos conectados                : 39 40 42 270 272 273 
+ 
+Etiqueta 22 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3871.4800  234.2975  0.0000  
+    Elementos conectados                : 41 42 44 215 272 274 
+ 
+Etiqueta 23 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3892.6171  105.3313  0.0000  
+    Elementos conectados                : 43 44 45 47 215 
+ 
+Etiqueta 24 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3761.5477  128.0721  0.0000  
+    Elementos conectados                : 46 47 49 215 274 275 
+ 
+Etiqueta 25 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3595.0684  138.4209  0.0000  
+    Elementos conectados                : 48 49 51 275 276 277 
+ 
+Etiqueta 26 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3426.2312  133.8393  0.0000  
+    Elementos conectados                : 50 51 53 276 278 279 
+ 
+Etiqueta 27 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3263.5560  127.9548  0.0000  
+    Elementos conectados                : 52 53 55 278 280 281 
+ 
+Etiqueta 28 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3106.2347  123.5597  0.0000  
+    Elementos conectados                : 54 55 57 280 282 283 
+ 
+Etiqueta 29 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2959.5153  122.3474  0.0000  
+    Elementos conectados                : 56 57 58 60 282 284 
+ 
+Etiqueta 30 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2911.5501  233.8374  0.0000  
+    Elementos conectados                : 59 60 62 284 285 286 
+ 
+Etiqueta 31 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2851.6682  331.9193  0.0000  
+    Elementos conectados                : 61 62 64 285 287 288 
+ 
+Etiqueta 32 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2774.1959  433.0442  0.0000  
+    Elementos conectados                : 64 65 287 289 290 291 
+ 
+Etiqueta 33 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2653.3654  391.8994  0.0000  
+    Elementos conectados                : 63 65 67 289 292 293 
+ 
+Etiqueta 34 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2532.9973  339.1362  0.0000  
+    Elementos conectados                : 66 67 69 292 294 295 296 
+ 
+Etiqueta 35 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2482.8363  219.5128  0.0000  
+    Elementos conectados                : 68 69 71 294 297 298 
+ 
+Etiqueta 36 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2449.4951  110.7615  0.0000  
+    Elementos conectados                : 70 71 72 74 297 299 
+ 
+Etiqueta 37 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2321.2404  111.0368  0.0000  
+    Elementos conectados                : 73 74 76 299 300 301 
+ 
+Etiqueta 38 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2178.2245  122.1627  0.0000  
+    Elementos conectados                : 75 76 78 300 302 303 
+ 
+Etiqueta 39 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2023.6633  126.1956  0.0000  
+    Elementos conectados                : 77 78 80 302 304 305 
+ 
+Etiqueta 40 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1872.5055  117.8211  0.0000  
+    Elementos conectados                : 79 80 82 304 306 307 
+ 
+Etiqueta 41 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1735.2402  102.8064  0.0000  
+    Elementos conectados                : 81 82 84 86 306 308 
+ 
+Etiqueta 42 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1662.6431  191.2144  0.0000  
+    Elementos conectados                : 85 86 88 308 309 310 
+ 
+Etiqueta 43 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1597.1266  266.3219  0.0000  
+    Elementos conectados                : 87 88 90 309 311 312 
+ 
+Etiqueta 44 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1521.9745  329.7022  0.0000  
+    Elementos conectados                : 89 90 92 311 313 314 
+ 
+Etiqueta 45 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1426.4060  375.8635  0.0000  
+    Elementos conectados                : 91 92 94 313 315 316 
+ 
+Etiqueta 46 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1313.9062  395.1202  0.0000  
+    Elementos conectados                : 93 94 96 315 317 318 
+ 
+Etiqueta 47 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1196.8878  380.4830  0.0000  
+    Elementos conectados                : 95 96 98 317 319 320 
+ 
+Etiqueta 48 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1092.2775  334.3755  0.0000  
+    Elementos conectados                : 97 98 100 319 321 322 
+ 
+Etiqueta 49 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1003.9873  264.7608  0.0000  
+    Elementos conectados                : 99 100 102 321 323 324 
+ 
+Etiqueta 50 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 942.0213  170.8033  0.0000  
+    Elementos conectados                : 101 102 104 216 323 325 
+ 
+Etiqueta 51 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 913.5114  70.6615   0.0000  
+    Elementos conectados                : 103 104 105 106 108 216 
+ 
+Etiqueta 52 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 812.9561  153.4331  0.0000  
+    Elementos conectados                : 108 109 216 325 326 327 
+ 
+Etiqueta 53 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 679.3202  123.8760  0.0000  
+    Elementos conectados                : 107 109 111 326 328 329 
+ 
+Etiqueta 54 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 544.0866  117.6572  0.0000  
+    Elementos conectados                : 110 111 113 328 330 331 
+ 
+Etiqueta 55 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 392.5358  126.0782  0.0000  
+    Elementos conectados                : 112 113 115 330 332 333 
+ 
+Etiqueta 56 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 233.0686  122.0806  0.0000  
+    Elementos conectados                : 114 115 117 217 332 334 
+ 
+Etiqueta 57 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 104.9431  103.1555  0.0000  
+    Elementos conectados                : 116 117 118 120 217 
+ 
+Etiqueta 58 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 127.4126  228.8511  0.0000  
+    Elementos conectados                : 119 120 122 217 334 335 
+ 
+Etiqueta 59 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 138.7592  389.7832  0.0000  
+    Elementos conectados                : 121 122 124 335 336 337 
+ 
+Etiqueta 60 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 136.9931  555.7738  0.0000  
+    Elementos conectados                : 123 124 126 336 338 339 
+ 
+Etiqueta 61 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 134.7589  718.5618  0.0000  
+    Elementos conectados                : 125 126 128 338 340 341 
+ 
+Etiqueta 62 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 134.6522  880.2563  0.0000  
+    Elementos conectados                : 127 128 130 340 342 343 
+ 
+Etiqueta 63 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 136.8036  1042.6277  0.0000  
+    Elementos conectados                : 129 130 132 342 344 345 
+ 
+Etiqueta 64 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 138.7408  1208.1789  0.0000  
+    Elementos conectados                : 131 132 134 344 346 347 
+ 
+Etiqueta 65 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 127.4798  1369.5685  0.0000  
+    Elementos conectados                : 133 134 136 218 346 348 
+ 
+Etiqueta 66 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 105.1009  1496.1466  0.0000  
+    Elementos conectados                : 135 136 137 139 218 
+ 
+Etiqueta 67 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 233.2731  1475.8809  0.0000  
+    Elementos conectados                : 138 139 141 218 348 349 
+ 
+Etiqueta 68 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 393.9885  1469.1608  0.0000  
+    Elementos conectados                : 140 141 143 349 350 351 
+ 
+Etiqueta 69 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 553.1800  1475.4392  0.0000  
+    Elementos conectados                : 142 143 145 350 352 353 
+ 
+Etiqueta 70 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 700.7202  1482.1665  0.0000  
+    Elementos conectados                : 144 145 147 352 354 355 
+ 
+Etiqueta 71 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 830.9996  1488.8388  0.0000  
+    Elementos conectados                : 146 147 149 354 356 357 
+ 
+Etiqueta 72 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 948.6012  1483.4673  0.0000  
+    Elementos conectados                : 148 149 150 151 153 356 358 
+ 
+Etiqueta 73 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 983.5814  1348.5753  0.0000  
+    Elementos conectados                : 152 153 155 358 359 360 361 
+ 
+Etiqueta 74 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1086.1605  1270.7900  0.0000  
+    Elementos conectados                : 154 155 157 359 362 363 
+ 
+Etiqueta 75 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1190.2401  1226.0927  0.0000  
+    Elementos conectados                : 156 157 159 362 364 365 
+ 
+Etiqueta 76 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1304.7239  1207.2428  0.0000  
+    Elementos conectados                : 158 159 161 364 366 367 
+ 
+Etiqueta 77 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1419.9984  1222.3925  0.0000  
+    Elementos conectados                : 160 161 163 366 368 369 
+ 
+Etiqueta 78 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1515.8991  1267.9749  0.0000  
+    Elementos conectados                : 162 163 165 368 370 371 
+ 
+Etiqueta 79 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1597.4075  1331.1766  0.0000  
+    Elementos conectados                : 164 165 167 370 372 373 
+ 
+Etiqueta 80 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1676.7510  1421.9578  0.0000  
+    Elementos conectados                : 166 167 169 219 372 374 376 
+ 
+Etiqueta 81 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1685.6946  1534.1166  0.0000  
+    Elementos conectados                : 168 169 170 171 173 219 
+ 
+Etiqueta 82 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1773.2824  1481.4440  0.0000  
+    Elementos conectados                : 173 174 219 375 376 
+ 
+Etiqueta 83 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1888.2389  1479.0716  0.0000  
+    Elementos conectados                : 172 174 176 375 377 378 
+ 
+Etiqueta 84 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2029.5861  1473.1395  0.0000  
+    Elementos conectados                : 175 176 178 377 379 380 
+ 
+Etiqueta 85 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2177.3343  1469.7237  0.0000  
+    Elementos conectados                : 177 178 180 379 381 382 
+ 
+Etiqueta 86 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2325.4576  1472.8582  0.0000  
+    Elementos conectados                : 179 180 182 381 383 384 
+ 
+Etiqueta 87 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2459.3634  1478.9383  0.0000  
+    Elementos conectados                : 181 182 183 185 383 385 
+ 
+Etiqueta 88 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2512.0477  1377.7220  0.0000  
+    Elementos conectados                : 184 185 187 385 386 387 
+ 
+Etiqueta 89 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2564.9669  1294.8195  0.0000  
+    Elementos conectados                : 186 187 189 386 388 389 
+ 
+Etiqueta 90 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2623.2247  1212.9683  0.0000  
+    Elementos conectados                : 189 190 388 390 391 392 
+ 
+Etiqueta 91 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2724.0197  1229.2203  0.0000  
+    Elementos conectados                : 188 190 192 390 393 394 
+ 
+Etiqueta 92 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2841.5147  1267.1368  0.0000  
+    Elementos conectados                : 191 192 194 393 395 396 397 
+ 
+Etiqueta 93 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2904.4983  1382.0363  0.0000  
+    Elementos conectados                : 193 194 196 395 398 399 
+ 
+Etiqueta 94 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2949.0753  1487.8393  0.0000  
+    Elementos conectados                : 195 196 197 199 398 400 
+ 
+Etiqueta 95 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3087.0721  1482.0750  0.0000  
+    Elementos conectados                : 198 199 201 400 401 402 
+ 
+Etiqueta 96 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3248.3614  1467.7525  0.0000  
+    Elementos conectados                : 200 201 203 401 403 404 
+ 
+Etiqueta 97 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3419.9567  1462.0406  0.0000  
+    Elementos conectados                : 202 203 205 403 405 406 
+ 
+Etiqueta 98 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3592.9344  1459.1960  0.0000  
+    Elementos conectados                : 204 205 207 405 407 408 
+ 
+Etiqueta 99 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3761.0100  1471.0207  0.0000  
+    Elementos conectados                : 206 207 209 220 407 409 
+ 
+Etiqueta 100 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3892.5151  1494.3599  0.0000  
+    Elementos conectados                : 208 209 210 212 220 
+ 
+Etiqueta 101 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3871.2599  1364.7652  0.0000  
+    Elementos conectados                : 211 212 214 220 409 410 
+ 
+Etiqueta 102 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2311.1955  661.4460  0.0000  
+    Elementos conectados                : 222 263 265 417 475 
+ 
+Etiqueta 103 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2350.8537  725.4229  0.0000  
+    Elementos conectados                : 222 223 417 418 419 420 
+ 
+Etiqueta 104 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2340.6457  800.0000  0.0000  
+    Elementos conectados                : 221 223 225 418 421 
+ 
+Etiqueta 105 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2350.8537  874.5771  0.0000  
+    Elementos conectados                : 225 226 421 422 423 424 
+ 
+Etiqueta 106 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2311.1954  938.5540  0.0000  
+    Elementos conectados                : 224 226 228 422 425 
+ 
+Etiqueta 107 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2290.1879  1010.8334  0.0000  
+    Elementos conectados                : 228 229 425 426 427 428 
+ 
+Etiqueta 108 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2227.9372  1053.1486  0.0000  
+    Elementos conectados                : 227 229 231 426 429 
+ 
+Etiqueta 109 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2179.3461  1110.6367  0.0000  
+    Elementos conectados                : 231 232 429 430 431 432 
+ 
+Etiqueta 110 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2105.2644  1123.9738  0.0000  
+    Elementos conectados                : 230 232 234 430 433 
+ 
+Etiqueta 111 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2037.4931  1156.7268  0.0000  
+    Elementos conectados                : 234 235 433 434 435 436 
+ 
+Etiqueta 112 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1964.3935  1138.7802  0.0000  
+    Elementos conectados                : 233 235 237 434 437 
+ 
+Etiqueta 113 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1889.1587  1141.1368  0.0000  
+    Elementos conectados                : 237 238 437 438 439 440 
+ 
+Etiqueta 114 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1829.6771  1095.0079  0.0000  
+    Elementos conectados                : 236 238 240 438 441 
+ 
+Etiqueta 115 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1759.9875  1066.5597  0.0000  
+    Elementos conectados                : 240 241 441 442 443 444 
+ 
+Etiqueta 116 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1724.4110  1000.2262  0.0000  
+    Elementos conectados                : 239 241 243 442 445 
+ 
+Etiqueta 117 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1672.3189  945.8934  0.0000  
+    Elementos conectados                : 243 244 445 446 447 448 
+ 
+Etiqueta 118 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1666.7982  870.8252  0.0000  
+    Elementos conectados                : 242 244 246 446 449 
+ 
+Etiqueta 119 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1641.3077  800.0000  0.0000  
+    Elementos conectados                : 246 247 449 450 451 452 
+ 
+Etiqueta 120 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1666.7983  729.1748  0.0000  
+    Elementos conectados                : 245 247 249 450 453 
+ 
+Etiqueta 121 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1672.3189  654.1066  0.0000  
+    Elementos conectados                : 249 250 453 454 455 456 
+ 
+Etiqueta 122 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1724.4110  599.7738  0.0000  
+    Elementos conectados                : 248 250 252 454 457 
+ 
+Etiqueta 123 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1759.9875  533.4403  0.0000  
+    Elementos conectados                : 252 253 457 458 459 460 
+ 
+Etiqueta 124 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1829.6771  504.9921  0.0000  
+    Elementos conectados                : 251 253 255 458 461 
+ 
+Etiqueta 125 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1889.1588  458.8632  0.0000  
+    Elementos conectados                : 255 256 461 462 463 464 
+ 
+Etiqueta 126 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1964.3935  461.2198  0.0000  
+    Elementos conectados                : 254 256 258 462 465 
+ 
+Etiqueta 127 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2037.4931  443.2732  0.0000  
+    Elementos conectados                : 258 259 465 466 467 468 
+ 
+Etiqueta 128 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2105.2644  476.0262  0.0000  
+    Elementos conectados                : 257 259 261 466 469 
+ 
+Etiqueta 129 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2179.3461  489.3633  0.0000  
+    Elementos conectados                : 261 262 469 470 471 472 
+ 
+Etiqueta 130 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2227.9373  546.8514  0.0000  
+    Elementos conectados                : 260 262 264 470 473 474 
+ 
+Etiqueta 131 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2290.1879  589.1666  0.0000  
+    Elementos conectados                : 264 265 473 475 476 
+ 
+Etiqueta 132 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3746.1274  948.2864  0.0000  
+    Elementos conectados                : 267 413 414 697 705 706 
+ 
+Etiqueta 133 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3750.7175  796.7809  0.0000  
+    Elementos conectados                : 266 267 269 704 706 707 
+ 
+Etiqueta 134 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3745.8401  645.8597  0.0000  
+    Elementos conectados                : 268 269 271 704 713 715 
+ 
+Etiqueta 135 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3729.9697  488.3398  0.0000  
+    Elementos conectados                : 270 271 273 710 714 715 
+ 
+Etiqueta 136 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3701.7950  299.6982  0.0000  
+    Elementos conectados                : 272 273 274 275 277 710 712 
+ 
+Etiqueta 137 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3511.2263  278.2887  0.0000  
+    Elementos conectados                : 276 277 279 677 711 712 
+ 
+Etiqueta 138 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3348.1758  262.9374  0.0000  
+    Elementos conectados                : 278 279 281 659 677 678 
+ 
+Etiqueta 139 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3193.0654  251.4106  0.0000  
+    Elementos conectados                : 280 281 283 659 662 665 
+ 
+Etiqueta 140 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3045.6953  242.0854  0.0000  
+    Elementos conectados                : 282 283 284 286 665 666 
+ 
+Etiqueta 141 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2981.9508  353.7014  0.0000  
+    Elementos conectados                : 285 286 288 660 664 666 
+ 
+Etiqueta 142 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2909.5968  463.8973  0.0000  
+    Elementos conectados                : 287 288 290 644 656 660 
+ 
+Etiqueta 143 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2824.6752  580.4855  0.0000  
+    Elementos conectados                : 290 291 618 643 644 646 
+ 
+Etiqueta 144 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2662.5005  549.5254  0.0000  
+    Elementos conectados                : 289 291 293 617 618 619 620 
+ 
+Etiqueta 145 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2554.9652  464.1752  0.0000  
+    Elementos conectados                : 292 293 295 614 619 
+ 
+Etiqueta 146 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2417.3264  466.4349  0.0000  
+    Elementos conectados                : 295 296 571 572 575 614 615 
+ 
+Etiqueta 147 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2364.2564  331.4412  0.0000  
+    Elementos conectados                : 294 296 298 415 574 575 576 
+ 
+Etiqueta 148 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2376.4163  200.1262  0.0000  
+    Elementos conectados                : 297 298 299 301 415 
+ 
+Etiqueta 149 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2261.5378  235.6129  0.0000  
+    Elementos conectados                : 300 301 303 415 573 574 
+ 
+Etiqueta 150 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2110.0229  262.8445  0.0000  
+    Elementos conectados                : 302 303 305 573 588 589 590 
+ 
+Etiqueta 151 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1942.2237  257.4923  0.0000  
+    Elementos conectados                : 304 305 307 590 591 592 593 
+ 
+Etiqueta 152 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1794.0211  223.8379  0.0000  
+    Elementos conectados                : 306 307 308 310 593 596 
+ 
+Etiqueta 153 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1715.3623  310.6651  0.0000  
+    Elementos conectados                : 309 310 312 594 596 597 
+ 
+Etiqueta 154 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1637.7063  378.4839  0.0000  
+    Elementos conectados                : 311 312 314 594 595 603 
+ 
+Etiqueta 155 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1554.0300  464.5780  0.0000  
+    Elementos conectados                : 313 314 316 600 603 604 605 
+ 
+Etiqueta 156 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1414.1179  504.5861  0.0000  
+    Elementos conectados                : 315 316 318 560 600 602 
+ 
+Etiqueta 157 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1250.5919  528.2820  0.0000  
+    Elementos conectados                : 317 318 320 560 561 562 563 
+ 
+Etiqueta 158 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1098.6562  469.2623  0.0000  
+    Elementos conectados                : 319 320 322 506 559 562 
+ 
+Etiqueta 159 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 975.9983  399.6392  0.0000  
+    Elementos conectados                : 321 322 324 506 507 514 
+ 
+Etiqueta 160 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 853.5073  302.0900  0.0000  
+    Elementos conectados                : 323 324 325 327 514 515 518 
+ 
+Etiqueta 161 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 702.6596  253.2706  0.0000  
+    Elementos conectados                : 326 327 329 518 519 522 
+ 
+Etiqueta 162 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 595.8162  213.3430  0.0000  
+    Elementos conectados                : 328 329 331 520 522 
+ 
+Etiqueta 163 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 475.9291  242.8923  0.0000  
+    Elementos conectados                : 330 331 333 520 527 528 
+ 
+Etiqueta 164 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 298.0185  281.5923  0.0000  
+    Elementos conectados                : 332 333 334 335 337 526 527 
+ 
+Etiqueta 165 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 283.0195  469.4574  0.0000  
+    Elementos conectados                : 336 337 339 501 523 526 
+ 
+Etiqueta 166 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 274.6527  636.2031  0.0000  
+    Elementos conectados                : 338 339 341 499 501 502 
+ 
+Etiqueta 167 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 271.4068  799.2198  0.0000  
+    Elementos conectados                : 340 341 343 479 499 500 
+ 
+Etiqueta 168 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 273.4897  961.6922  0.0000  
+    Elementos conectados                : 342 343 345 478 479 480 
+ 
+Etiqueta 169 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 281.2718  1126.7246  0.0000  
+    Elementos conectados                : 344 345 347 478 490 491 
+ 
+Etiqueta 170 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 297.2369  1313.2551  0.0000  
+    Elementos conectados                : 346 347 348 349 351 490 496 
+ 
+Etiqueta 171 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 476.6218  1344.2125  0.0000  
+    Elementos conectados                : 350 351 353 492 496 497 
+ 
+Etiqueta 172 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 623.7501  1358.0497  0.0000  
+    Elementos conectados                : 352 353 355 487 492 494 
+ 
+Etiqueta 173 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 763.7649  1372.1847  0.0000  
+    Elementos conectados                : 354 355 357 416 487 488 
+ 
+Etiqueta 174 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 875.5064  1395.0978  0.0000  
+    Elementos conectados                : 356 357 358 360 416 
+ 
+Etiqueta 175 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 853.8351  1279.1546  0.0000  
+    Elementos conectados                : 360 361 416 481 482 488 
+ 
+Etiqueta 176 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 969.1251  1204.6351  0.0000  
+    Elementos conectados                : 359 361 363 482 538 546 
+ 
+Etiqueta 177 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1092.0152  1141.9816  0.0000  
+    Elementos conectados                : 362 363 365 545 546 548 
+ 
+Etiqueta 178 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1228.0098  1098.2593  0.0000  
+    Elementos conectados                : 364 365 367 547 548 578 
+ 
+Etiqueta 179 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1400.2720  1073.9267  0.0000  
+    Elementos conectados                : 366 367 369 578 579 581 582 
+ 
+Etiqueta 180 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1535.9516  1141.9300  0.0000  
+    Elementos conectados                : 368 369 371 569 580 582 
+ 
+Etiqueta 181 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1622.9404  1208.1290  0.0000  
+    Elementos conectados                : 370 371 373 567 569 570 
+ 
+Etiqueta 182 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1728.0613  1274.7598  0.0000  
+    Elementos conectados                : 372 373 374 564 566 567 568 
+ 
+Etiqueta 183 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1817.9296  1374.1739  0.0000  
+    Elementos conectados                : 374 375 376 378 564 565 
+ 
+Etiqueta 184 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1966.5027  1344.5452  0.0000  
+    Elementos conectados                : 377 378 380 565 606 607 608 
+ 
+Etiqueta 185 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2109.2477  1346.5541  0.0000  
+    Elementos conectados                : 379 380 382 606 611 612 
+ 
+Etiqueta 186 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2256.2226  1324.2378  0.0000  
+    Elementos conectados                : 381 382 384 609 610 612 736 
+ 
+Etiqueta 187 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2402.4538  1362.3086  0.0000  
+    Elementos conectados                : 383 384 385 387 736 737 
+ 
+Etiqueta 188 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2476.5873  1293.1395  0.0000  
+    Elementos conectados                : 386 387 389 737 739 
+ 
+Etiqueta 189 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2514.5524  1202.5266  0.0000  
+    Elementos conectados                : 388 389 391 735 738 739 
+ 
+Etiqueta 190 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2585.3242  1101.3677  0.0000  
+    Elementos conectados                : 391 392 729 730 734 735 
+ 
+Etiqueta 191 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2685.4411  1139.3731  0.0000  
+    Elementos conectados                : 390 392 394 730 732 
+ 
+Etiqueta 192 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2793.4183  1133.2736  0.0000  
+    Elementos conectados                : 393 394 396 731 732 733 
+ 
+Etiqueta 193 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2933.0160  1146.2040  0.0000  
+    Elementos conectados                : 396 397 636 639 640 731 
+ 
+Etiqueta 194 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2985.4190  1281.1714  0.0000  
+    Elementos conectados                : 395 397 399 636 637 638 
+ 
+Etiqueta 195 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3011.1981  1394.2146  0.0000  
+    Elementos conectados                : 398 399 400 402 637 
+ 
+Etiqueta 196 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3143.2094  1328.2298  0.0000  
+    Elementos conectados                : 401 402 404 634 635 637 638 
+ 
+Etiqueta 197 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3331.6617  1322.4401  0.0000  
+    Elementos conectados                : 403 404 406 634 667 668 
+ 
+Etiqueta 198 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3505.5520  1313.0280  0.0000  
+    Elementos conectados                : 405 406 408 668 683 684 
+ 
+Etiqueta 199 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3700.4093  1296.2255  0.0000  
+    Elementos conectados                : 407 408 409 410 412 684 694 
+ 
+Etiqueta 200 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3729.1786  1106.0636  0.0000  
+    Elementos conectados                : 411 412 414 694 695 697 
+ 
+Etiqueta 201 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2386.7662  600.2893  0.0000  
+    Elementos conectados                : 417 419 475 476 572 613 615 
+ 
+Etiqueta 202 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2447.0164  687.1392  0.0000  
+    Elementos conectados                : 419 420 613 616 632 633 
+ 
+Etiqueta 203 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2434.5580  774.8674  0.0000  
+    Elementos conectados                : 418 420 421 423 631 633 
+ 
+Etiqueta 204 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2454.2741  878.7156  0.0000  
+    Elementos conectados                : 423 424 628 630 631 
+ 
+Etiqueta 205 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2407.2107  953.7922  0.0000  
+    Elementos conectados                : 422 424 425 427 626 627 628 
+ 
+Etiqueta 206 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2382.9836  1056.6794  0.0000  
+    Elementos conectados                : 427 428 622 626 
+ 
+Etiqueta 207 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2309.4535  1106.1222  0.0000  
+    Elementos conectados                : 426 428 429 431 621 622 623 
+ 
+Etiqueta 208 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2245.4721  1190.2624  0.0000  
+    Elementos conectados                : 431 432 609 610 621 
+ 
+Etiqueta 209 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2158.1874  1205.5234  0.0000  
+    Elementos conectados                : 430 432 433 435 610 611 612 
+ 
+Etiqueta 210 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2065.5158  1256.3643  0.0000  
+    Elementos conectados                : 435 436 606 608 611 
+ 
+Etiqueta 211 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1979.5714  1234.8048  0.0000  
+    Elementos conectados                : 434 436 437 439 607 608 
+ 
+Etiqueta 212 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1874.2321  1243.5580  0.0000  
+    Elementos conectados                : 439 440 564 565 566 607 
+ 
+Etiqueta 213 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1804.4864  1188.9046  0.0000  
+    Elementos conectados                : 438 440 441 443 566 568 
+ 
+Etiqueta 214 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1704.6932  1154.0552  0.0000  
+    Elementos conectados                : 443 444 567 568 570 
+ 
+Etiqueta 215 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1663.2067  1075.7588  0.0000  
+    Elementos conectados                : 442 444 445 447 569 570 580 
+ 
+Etiqueta 216 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1586.2172  1003.3339  0.0000  
+    Elementos conectados                : 447 448 580 581 582 586 
+ 
+Etiqueta 217 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1580.1636  914.9336  0.0000  
+    Elementos conectados                : 446 448 449 451 586 587 
+ 
+Etiqueta 218 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1539.2867  817.4539  0.0000  
+    Elementos conectados                : 451 452 585 587 598 
+ 
+Etiqueta 219 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1569.7128  734.2326  0.0000  
+    Elementos conectados                : 450 452 453 455 598 599 
+ 
+Etiqueta 220 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1572.0189  628.5562  0.0000  
+    Elementos conectados                : 455 456 599 600 601 602 604 
+ 
+Etiqueta 221 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1633.6623  564.9060  0.0000  
+    Elementos conectados                : 454 456 457 459 604 605 
+ 
+Etiqueta 222 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1678.7514  469.3028  0.0000  
+    Elementos conectados                : 459 460 595 603 605 
+ 
+Etiqueta 223 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1760.9554  436.2280  0.0000  
+    Elementos conectados                : 458 460 461 463 594 595 597 
+ 
+Etiqueta 224 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1841.0326  367.2292  0.0000  
+    Elementos conectados                : 463 464 591 593 596 597 
+ 
+Etiqueta 225 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1929.5825  370.4491  0.0000  
+    Elementos conectados                : 462 464 465 467 591 592 
+ 
+Etiqueta 226 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2030.7990  339.9867  0.0000  
+    Elementos conectados                : 467 468 589 590 592 
+ 
+Etiqueta 227 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2110.3827  378.9442  0.0000  
+    Elementos conectados                : 466 468 469 471 588 589 
+ 
+Etiqueta 228 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2215.2410  392.2836  0.0000  
+    Elementos conectados                : 471 472 573 574 576 588 
+ 
+Etiqueta 229 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2272.0998  460.2440  0.0000  
+    Elementos conectados                : 470 472 474 571 575 576 
+ 
+Etiqueta 230 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2309.4536  493.8778  0.0000  
+    Elementos conectados                : 473 474 476 571 572 
+ 
+Etiqueta 231 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2379.0950  1223.4697  0.0000  
+    Elementos conectados                : 609 621 623 736 737 738 739 
+ 
+Etiqueta 232 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2449.7736  1087.8676  0.0000  
+    Elementos conectados                : 622 623 626 627 734 735 738 
+ 
+Etiqueta 233 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2538.4240  952.3687  0.0000  
+    Elementos conectados                : 627 628 629 630 726 729 734 
+ 
+Etiqueta 234 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2646.7070  835.1992  0.0000  
+    Elementos conectados                : 624 625 629 725 726 728 
+ 
+Etiqueta 235 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2735.0509  707.9428  0.0000  
+    Elementos conectados                : 617 618 624 645 646 725 
+ 
+Etiqueta 236 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1277.9952  943.0469  0.0000  
+    Elementos conectados                : 547 551 554 577 578 579 
+ 
+Etiqueta 237 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1329.5306  786.9872  0.0000  
+    Elementos conectados                : 554 555 558 577 583 584 
+ 
+Etiqueta 238 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1378.5785  647.3009  0.0000  
+    Elementos conectados                : 558 560 561 583 601 602 
+ 
+Etiqueta 239 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 833.3048  1129.6574  0.0000  
+    Elementos conectados                : 481 482 485 529 538 540 
+ 
+Etiqueta 240 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 689.1705  1047.2848  0.0000  
+    Elementos conectados                : 483 485 486 529 531 532 
+ 
+Etiqueta 241 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 547.8641  962.2526  0.0000  
+    Elementos conectados                : 477 483 484 531 533 534 
+ 
+Etiqueta 242 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 409.5240  880.5893  0.0000  
+    Elementos conectados                : 477 479 480 498 500 533 
+ 
+Etiqueta 243 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 415.9211  1041.6919  0.0000  
+    Elementos conectados                : 477 478 480 484 489 491 
+ 
+Etiqueta 244 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 554.5192  1119.5351  0.0000  
+    Elementos conectados                : 483 484 486 489 493 495 
+ 
+Etiqueta 245 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 696.6374  1222.4028  0.0000  
+    Elementos conectados                : 481 485 486 487 488 493 494 
+ 
+Etiqueta 246 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 431.2178  1198.6656  0.0000  
+    Elementos conectados                : 489 490 491 495 496 497 
+ 
+Etiqueta 247 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 555.7441  1249.1012  0.0000  
+    Elementos conectados                : 492 493 494 495 497 
+ 
+Etiqueta 248 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 547.2590  800.6467  0.0000  
+    Elementos conectados                : 498 503 505 533 534 536 
+ 
+Etiqueta 249 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 687.6847  720.5049  0.0000  
+    Elementos conectados                : 503 508 509 535 536 537 
+ 
+Etiqueta 250 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 830.4057  638.3654  0.0000  
+    Elementos conectados                : 509 510 511 535 541 542 
+ 
+Etiqueta 251 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 971.2494  553.9722  0.0000  
+    Elementos conectados                : 506 507 510 541 553 559 
+ 
+Etiqueta 252 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 411.7275  718.4245  0.0000  
+    Elementos conectados                : 498 499 500 502 504 505 
+ 
+Etiqueta 253 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 553.0508  638.6295  0.0000  
+    Elementos conectados                : 503 504 505 508 512 513 
+ 
+Etiqueta 254 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 420.3699  555.7064  0.0000  
+    Elementos conectados                : 501 502 504 512 523 525 
+ 
+Etiqueta 255 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 837.7189  475.5894  0.0000  
+    Elementos conectados                : 507 510 511 514 515 517 
+ 
+Etiqueta 256 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 695.4259  558.5134  0.0000  
+    Elementos conectados                : 508 509 511 513 516 517 
+ 
+Etiqueta 257 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 704.1939  399.8394  0.0000  
+    Elementos conectados                : 515 516 517 518 519 521 
+ 
+Etiqueta 258 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 564.7648  478.9991  0.0000  
+    Elementos conectados                : 512 513 516 521 524 525 
+ 
+Etiqueta 259 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 580.4018  329.8202  0.0000  
+    Elementos conectados                : 519 520 521 522 524 528 
+ 
+Etiqueta 260 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 438.4197  393.2178  0.0000  
+    Elementos conectados                : 523 524 525 526 527 528 
+ 
+Etiqueta 261 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 828.7439  968.7769  0.0000  
+    Elementos conectados                : 529 530 532 539 540 543 
+ 
+Etiqueta 262 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 829.6928  803.6605  0.0000  
+    Elementos conectados                : 530 535 537 542 543 544 
+ 
+Etiqueta 263 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 688.6697  883.9125  0.0000  
+    Elementos conectados                : 530 531 532 534 536 537 
+ 
+Etiqueta 264 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 968.2228  1055.1183  0.0000  
+    Elementos conectados                : 538 539 540 545 546 549 
+ 
+Etiqueta 265 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 975.5001  891.0802  0.0000  
+    Elementos conectados                : 539 543 544 549 550 552 
+ 
+Etiqueta 266 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 976.7739  718.9632  0.0000  
+    Elementos conectados                : 541 542 544 550 553 556 
+ 
+Etiqueta 267 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1114.3333  990.4440  0.0000  
+    Elementos conectados                : 545 547 548 549 551 552 
+ 
+Etiqueta 268 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1147.1055  805.0617  0.0000  
+    Elementos conectados                : 550 551 552 554 555 556 557 
+ 
+Etiqueta 269 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1244.7986  678.0636  0.0000  
+    Elementos conectados                : 555 557 558 561 563 
+ 
+Etiqueta 270 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1114.5837  624.4721  0.0000  
+    Elementos conectados                : 553 556 557 559 562 563 
+ 
+Etiqueta 271 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1472.5569  751.8872  0.0000  
+    Elementos conectados                : 583 584 585 598 599 601 
+ 
+Etiqueta 272 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1454.9541  898.8806  0.0000  
+    Elementos conectados                : 577 579 581 584 585 586 587 
+ 
+Etiqueta 273 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2585.2752  693.8020  0.0000  
+    Elementos conectados                : 616 617 620 624 625 632 
+ 
+Etiqueta 274 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2507.9028  577.5792  0.0000  
+    Elementos conectados                : 613 614 615 616 619 620 
+ 
+Etiqueta 275 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2517.6075  802.9615  0.0000  
+    Elementos conectados                : 625 629 630 631 632 633 
+ 
+Etiqueta 276 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2800.1304  859.0387  0.0000  
+    Elementos conectados                : 645 648 649 725 727 728 
+ 
+Etiqueta 277 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2868.3533  1006.5413  0.0000  
+    Elementos conectados                : 639 647 649 727 731 733 
+ 
+Etiqueta 278 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3249.1594  1178.4865  0.0000  
+    Elementos conectados                : 634 635 641 667 669 670 
+ 
+Etiqueta 279 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3177.8897  1034.0062  0.0000  
+    Elementos conectados                : 641 642 652 669 671 672 
+ 
+Etiqueta 280 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3108.7944  890.8558  0.0000  
+    Elementos conectados                : 652 653 654 671 673 675 
+ 
+Etiqueta 281 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3040.1788  747.3032  0.0000  
+    Elementos conectados                : 650 651 653 657 674 675 
+ 
+Etiqueta 282 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2972.7985  604.4534  0.0000  
+    Elementos conectados                : 643 644 650 656 657 658 
+ 
+Etiqueta 283 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3084.6169  1164.0806  0.0000  
+    Elementos conectados                : 635 636 638 640 641 642 
+ 
+Etiqueta 284 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3021.1972  1019.4382  0.0000  
+    Elementos conectados                : 639 640 642 647 652 654 
+ 
+Etiqueta 285 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2888.1614  729.0696  0.0000  
+    Elementos conectados                : 643 645 646 648 650 651 
+ 
+Etiqueta 286 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2954.4434  875.3763  0.0000  
+    Elementos conectados                : 647 648 649 651 653 654 
+ 
+Etiqueta 287 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3120.6778  623.8261  0.0000  
+    Elementos conectados                : 655 657 658 674 679 680 
+ 
+Etiqueta 288 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3197.0622  503.7908  0.0000  
+    Elementos conectados                : 655 661 663 679 681 682 
+ 
+Etiqueta 289 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3271.6528  385.3558  0.0000  
+    Elementos conectados                : 659 662 663 676 678 681 
+ 
+Etiqueta 290 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3050.7935  486.3240  0.0000  
+    Elementos conectados                : 655 656 658 660 661 664 
+ 
+Etiqueta 291 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3123.0972  370.4310  0.0000  
+    Elementos conectados                : 661 662 663 664 665 666 
+ 
+Etiqueta 292 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3413.7262  1175.1294  0.0000  
+    Elementos conectados                : 667 668 670 683 685 686 
+ 
+Etiqueta 293 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3333.1026  1040.6149  0.0000  
+    Elementos conectados                : 669 670 672 685 687 688 
+ 
+Etiqueta 294 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3260.6969  903.5378  0.0000  
+    Elementos conectados                : 671 672 673 687 690 691 
+ 
+Etiqueta 295 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3190.1845  763.8857  0.0000  
+    Elementos conectados                : 673 674 675 680 689 691 
+ 
+Etiqueta 296 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3267.7111  640.6281  0.0000  
+    Elementos conectados                : 679 680 682 689 699 700 
+ 
+Etiqueta 297 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3343.0128  521.7868  0.0000  
+    Elementos conectados                : 676 681 682 699 716 718 
+ 
+Etiqueta 298 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3422.7692  404.3742  0.0000  
+    Elementos conectados                : 676 677 678 711 717 718 
+ 
+Etiqueta 299 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3574.0621  1154.5674  0.0000  
+    Elementos conectados                : 683 684 686 693 694 695 
+ 
+Etiqueta 300 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3479.9969  1035.5985  0.0000  
+    Elementos conectados                : 685 686 688 692 693 696 
+ 
+Etiqueta 301 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3407.4181  912.2806  0.0000  
+    Elementos conectados                : 687 688 690 692 701 703 
+ 
+Etiqueta 302 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3339.1489  777.0338  0.0000  
+    Elementos conectados                : 689 690 691 700 702 703 
+ 
+Etiqueta 303 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3527.4300  922.9003  0.0000  
+    Elementos conectados                : 692 696 698 701 708 
+ 
+Etiqueta 304 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3614.1278  1004.5739  0.0000  
+    Elementos conectados                : 693 695 696 697 698 705 
+ 
+Etiqueta 305 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3496.6014  787.2572  0.0000  
+    Elementos conectados                : 701 702 703 708 709 720 721 
+ 
+Etiqueta 306 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3409.6553  653.6581  0.0000  
+    Elementos conectados                : 699 700 702 716 720 722 
+ 
+Etiqueta 307 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3628.8791  722.0994  0.0000  
+    Elementos conectados                : 704 707 709 713 721 723 
+ 
+Etiqueta 308 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3627.5757  863.5720  0.0000  
+    Elementos conectados                : 698 705 706 707 708 709 
+ 
+Etiqueta 309 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3577.3209  433.7287  0.0000  
+    Elementos conectados                : 710 711 712 714 717 719 
+ 
+Etiqueta 310 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3615.8231  581.9912  0.0000  
+    Elementos conectados                : 713 714 715 719 723 724 
+ 
+Etiqueta 311 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3482.9882  542.6843  0.0000  
+    Elementos conectados                : 716 717 718 719 722 724 
+ 
+Etiqueta 312 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3527.0482  656.4558  0.0000  
+    Elementos conectados                : 720 721 722 723 724 
+ 
+Etiqueta 313 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2702.5920  1003.7199  0.0000  
+    Elementos conectados                : 726 727 728 729 730 732 733 
+ 
+Etiqueta 314 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 0.0000    160.0000  0.0000  
+    Elementos conectados                : 118 119 120 
+ 
+Etiqueta 315 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 0.0000    320.0000  0.0000  
+    Elementos conectados                : 119 121 122 
+ 
+Etiqueta 316 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 0.0000    480.0000  0.0000  
+    Elementos conectados                : 121 123 124 
+ 
+Etiqueta 317 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 0.0000    640.0000  0.0000  
+    Elementos conectados                : 123 125 126 
+ 
+Etiqueta 318 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 0.0000    800.0000  0.0000  
+    Elementos conectados                : 125 127 128 
+ 
+Etiqueta 319 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 0.0000    960.0000  0.0000  
+    Elementos conectados                : 127 129 130 
+ 
+Etiqueta 320 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 0.0000    1120.0000  0.0000  
+    Elementos conectados                : 129 131 132 
+ 
+Etiqueta 321 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 0.0000    1280.0000  0.0000  
+    Elementos conectados                : 131 133 134 
+ 
+Etiqueta 322 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 0.0000    1440.0000  0.0000  
+    Elementos conectados                : 133 135 136 
+ 
+Etiqueta 323 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 907.8681  0.0000    0.0000  
+    Elementos conectados                : 105 106 
+ 
+Etiqueta 324 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 789.5074  0.0000    0.0000  
+    Elementos conectados                : 106 107 108 109 
+ 
+Etiqueta 325 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 642.1463  0.0000    0.0000  
+    Elementos conectados                : 107 110 111 
+ 
+Etiqueta 326 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 481.6097  0.0000    0.0000  
+    Elementos conectados                : 110 112 113 
+ 
+Etiqueta 327 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 321.0732  0.0000    0.0000  
+    Elementos conectados                : 112 114 115 
+ 
+Etiqueta 328 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 160.5366  0.0000    0.0000  
+    Elementos conectados                : 114 116 117 
+ 
+Etiqueta 329 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 160.5363  1600.0000  0.0000  
+    Elementos conectados                : 137 138 139 
+ 
+Etiqueta 330 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 321.0727  1600.0000  0.0000  
+    Elementos conectados                : 138 140 141 
+ 
+Etiqueta 331 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 481.6090  1600.0000  0.0000  
+    Elementos conectados                : 140 142 143 
+ 
+Etiqueta 332 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 642.1453  1600.0000  0.0000  
+    Elementos conectados                : 142 144 145 
+ 
+Etiqueta 333 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 789.5065  1600.0000  0.0000  
+    Elementos conectados                : 144 146 147 
+ 
+Etiqueta 334 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 907.8677  1600.0000  0.0000  
+    Elementos conectados                : 146 148 149 
+ 
+Etiqueta 335 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1587.8467  84.5194   0.0000  
+    Elementos conectados                : 83 84 85 86 
+ 
+Etiqueta 336 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1552.3744  162.1912  0.0000  
+    Elementos conectados                : 85 87 88 
+ 
+Etiqueta 337 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1496.4577  226.7244  0.0000  
+    Elementos conectados                : 87 89 90 
+ 
+Etiqueta 338 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1424.6244  272.8894  0.0000  
+    Elementos conectados                : 89 91 92 
+ 
+Etiqueta 339 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1342.6943  296.9447  0.0000  
+    Elementos conectados                : 91 93 94 
+ 
+Etiqueta 340 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1257.3057  296.9447  0.0000  
+    Elementos conectados                : 93 95 96 
+ 
+Etiqueta 341 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1175.3756  272.8894  0.0000  
+    Elementos conectados                : 95 97 98 
+ 
+Etiqueta 342 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1103.5423  226.7244  0.0000  
+    Elementos conectados                : 97 99 100 
+ 
+Etiqueta 343 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1047.6256  162.1912  0.0000  
+    Elementos conectados                : 99 101 102 
+ 
+Etiqueta 344 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1012.1533  84.5194   0.0000  
+    Elementos conectados                : 101 103 104 
+ 
+Etiqueta 345 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1012.1533  1515.4806  0.0000  
+    Elementos conectados                : 150 151 
+ 
+Etiqueta 346 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1047.6256  1437.8088  0.0000  
+    Elementos conectados                : 151 152 153 
+ 
+Etiqueta 347 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1103.5423  1373.2757  0.0000  
+    Elementos conectados                : 152 154 155 
+ 
+Etiqueta 348 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1175.3756  1327.1106  0.0000  
+    Elementos conectados                : 154 156 157 
+ 
+Etiqueta 349 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1257.3058  1303.0552  0.0000  
+    Elementos conectados                : 156 158 159 
+ 
+Etiqueta 350 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1342.6943  1303.0552  0.0000  
+    Elementos conectados                : 158 160 161 
+ 
+Etiqueta 351 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1424.6244  1327.1106  0.0000  
+    Elementos conectados                : 160 162 163 
+ 
+Etiqueta 352 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1496.4577  1373.2756  0.0000  
+    Elementos conectados                : 162 164 165 
+ 
+Etiqueta 353 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1552.3744  1437.8088  0.0000  
+    Elementos conectados                : 164 166 167 
+ 
+Etiqueta 354 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1587.8467  1515.4806  0.0000  
+    Elementos conectados                : 166 168 169 
+ 
+Etiqueta 355 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2182.7070  881.3465  0.0000  
+    Elementos conectados                : 1 3 4 
+ 
+Etiqueta 356 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2133.8255  948.6282  0.0000  
+    Elementos conectados                : 3 5 6 
+ 
+Etiqueta 357 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2061.8030  990.2104  0.0000  
+    Elementos conectados                : 5 7 8 
+ 
+Etiqueta 358 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1979.0946  998.9021  0.0000  
+    Elementos conectados                : 7 9 10 
+ 
+Etiqueta 359 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1900.0000  973.2051  0.0000  
+    Elementos conectados                : 9 11 12 
+ 
+Etiqueta 360 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1838.1984  917.5557  0.0000  
+    Elementos conectados                : 11 13 14 
+ 
+Etiqueta 361 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1804.3715  841.5822  0.0000  
+    Elementos conectados                : 13 15 16 
+ 
+Etiqueta 362 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1804.3715  758.4178  0.0000  
+    Elementos conectados                : 15 17 18 
+ 
+Etiqueta 363 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1838.1984  682.4443  0.0000  
+    Elementos conectados                : 17 19 20 
+ 
+Etiqueta 364 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1900.0000  626.7949  0.0000  
+    Elementos conectados                : 19 21 22 
+ 
+Etiqueta 365 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1979.0946  601.0979  0.0000  
+    Elementos conectados                : 21 23 24 
+ 
+Etiqueta 366 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2061.8030  609.7896  0.0000  
+    Elementos conectados                : 23 25 26 
+ 
+Etiqueta 367 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2133.8255  651.3718  0.0000  
+    Elementos conectados                : 25 27 28 
+ 
+Etiqueta 368 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2182.7070  718.6535  0.0000  
+    Elementos conectados                : 27 29 30 
+ 
+Etiqueta 369 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2406.9444  0.0000    0.0000  
+    Elementos conectados                : 72 73 74 
+ 
+Etiqueta 370 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2252.3036  0.0000    0.0000  
+    Elementos conectados                : 73 75 76 
+ 
+Etiqueta 371 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2097.4982  0.0000    0.0000  
+    Elementos conectados                : 75 77 78 
+ 
+Etiqueta 372 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1942.6928  0.0000    0.0000  
+    Elementos conectados                : 77 79 80 
+ 
+Etiqueta 373 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1801.4340  0.0000    0.0000  
+    Elementos conectados                : 79 81 82 
+ 
+Etiqueta 374 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1688.4915  0.0000    0.0000  
+    Elementos conectados                : 81 83 84 
+ 
+Etiqueta 375 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1688.2709  1600.0000  0.0000  
+    Elementos conectados                : 170 171 
+ 
+Etiqueta 376 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1800.8189  1600.0000  0.0000  
+    Elementos conectados                : 171 172 173 174 
+ 
+Etiqueta 377 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1941.6320  1600.0000  0.0000  
+    Elementos conectados                : 172 175 176 
+ 
+Etiqueta 378 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2096.0769  1600.0000  0.0000  
+    Elementos conectados                : 175 177 178 
+ 
+Etiqueta 379 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2250.5218  1600.0000  0.0000  
+    Elementos conectados                : 177 179 180 
+ 
+Etiqueta 380 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2404.9667  1600.0000  0.0000  
+    Elementos conectados                : 179 181 182 
+ 
+Etiqueta 381 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2834.8431  131.5591  0.0000  
+    Elementos conectados                : 58 59 60 
+ 
+Etiqueta 382 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2798.3327  226.7294  0.0000  
+    Elementos conectados                : 59 61 62 
+ 
+Etiqueta 383 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2737.7573  290.3697  0.0000  
+    Elementos conectados                : 61 63 64 65 
+ 
+Etiqueta 384 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2654.7474  285.9633  0.0000  
+    Elementos conectados                : 63 66 67 
+ 
+Etiqueta 385 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2598.3517  220.4915  0.0000  
+    Elementos conectados                : 66 68 69 
+ 
+Etiqueta 386 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2564.2350  127.7760  0.0000  
+    Elementos conectados                : 68 70 71 
+ 
+Etiqueta 387 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2565.1571  1468.4402  0.0000  
+    Elementos conectados                : 183 184 185 
+ 
+Etiqueta 388 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2601.6677  1373.2696  0.0000  
+    Elementos conectados                : 184 186 187 
+ 
+Etiqueta 389 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2662.2435  1309.6299  0.0000  
+    Elementos conectados                : 186 188 189 190 
+ 
+Etiqueta 390 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2745.2532  1314.0370  0.0000  
+    Elementos conectados                : 188 191 192 
+ 
+Etiqueta 391 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2801.6487  1379.5088  0.0000  
+    Elementos conectados                : 191 193 194 
+ 
+Etiqueta 392 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2835.7650  1472.2243  0.0000  
+    Elementos conectados                : 193 195 196 
+ 
+Etiqueta 393 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3834.2715  0.0000    0.0000  
+    Elementos conectados                : 45 46 47 
+ 
+Etiqueta 394 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3668.5429  0.0000    0.0000  
+    Elementos conectados                : 46 48 49 
+ 
+Etiqueta 395 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3502.8144  0.0000    0.0000  
+    Elementos conectados                : 48 50 51 
+ 
+Etiqueta 396 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3337.0859  0.0000    0.0000  
+    Elementos conectados                : 50 52 53 
+ 
+Etiqueta 397 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3171.3574  0.0000    0.0000  
+    Elementos conectados                : 52 54 55 
+ 
+Etiqueta 398 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3005.6288  0.0000    0.0000  
+    Elementos conectados                : 54 56 57 
+ 
+Etiqueta 399 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3003.6335  1600.0000  0.0000  
+    Elementos conectados                : 197 198 199 
+ 
+Etiqueta 400 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3169.6946  1600.0000  0.0000  
+    Elementos conectados                : 198 200 201 
+ 
+Etiqueta 401 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3335.7556  1600.0000  0.0000  
+    Elementos conectados                : 200 202 203 
+ 
+Etiqueta 402 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3501.8167  1600.0000  0.0000  
+    Elementos conectados                : 202 204 205 
+ 
+Etiqueta 403 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3667.8778  1600.0000  0.0000  
+    Elementos conectados                : 204 206 207 
+ 
+Etiqueta 404 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 3833.9389  1600.0000  0.0000  
+    Elementos conectados                : 206 208 209 
+ 
+Etiqueta 405 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 4000.0000  1440.0000  0.0000  
+    Elementos conectados                : 210 211 212 
+ 
+Etiqueta 406 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 4000.0000  1280.0000  0.0000  
+    Elementos conectados                : 211 213 214 
+ 
+Etiqueta 407 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 4000.0000  1120.0000  0.0000  
+    Elementos conectados                : 31 32 213 
+ 
+Etiqueta 408 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 4000.0000  960.0000  0.0000  
+    Elementos conectados                : 31 33 34 
+ 
+Etiqueta 409 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 4000.0000  800.0000  0.0000  
+    Elementos conectados                : 33 35 36 
+ 
+Etiqueta 410 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 4000.0000  640.0000  0.0000  
+    Elementos conectados                : 35 37 38 
+ 
+Etiqueta 411 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 4000.0000  480.0000  0.0000  
+    Elementos conectados                : 37 39 40 
+ 
+Etiqueta 412 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 4000.0000  320.0000  0.0000  
+    Elementos conectados                : 39 41 42 
+ 
+Etiqueta 413 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 4000.0000  160.0000  0.0000  
+    Elementos conectados                : 41 43 44 
+ 
+Etiqueta 414 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 0.0000    0.0000    0.0000  
+    Elementos conectados                : 116 118 
+ 
+Etiqueta 415 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 0.0000    1600.0000  0.0000  
+    Elementos conectados                : 135 137 
+ 
+Etiqueta 416 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1000.0000  0.0000    0.0000  
+    Elementos conectados                : 103 105 
+ 
+Etiqueta 417 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1000.0000  1600.0000  0.0000  
+    Elementos conectados                : 148 150 
+ 
+Etiqueta 418 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1600.0000  0.0000    0.0000  
+    Elementos conectados                : 83 
+ 
+Etiqueta 419 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 1600.0000  1600.0000  0.0000  
+    Elementos conectados                : 168 170 
+ 
+Etiqueta 420 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2200.0000  800.0000  0.0000  
+    Elementos conectados                : 1 2 29 
+ 
+Etiqueta 421 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2550.0000  0.0000    0.0000  
+    Elementos conectados                : 70 72 
+ 
+Etiqueta 422 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2550.0000  1600.0000  0.0000  
+    Elementos conectados                : 181 183 
+ 
+Etiqueta 423 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2850.0000  0.0000    0.0000  
+    Elementos conectados                : 56 58 
+ 
+Etiqueta 424 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 2850.0000  1600.0000  0.0000  
+    Elementos conectados                : 195 197 
+ 
+Etiqueta 425 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 4000.0000  0.0000    0.0000  
+    Elementos conectados                : 43 45 
+ 
+Etiqueta 426 
+    Csys de Deslocamento                : ABSOLUTO
+    CSYS de Referência                  : ABSOLUTO
+    Coordenadas globais                 : 4000.0000  1600.0000  0.0000  
+    Elementos conectados                : 208 210 
+ 
