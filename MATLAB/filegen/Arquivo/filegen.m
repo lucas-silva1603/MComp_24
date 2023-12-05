@@ -113,7 +113,7 @@ end
 
 if isequal(el_col(1,4), 3)
 
-    for i=1:1:length(el_col)
+    for i=1:1:length(el_col) == true
 
     element_num=[element_num;el_col(i,2)];
     element_material=[element_material, material];   
@@ -126,7 +126,7 @@ if isequal(el_col(1,4), 3)
 
     % Output da matriz de conectividades com informação sobre cada elemento
     % -----------------------------
-    el_out=cat(2,element_num,element_material', element_type',n1,n2,n3); 
+    el_out=cat(2,element_num',element_material', element_type,n1,n2,n3); 
     % -----------------------------
 
 % Loop de criação da matriz de conectividades para elementos triangulares

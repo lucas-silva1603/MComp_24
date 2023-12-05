@@ -113,14 +113,15 @@ end
 
 if isequal(el_col(1,4), 3)
 
-    for i=1:1:length(el_col) == true
+    for i=1:1:length(el_col)
 
     element_num=[element_num;el_col(i,2)];
     element_material=[element_material, material];   
     element_type=[element_type, el_col(i,4)];
     n1=[n1;el_col(i,11)];
     n2=[n2;el_col(i,12)];
-    n3=[n3;el_col(i,13)];
+    n3=[n3;el_col(i,13)];   
+
     end
 
     % Output da matriz de conectividades com informação sobre cada elemento
