@@ -17,7 +17,7 @@ clc
 node_file = fopen('Nodes.txt' ,'r');
 element_file = fopen('Elements.txt', 'r');
 formatspec = '%c';'%d"';
-
+4
 % Lê dados do ficheiro do NX e extrai informaçao relevante
 
 % Nos:
