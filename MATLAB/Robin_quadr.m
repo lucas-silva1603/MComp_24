@@ -1,4 +1,6 @@
 function [He, Pe] =Robin_quadr (x1,y1,x2,y2,x3,y3,p,gama)
+% Funcão para obter contribuições de condições de Robin aplicadas em
+% elementos quadráticos
 
 %------------- Inicializacoes --------------------------
 b=zeros(3,1);
@@ -33,5 +35,6 @@ for ip=1:nip
     %-------------------------------------------------------
     He = He + wipp*b*b';
     Pe = Pe + wipg*b;
+    
 end % Fim do loop
 end % Fim da Função

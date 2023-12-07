@@ -1,5 +1,3 @@
-
-
 function [Ke, fe] = Elem_TRI6 (XN,fL)
 %   Matriz XN(6,2) contem as coordenadas locais deste triangulo de 6 nos 
 %   inicializar Ke e fe

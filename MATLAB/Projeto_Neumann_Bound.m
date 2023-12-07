@@ -1,4 +1,5 @@
 function [Kg, fg] = Projeto_Neumann_Bound(Kg, fg, Neumann_Bound, x, y, EType)
+% Função para aplicar condições fronteira Neumannn 
 
 if Neumann_Bound == 0
     % Se não houver condições de fronteira deste tipo passar
@@ -28,7 +29,8 @@ else
             % Buscar valor de gama e p
             gama = Robin_Bound(i,5);
             p = 0;
-
+            
+            % Obter valores a adicionar à matriz de rigidez e ao vetor de forças 
             [He, Pe] = Robin_quadr (x(no1),y(no1),x(no2),y(no2),x(no3),y(no3),p,gama);
             
             %     assemblagem

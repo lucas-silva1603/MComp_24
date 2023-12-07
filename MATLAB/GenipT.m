@@ -1,6 +1,5 @@
 function [xp, wp]=GenipT (nip)
 % Regras de integracao numérica para triangulos
-% pesquisar: S. Deng quadrature formulas in two dimensions matlab
 
 if (nip == 3)   % regra de 3 pts e grau 2
 xp=[0.5 0; 0.5 0.5;0 0.5];   % (3x2)

@@ -1,4 +1,5 @@
 function [Kg, fg] = Projeto_Robin_Bound(Kg, fg, Robin_Bound,x,y, EType)
+% Função para aplicar condições fronteira Robin
 
 if Robin_Bound == 0
     % Se não houver condições de fronteira deste tipo passar
@@ -34,7 +35,8 @@ else
             % Buscar valor de gama e p
             gama = Robin_Bound(i,5);
             p = Robin_Bound(i,6);
-
+            
+            % Obter valores a adicionar à matriz de rigidez e ao vetor de forças 
             [He, Pe] = Robin_quadr (x(no1),y(no1),x(no2),y(no2),x(no3),y(no3),p,gama);
             
             %     assemblagem

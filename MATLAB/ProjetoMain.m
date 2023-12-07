@@ -23,9 +23,23 @@ clc
 
     % teste
 % -------------------------------------------------------------------------
-% Tem solução exata? 0 - não, 1 - sim
-exact = 0;
+% Dados iniciais
 EType = 33;
+    % Tem solução exata? 0 - não, 1 - sim
+exact = 0;
+
+    % Obter dados da malha e condicões fronteira
+% [x, y, elem, boundaries] = read(file);
+
+    % Dados para cálculo da pressão (Pascal)
+        % Pressão inicial(atmosférica)
+p0 = 101325;
+        % Densidade do líquido
+ro = 1000;
+        % Velocidade inicial
+v0 = 2;
+    
+
 % -------------------------------------------------------------------------
 % teste tri 3
 if EType == 33
@@ -34,9 +48,9 @@ if EType == 33
     
     elem = [33 1 3 2 1; 33 3 1 4 1;33 5 2 3 1;33 4 7 3 1;33 6 3 7 1;33 3 6 5 1];
     Essential_Boundary = [1 2; 4 3];
-    Neumann_Bound = 0;
+    Neumann_Bound = [1 1 2 0];
     Applied_Forces = 0;
-    Robin_Bound = [1 5 6 1 1];
+    Robin_Bound = [1 5 6 1 1];  
 end
 % -------------------------------------------------------------------------
 if EType == 36
@@ -71,8 +85,9 @@ Nelt = size(elem,1);
     
     % Tipo de elemento
 EType = elem(1,1);
+    % Assume-se que todos os elementos são iguais
 
-    % Matriz para desenho dos resultados
+    % Matriz de conectividades
 if EType == 33
     Connectivity = zeros(Nelt,3);
 elseif EType == 36
@@ -89,7 +104,7 @@ for i=1:Nelt
     % Matriz e vetor de força do elemento
     [Ke, fe, edofs] = Projeto_Elem_Ke_Fe(x,y,elem(i,:),EType);
 
-    % Guardar conectividade do triângulo
+    % Guardar conectividade do triângulo na tabela de conectividades
     Connectivity(i,:) = edofs;
     % Assemblagem 
     Kg(edofs,edofs)= Kg(edofs,edofs) + Ke; 
@@ -103,7 +118,7 @@ end
 [Kg, fg] = Projeto_Applied_Forces(Kg,fg,Applied_Forces);
 
     % Condições Neumman
-[Kg, fg] = Projeto_Neumann_Bound(Kg,fg,Neumann_Bound);
+[Kg, fg] = Projeto_Neumann_Bound(Kg,fg,Neumann_Bound, x, y, EType);
 
     % Condições Robin
 [Kg, fg] = Projeto_Robin_Bound(Kg,fg,Robin_Bound, x, y, EType);
@@ -117,84 +132,18 @@ fr= fg;
 [Kr, fr] = Projeto_Essential_Bound(Kr,fr,Essential_Boundary);
   
 % -------------------------------------------------------------------------
-% Obter solução
+% Obter resultados
+
+% Obter solução do potencial
 u=Kr\fr;
-R = Kg*u-fg;
 
-% -------------------------------------------------------------------------
-% Representação dos resultados
-% -------------------------------------------------------------------------
-    % Representação potencial
-figure(1);
-title('Potencial em 2D');
-xlabel('X');
-ylabel('Y');
-colorbar;  % Legenda de cor
-
-% Mudar a ordem conectividade para desenhar os gráficos
-if EType == 36
-    Connectivity = [Connectivity(:,1) Connectivity(:,4) Connectivity(:,2) Connectivity(:,5) Connectivity(:,3) Connectivity(:,6)]; 
-end
-
-patch('Faces', Connectivity, 'Vertices', [x,y], 'FaceVertexCData', u, 'FaceColor', 'interp', 'EdgeColor', 'k');hold;
-plot(x,y,'ro');
-
-
-% -------------------------------------------------------------------------
-    % Representação gradiente
-
+% Obter componentes das velocidades nos centroides
 [xm,ym,um,vm] = Projeto_Grad(x,y,elem,u);
 
-figure (2);
-title('Gradiente');
-xlabel('X');
-ylabel('Y');
+% Pressão nos centroides (em pascasl)
+p = p0 + 0.5*ro*(v0^2)- 0.5*ro*(um.^2 + vm.^2);
 
-% Desenho da malha
-plot (x,y,'ro');hold 
-
-if elem(1,1) == 33 
-    triplot([elem(:,2),elem(:,3),elem(:,4)], x, y);
-end
-
-quiver (xm,ym,um,vm,'k'); %Desenho do gradiente
-
-% -------------------------------------------------------------------------
-    % Representação gradiente com potencial
-
-figure(3);
-title('Escoamento');
-xlabel('X');
-ylabel('Y');
-colorbar;  % Legenda de cor
-
-    % Desenho do potencial
-patch('Faces', Connectivity, 'Vertices', [x,y], 'FaceVertexCData', u, 'FaceColor', 'interp', 'EdgeColor', 'k');hold;
-    % Desenho do gradiente
-quiver (xm,ym,um,vm,'k');
-
-% -------------------------------------------------------------------------
-% Pressão
-ro = 1000;
-p = -(elem(:,end)' - 0.5*ro*(um.^2 + vm.^2)); 
-
-    % Representação Pressão(opcional)
-figure(4)
-title('Pressão');
-xlabel('X');
-ylabel('Y');
-colorbar;  % Legenda de cor
-
-for i = 1:size(Connectivity, 1)
-    edofs = Connectivity(i, :);
-    element_x = x(edofs);
-    element_y = y(edofs);
-
-    patch(element_x, element_y, p(i), 'EdgeColor', 'k');
-end
-% -------------------------------------------------------------------------
-% Imprimir resultados finais
-    % Calcular velocidade máxima e mínima e localização
+% Calcular velocidade máxima e mínima e localização
 v = sqrt(um.^2 + vm.^2);
 vmax = max(v);
 v_max_location = (v==vmax);
@@ -207,6 +156,85 @@ p_max_location = (p==pmax);
 pmin = min(p);
 p_min_location = (p==pmin);
 
+    % Cálculo da força resultante nas paredes
+[Forces] = Projeto_Resulting_Force(p0,p,Neumann_Bound,x,y);
+
+% -------------------------------------------------------------------------
+% Representação dos resultados
+% -------------------------------------------------------------------------
+    % Mudar a ordem conectividade para desenhar os gráficos para triângulos de
+    % 6 nós
+if EType == 36
+    Connectivity = [Connectivity(:,1) Connectivity(:,4)
+        Connectivity(:,2) Connectivity(:,5) Connectivity(:,3) Connectivity(:,6)]; 
+end
+
+% -------------------------------------------------------------------------
+    % Representação potencial
+figure(1);
+title('Potencial em 2D');
+xlabel('X');
+ylabel('Y');
+colorbar;  % Legenda de cor
+
+    % Desenho do potencial
+patch('Faces', Connectivity, 'Vertices', [x,y], 'FaceVertexCData', u, 'FaceColor', 'interp', 'EdgeColor', 'k');hold on
+
+    % Desenho dos nós
+plot(x,y,'ro');
+
+
+% -------------------------------------------------------------------------
+    % Representação da velocidade
+figure (2);
+title('Gradiente');
+xlabel('X');
+ylabel('Y');
+
+    % Desenho da malha
+if elem(1,1) == 33 
+    triplot([elem(:,2),elem(:,3),elem(:,4)], x, y);hold on
+end
+
+    % Desenho dos nós
+plot (x,y,'ro');
+
+    %Desenho do gradiente
+quiver (xm,ym,um,vm,'k'); 
+
+% -------------------------------------------------------------------------
+    % Representação gradiente com potencial
+
+figure(3);
+title('Escoamento');
+xlabel('X');
+ylabel('Y');
+colorbar;  % Legenda de cor
+
+    % Desenho do potencial
+patch('Faces', Connectivity, 'Vertices', [x,y], 'FaceVertexCData', u, 'FaceColor', 'interp', 'EdgeColor', 'k');hold on
+    % Desenho do gradiente
+quiver (xm,ym,um,vm,'k');
+
+% -------------------------------------------------------------------------
+    % Representação Pressão
+figure(4)
+title('Pressão');
+xlabel('X');
+ylabel('Y');
+colorbar;  % Legenda de cor
+    
+    % Desenho da pressão representando a cor por elemento 
+for i = 1:size(Connectivity, 1)
+    edofs = Connectivity(i, :);
+    element_x = x(edofs);
+    element_y = y(edofs);
+
+    patch(element_x, element_y, p(i), 'EdgeColor', 'k');
+end
+
+% -------------------------------------------------------------------------
+% Imprimir resultados finais pedidos
     % Imprimir resultados
 disp(['Velocidade máxima: ', num2str(vmax), ' em: (', ...
     num2str(xm(v_max_location)), ', ', num2str(ym(v_max_location)), ')']);
@@ -216,14 +244,21 @@ disp(['Pressão máxima: ', num2str(pmax), ' em: (', ...
     num2str(xm(p_max_location)), ', ', num2str(ym(p_max_location)), ')']);
 disp(['Pressão mínima: ', num2str(pmin), ' em: (', ...
     num2str(xm(p_min_location)), ', ', num2str(ym(p_min_location)), ')']);
+disp(['Força resultante em todas as paredes ', num2str(sum(Forces(:,2))/1000),' KN'])
 
 
 % -------------------------------------------------------------------------
 % Se com solução exata comparar erro
 if exact == 1
 
-    % solucao exacta
-    uex=1-x.^2-y.^2 ; % Valor exato nos nós 
+    % Solucao exacta é um retângulo. Como a velocidade inicial é conhecida 
+    % (foi retirado do enunciado V = 2,0 m/s) e as paredes superiores e 
+    % inferiores são impermeáveis(dv/dn = 0), a velocidade é constante.
+    % Sendo assim o potencial é linear. Com potencial à saída igual a 0 e
+    % comprimento de retângulo de 1 metro temos u(x) = 2 - 2x
+    
+    % Valor exato nos nós 
+    uex=2 -2*x; 
 
     % Cálculo do erro do potencial
     erru = abs(u - uex);
@@ -234,16 +269,20 @@ if exact == 1
 
 
     % Cálculo da velocidade exata
-    umex = 2*xm;
-    vmex = 2*ym;
+    umex = 2;
+    vmex = 0;
 
     % Cálculo do erro da velocidade
-    errux= um-umex;
-    erruy = vm-vmex;
-    ergrad =sqrt(errux.^2+erruy.^2);
-    
+        % errux = um-umex;
+        % erruy = vm-vmex;
+        % ergrad =sqrt(errux.^2+erruy.^2);
+    V = sqrt(um.^2+vm.^2);
+    ergrad = abs(V-umex);
+
     % Cálculo da pressão exata
-    pex = -(elem(:,end)' - 0.5*ro*(umex.^2 + vmex.^2));
+        % Como a velocidade é constante, a pressão também é constante(igual
+        % à pressão inicial
+    pex = p0;
 
     % Cálculo do erro da pressão
     errp = abs(p - pex);

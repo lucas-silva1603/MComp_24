@@ -1,4 +1,5 @@
 function [Kg, fg] = Projeto_Applied_Forces(Kg, fg, Applied_Forces)
+% Função para adicionar forças pontuais ao vetor de forças
 
 if Applied_Forces == 0
     % Se não houver condições de fronteira deste tipo passar
