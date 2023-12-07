@@ -81,3 +81,10 @@
 # Propriedades do material
 1
 1 1
+# Fontes e carregamentos distribuidos
+0
+# Condições de fronteira essenciais
+# Fontes/cargas pontuais impostas
+0
+# Condições de fronteira mistas  - Convecção natural
+0

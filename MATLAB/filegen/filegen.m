@@ -12,13 +12,15 @@ clc
 % --------------------------------------------------------------------------
 
 
-% Importa ficheiro de dados do NX
+% Importa ficheiros de dados do NX
 
 node_file = fopen('Nodes.txt' ,'r');
 element_file = fopen('Elements.txt', 'r');
 formatspec = '%c';'%d"';
-4
-% Lê dados do ficheiro do NX e extrai informaçao relevante
+
+flux_file = fopen('fluxo.csv','r');
+
+% Lê dados dos ficheiros do NX e extrai informaçao relevante
 
 % Nos:
 
@@ -160,6 +162,11 @@ else
 end
 
 
+% Extração de informação sobre o fluxo imposto na fronteira
+
+flux_lines = splitlines(fscanf(flux_file, formatspec));
+%flux_raw = splot(flux_lines);
+
 % Propriedades do material
 
 % -----------------------------------------------------------------------
@@ -171,16 +178,61 @@ numero_materiais = 1;
 ident_mat = 1;
 prop_material = double(1);
 
+% --------------------------------------------------
 % Extração das condições fronteira do ficheiro do NX
-
+% --------------------------------------------------
 
 % Extração das forças/cargas/fluxo impostos
 
+filt_flux = [];
 
+for i=2:1:(length(flux_lines)-1)
 
+    filt_flux = [filt_flux; flux_lines(i,1)];
 
+end
 
+flux_lines = filt_flux;
+flux_col = split(flux_lines);
 
+%Inicialização de variáveis
+
+f_el = []; % Número do elemento
+f_n1 = []; % Número do nó 1
+f_n2 = []; % Número do nó 2
+f_n3 = []; % Número do nó 3 (T6)
+flux = []; % Valor do fluo imposto
+
+% Verificar tipo de elemento
+
+if element_type(1) == 6
+
+    for i=1:1:length(flux_col)
+
+        f_el = [f_el; flux_col()];
+        f_n1 = [f_n1; flux_col()];
+        f_n2 = [f_n2; flux_col()];
+        f_n3 = [f_n3; flux_col()];
+        flux = [flux; flux_col()];
+        
+    end
+    
+    flux_out = cat(f_el, f_n1, f_n2, f_n3, flux);
+
+else
+
+    for i=1:1:length(flux_col)
+
+        f_el = [f_el; flux_col()];
+        f_n1 = [f_n1; flux_col()];
+        f_n2 = [f_n2; flux_col()];
+        flux = [flux; flux_col()];
+
+    end
+
+    flux_out = cat(f_el, f_n1, f_n2, flux);
+
+end
 
 
 
@@ -226,26 +278,34 @@ writematrix(mat_, 'dados.txt', 'Delimiter', 'space', 'WriteMode', 'append');
 
 % writematrix(  , 'dados.txt','WriteMode', 'append');
 
+
 % Escreve as fontes e carregamentos distriubidos
+
+writematrix('# Fontes e carregamentos distribuidos', 'dados.txt','WriteMode', 'append');
+writematrix('0', 'dados.txt','WriteMode', 'append');
 
 % Escreve as condições de fronteira esseciais
 
+writematrix('# Condições de fronteira essenciais', 'dados.txt','WriteMode', 'append');
+
+
 % Escreve as fontes e cargas pontuais
 
-% Escreve o fluxo imposto na fronteira (condição de fronteira naturail)
+writematrix('# Fontes/cargas pontuais impostas', 'dados.txt','WriteMode', 'append');
+writematrix('0', 'dados.txt','WriteMode', 'append');
+
+% Escreve o fluxo imposto na fronteira (condição de fronteira natural)
+
+
+
 
 % Escreve a condição de fronteira mista
 
-    
+writematrix('# Condições de fronteira mistas  - Convecção natural', 'dados.txt','WriteMode', 'append');
+writematrix('0', 'dados.txt','WriteMode', 'append');
 
 
-
-
-
-
-
-
-
+% FLUXO IMPOSTO NA FRONTEIRA E CONDIÇOES ESSENCIAIS
 
 
 
