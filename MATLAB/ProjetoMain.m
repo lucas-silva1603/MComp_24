@@ -48,7 +48,7 @@ if EType == 33
     
     elem = [33 1 3 2 1; 33 3 1 4 1;33 5 2 3 1;33 4 7 3 1;33 6 3 7 1;33 3 6 5 1];
     Essential_Boundary = [1 2; 4 3];
-    Neumann_Bound = [1 1 2 0];
+    Neumann_Bound = [1 1 2 0; 3 2 3 0];
     Applied_Forces = 0;
     Robin_Bound = [1 5 6 1 1];  
 end
@@ -244,8 +244,13 @@ disp(['Pressão máxima: ', num2str(pmax), ' em: (', ...
     num2str(xm(p_max_location)), ', ', num2str(ym(p_max_location)), ')']);
 disp(['Pressão mínima: ', num2str(pmin), ' em: (', ...
     num2str(xm(p_min_location)), ', ', num2str(ym(p_min_location)), ')']);
-disp(['Força resultante em todas as paredes ', num2str(sum(Forces(:,2))/1000),' KN'])
 
+for i = 1:size(Forces,1)
+
+    disp(['A força resultante na parede que vai do ponto (',num2str(x(Forces(i,2))),...
+    ', ',num2str(y(Forces(i,2))), ') ao ponto (', num2str(x(Forces(i,3))),', ',...
+    num2str(y(Forces(i,3))), ') é ', num2str(Forces(i,1)/1000), 'KN.'])
+end
 
 % -------------------------------------------------------------------------
 % Se com solução exata comparar erro
