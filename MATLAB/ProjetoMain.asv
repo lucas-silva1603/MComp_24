@@ -24,7 +24,7 @@ clc
     % teste
 % -------------------------------------------------------------------------
 % Dados iniciais
-EType = 33;
+EType = 36;
     % Tem solução exata? 0 - não, 1 - sim
 exact = 1;
 
@@ -236,19 +236,14 @@ end
 % -------------------------------------------------------------------------
 % Imprimir resultados finais pedidos
     % Imprimir resultados
-disp('Resultados pedidos:')
-disp(' ')
 disp(['Velocidade máxima: ', num2str(vmax), ' em: (', ...
     num2str(xm(v_max_location)), ', ', num2str(ym(v_max_location)), ')']);
 disp(['Velocidade mínima: ', num2str(vmin), ' em: (', ...
     num2str(xm(v_min_location)), ', ', num2str(ym(v_min_location)), ')']);
-disp(' ')
-
 disp(['Pressão máxima: ', num2str(pmax), ' em: (', ...
     num2str(xm(p_max_location)), ', ', num2str(ym(p_max_location)), ')']);
 disp(['Pressão mínima: ', num2str(pmin), ' em: (', ...
     num2str(xm(p_min_location)), ', ', num2str(ym(p_min_location)), ')']);
-disp(' ')
 
 if isequal(Forces,0)
     % Não há paredes rígidas
@@ -278,7 +273,7 @@ if exact == 1
     erru = abs(u - uex);
     erru_max = max(erru); %Erro absoluto máximo
     erru_max_location = (erru == erru_max);% Localização erro absoluto máximo
-    erru_rel_max = erru_max/uex(erru_max_location)*100;% Erro relativo
+    erru_rel_max = ergrad_max/umex(errgra_rel_max_location);% Erro relativo
     
     % Representar erro em 3D
     figure(5)
@@ -288,12 +283,13 @@ if exact == 1
     % Cálculo da velocidade exata
     umex = 2;
     vmex = 0;
-    V = sqrt(um.^2+vm.^2);
 
     % Cálculo do erro da velocidade
+    V = sqrt(um.^2+vm.^2);
+    
     ergrad = abs(V-umex); %Erro absoluto
     ergrad_max = max(ergrad); %Erro absoluto máximo
-    errgrad_rel_max = ergrad_max/umex * 100;% Erro relativo
+    errgra_rel_max = ergrad_max/umex * 100;% Erro relativo
 
 
     % Cálculo da pressão exata
@@ -305,23 +301,11 @@ if exact == 1
     errp = abs(p - pex); %Erro absoluto
     errp_max = max(errp); %Erro absoluto máximo
     errp_max_rel = errp_max/pex * 100; % Erro relativo
-
-    disp('-----------------------------------------------------------------')
-    disp('-----------------------------------------------------------------')
-    disp(' ')
-    disp('Erros:')
-    disp(' ')
     
-    disp(['Erro absoluto máximo de potencial: ', num2str(erru_max)]);
-    disp(['Erro relativo máximo de potencial: ', num2str(erru_rel_max), '%']);
-    disp(' ')
-
-    disp(['Erro absoluto máximo de velocidade: ', num2str(ergrad_max)]);
-    disp(['Erro relativo máximo de velocidade: ', num2str(errgrad_rel_max), '%']);
-    disp(' ')
-
-    disp(['Erro absoluto máximo de pressão: ', num2str(errp_max)]);
-    disp(['Erro relativo máximo de pressão: ', num2str(errp_max_rel), '%']);
+    
+    disp(['Erro máximo de potencial: ', num2str(max(erru))]);
+    disp(['Erro máximo de velocidade: ', num2str(max(ergrad))]);
+    disp(['Erro máximo de pressão: ', num2str(max(errp))]);
 end
 
 

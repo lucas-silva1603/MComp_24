@@ -14,6 +14,7 @@ Number_of_el_walls = size(Borders,1);
 if isequal(Neumann_Bound,0)
     % Se não houver condições Neuman sair da função
     Number_of_el_walls = 0;
+    Forces = 0;
 else 
     % Criar a primeira parede
     [Force] = Element_Force(p0,p,Borders(1,:),x,y);
