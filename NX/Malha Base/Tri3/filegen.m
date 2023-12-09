@@ -272,17 +272,34 @@ for node=1:1:length(n_out)
     
 end
 
+k = boundary(n_out(:,2),n_out(:,3),0.9);
+fronteira=[x(k),y(k)];  
+%plot(fronteira(:,1), fronteira(:,2));
+
+fluxo_0=[];
+check1=[];
+check2=[];
+
+for i=1:1:length(k)
+    a = ismember(k(i),fr_direita);
+    if ismember(k(i),fr_direita) == 0
+
+        check1 = [check1;k(i)];
+    end
+    
+end
 
 
+for i=1:1:length(check1)
 
+    if ismember(check1(i),fr_esquerda) == 0
 
+        check2 = [check2;check1(i)];
+    end
+    
+end
 
-
-
-
-
-
-
+fluxo_0 = check2; 
 
 
 

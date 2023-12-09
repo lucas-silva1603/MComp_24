@@ -251,33 +251,53 @@ for node=1:1:length(n_out)
     aaa = ((nx - 2700)^2)/(1200^2);
     aab = ((ny - 800)^2)/(600^2);
     aac = aaa + aab;
-    dist1 = ((nx - 2700)^2)/(1200^2)*cos(45) + ((((ny) - 800)^2)/(600^2));
+    x01 = (nx-2700)*cos(pi/2)+(ny-800)*sin(pi/2);
+    y01 = -(nx-2700)*sin(pi/2)+(ny-800)*cos(pi/2);
 
+    x02 = (nx-2700)*cos(pi/2)+(ny+800)*sin(pi/2);
+    y02 = -(nx-2700)*sin(pi/2)+(ny+800)*cos(pi/2);
 
-    if ((nx - 2700)^2)/(1200^2) + ((((ny) - 800)^2)/(600^2)) == 1
+    dist1 = (((x01)^2)/(1200^2))+(((y01)^2)/(600^2));
+    dist2 = (((x02)^2)/(1200^2))+(((y02)^2)/(600^2));
+
+    if dist1 == 1
         % Nó na fronteira elipsoidal superior
         fr_elipse1 = [fr_elipse1; n_out(node,1)];
     end
 
-    if (((nx - 2700)^2)/(1200^2)) + (((ny + 800)^2)/(600^2)) == 1
+    if dist2 == 1
         % Nó na fronteira elipsoidal inferior
         fr_elipse2 = [fr_elipse2; n_out(node,1)];
     end
     
- 
+end
 
+k = boundary(n_out(:,2),n_out(:,3),0.9);
+fronteira=[x(k),y(k)];  
+%plot(fronteira(:,1), fronteira(:,2));
+
+fluxo_0=[];
+check1=[];
+check2=[];
+
+for i=1:1:length(k)
+    a = ismember(k(i),fr_direita);
+    if ismember(k(i),fr_direita) == 0
+
+        check1 = [check1;k(i)];
+    end
+    
 end
 
 
+for i=1:1:length(check1)
 
+    if ismember(check1,fr_e) == 0
 
-
-
-
-
-
-
-
+        check2 = [check2;check1];
+    end
+    
+end
 
 
 
