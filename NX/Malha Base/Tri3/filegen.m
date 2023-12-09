@@ -181,9 +181,49 @@ prop_material = double(1);
 
 % Fluxo imposto
 
-for node:1:1:length(n_out)
+% Procura os nós que se encontram nas fronteiras da geometria e associa-os
+% ao respetivo elemento
 
-    if n_out(node,2) = 
+% Determina em que fronteira está cada nó e o seus respetivos elementos 
+
+% Nota: Um elemento encontra-se na fronteira caso dois ou mais dos seus nós
+% estejam na fronteira
+
+
+% Inicialização de variáveis
+
+fr_esquerda = [];
+fr_direita = [];
+fr_cima = [];
+fr_baixo = [];
+fr_interior = [];
+fr_elipses = [];
+
+for node=1:1:length(n_out)
+
+    if n_out(node,2) == 0
+        % Nó na fronteira esquerda
+        fr_esquerda = [fr_esquerda;n_out(node)]; % Associa o número do nó à fronteira esquerda
+    end
+
+    if n_out(node,2) == 4000
+        % Nó na fronteira direita
+        fr_direita = [fr_direita;n_out(node)]; % Associa o número do nó à fronteira direita
+    end
+
+    if n_out(node,3) == 800
+        % Nó fronteira de cima
+        fr_cima = [fr_cima;n_out(node)]; % Associa o número do nó à fronteira de cima
+    end
+
+    if n_out(node,3) == -800
+        % Nó fronteira de cima
+        fr_baixo = [fr_baixo;n_out(node)]; % Associa o número do nó à fronteira de baixo
+    end
+
+end
+
+
 
 
 
@@ -275,7 +315,7 @@ writematrix('0', 'dados.txt','WriteMode', 'append');
 
 % Fecha o ficheiro dados.txt
 
-fclose(flux_file);
+%fclose(flux_file);
 fclose(dados);
 
 
