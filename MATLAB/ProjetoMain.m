@@ -24,7 +24,7 @@ clc
     % teste
 % -------------------------------------------------------------------------
 % Dados iniciais
-EType = 33;
+EType = 36;
     % Tem solução exata? 0 - não, 1 - sim
 exact = 1;
 

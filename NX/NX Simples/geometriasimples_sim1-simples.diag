@@ -1,0 +1,76 @@
+
+*** 20:32:26 *** 
+Starting Nastran Exporter
+
+*** 20:32:26 *** 
+Writing file C:\Users\User\Desktop\NX Simples\geometriasimples_sim1-simples.dat
+
+*** 20:32:26 *** 
+Writing SIMCENTER NASTRAN 2212.0 compatible deck
+
+*** 20:32:26 *** 
+Writing Nastran System section
+
+*** 20:32:26 *** 
+Writing File Management section
+
+*** 20:32:26 *** 
+Writing Executive Control section
+
+*** 20:32:26 *** 
+Writing Case Control section
+
+*** 20:32:26 *** 
+Writing Bulk Data section
+
+*** 20:32:26 *** 
+Writing Nodes
+
+*** 20:32:26 *** 
+Writing Elements
+
+*** 20:32:26 *** 
+WARNING : No thickness defined for mesh 2d_mesh(1). Thickness will be specified 
+          by associated physical property.
+ 
+*** 20:32:26 *** 
+Writing Physical Properties
+
+*** 20:32:26 *** 
+Writing Materials
+
+*** 20:32:26 *** 
+Writing Degree-of-Freedom Sets
+
+*** 20:32:26 *** 
+Writing Loads and Constraints
+
+*** 20:32:26 *** 
+Writing Coordinate Systems
+
+*** 20:32:26 *** 
+Validating Solution Setup
+
+*** 20:32:26 *** 
+Summary of Bulk Data cards written
+
++----------+----------+
+|   NAME   |  NUMBER  |
++----------+----------+
+| CHBDYE   | 14       |
+| CTRIA3   | 24       |
+| GRID     | 21       |
+| LOAD     | 1        |
+| MAT4     | 1        |
+| NLPARM   | 1        |
+| PARAM    | 5        |
+| PSHELL   | 1        |
+| QBDY3    | 2        |
++----------+----------+
+
+*** 20:32:26 *** 
+1 warning issued
+
+*** 20:32:26 *** 
+Nastran Deck Successfully Written
+
