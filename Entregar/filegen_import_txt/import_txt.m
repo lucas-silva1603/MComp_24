@@ -104,7 +104,6 @@ fend = fstart - 1 + str2double(lines(fstart - 1));
 f_raw = [];
 
 for k=fstart:1:fend
-
     f_raw = [f_raw; lines(k)];
 end
 
