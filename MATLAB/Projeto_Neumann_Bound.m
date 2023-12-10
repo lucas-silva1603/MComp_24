@@ -12,12 +12,14 @@ else
             % Número dos nó com fluxo imposto
             no1= Neumann_Bound(i,2);
             no2= Neumann_Bound(i,3);
+            d = distance([x(no1),y(no1)], ...
+        [x(no2),y(no2)]);
         
             % Fluxo(gamma)
             gama = Neumann_Bound(i,4);
                         
-            fg(no1) = fg(no1) + gama/2;
-            fg(no2) = fg(no2) + gama/2;
+            fg(no1) = fg(no1) + d*gama/2;
+            fg(no2) = fg(no2) + d*gama/2;
 
         elseif EType == 36
             % Número dos nós

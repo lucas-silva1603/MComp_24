@@ -23,10 +23,10 @@ clc
 
     % teste
 % -------------------------------------------------------------------------
-% Dados iniciais
-EType = 36;
+% Dados iniciais (Colocar dados aqui)
+EType = 33;
     % Tem solução exata? 0 - não, 1 - sim
-exact = 1;
+exact = 0;
 
     % Obter dados da malha e condicões fronteira
 % [x, y, elem, boundaries] = read(file);
@@ -37,8 +37,8 @@ p0 = 101325;
         % Densidade do líquido
 ro = 1000;
         % Velocidade inicial
+% v0 = max(Neumann_Bound(:,end)); %obter velocidade de entrada
 v0 = 2;
-    
 
 % -------------------------------------------------------------------------
 % teste tri 3

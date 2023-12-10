@@ -92,8 +92,11 @@ for i = 2:Number_of_el_walls
 
         % Ajustar os extremos da parede nova
         Forces(no1_in_Wall_Beggining,2) = Forces(no2_in_Wall_end,2);
-        % Remover uma parede
-        Forces(no2_in_Wall_end,:) = [];  
+
+        % Remover uma parede caso não esteja a fechar-se a si mesma
+        if no1_in_Wall_Beggining ~= no2_in_Wall_end
+            Forces(no2_in_Wall_end,:) = []; 
+        end
 
 
     elseif any(no1_in_Wall_end) && any(no2_in_Wall_Beggining)
@@ -105,9 +108,11 @@ for i = 2:Number_of_el_walls
 
         % Ajustar os extremos da parede nova
         Forces(no1_in_Wall_end,3) = Forces(no2_in_Wall_Beggining,3);
-        % Remover uma parede
-        Forces(no2_in_Wall_Beggining,:) = []; 
 
+        % Remover uma parede caso não esteja a fechar-se a si mesma
+        if no1_in_Wall_end ~= no2_in_Wall_Beggining
+            Forces(no2_in_Wall_Beggining,:) = []; 
+        end
 
     elseif any(no1_in_Wall_end) && any(no2_in_Wall_end)
         % No 1 ligado ao fim de uma parede e o No 2 ligado a início de outra parede
