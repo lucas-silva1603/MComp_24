@@ -471,7 +471,7 @@ end
 % Aplica fluxo imposto
 
 fluxo=[];
-for i=1:1:length(fe)
+for i=1:1:size(fe,1)
     fluxo=[fluxo; 2];
 end
 
