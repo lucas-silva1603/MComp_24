@@ -1,0 +1,1 @@
+[n, e, p,f] = import_txt("dados.txt");

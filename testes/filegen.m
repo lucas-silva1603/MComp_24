@@ -504,9 +504,6 @@ potencial_nulo = sortrows(potencial_nulo); % Output para ficheiro txt
 
 
 
-
-
-
 % Cria (ou abre se já existente) ficheiro dados.txt no diretorio atual
 
 
@@ -557,7 +554,7 @@ writematrix('0', 'dados.txt','WriteMode', 'append');
 
 writematrix('# Condições de fronteira essenciais', 'dados.txt','WriteMode', 'append');
 writematrix(length(potencial_nulo), 'dados.txt','WriteMode', 'append');
-writematrix(potencial_nulo, 'dados.txt','WriteMode', 'append');
+writematrix(potencial_nulo, 'dados.txt','Delimiter', 'space', 'WriteMode', 'append');
 
 % Escreve as fontes e cargas pontuais
 
@@ -568,89 +565,14 @@ writematrix('0', 'dados.txt','WriteMode', 'append');
 
 writematrix('# Fluxo imposto na fronteira', 'dados.txt','WriteMode', 'append');
 writematrix(length(output_fluxo), 'dados.txt','WriteMode', 'append');
-writematrix(output_fluxo, 'dados.txt','WriteMode', 'append');
+writematrix(output_fluxo, 'dados.txt','Delimiter', 'space', 'WriteMode', 'append');
 
 % Escreve a condição de fronteira mista
 
 writematrix('# Condições de fronteira mistas  - Convecção natural', 'dados.txt','WriteMode', 'append');
 writematrix('0', 'dados.txt','WriteMode', 'append');
 
-
-% FLUXO IMPOSTO NA FRONTEIRA E CONDIÇOES ESSENCIAIS
-
-
-
-
-
-
 % Fecha o ficheiro dados.txt
 
 %fclose(flux_file);
 fclose(dados);
-
-
-
-
-
-
-
-
-%{
-
-
-% Extração de informação sobre o fluxo imposto na fronteira
-
-%flux_lines = splitlines(fscanf(flux_file, formatspec));
-%flux_raw = splot(flux_lines);
-filt_flux = [];
-
-for i=2:1:(length(flux_lines)-1)
-
-    filt_flux = [filt_flux; flux_lines(i,1)];
-
-end
-
-flux_lines = filt_flux;
-flux_col = split(flux_lines);
-
-%Inicialização de variáveis
-
-f_el = []; % Número do elemento
-f_n1 = []; % Número do nó 1
-f_n2 = []; % Número do nó 2
-f_n3 = []; % Número do nó 3 (T6)
-flux = []; % Valor do fluxo imposto
-
-% Verificar tipo de elemento
-
-
-
-if element_type(1) == 6
-
-    for i=1:1:length(flux_col)
-
-        f_el = [f_el; flux_col()];
-        f_n1 = [f_n1; flux_col()];
-        f_n2 = [f_n2; flux_col()];
-        f_n3 = [f_n3; flux_col()];
-        flux = [flux; flux_col()];
-        
-    end
-    
-    flux_out = cat(f_el, f_n1, f_n2, f_n3, flux);
-
-else
-
-    for i=1:1:length(flux_col)
-
-        f_el = [f_el; flux_col(i,1)];
-        f_n1 = [f_n1; flux_col(i,3)];
-        f_n2 = [f_n2; flux_col()];
-        flux = [flux; flux_col()];
-
-    end
-
-    flux_out = cat(f_el, f_n1, f_n2, flux);
-
-end
-%}

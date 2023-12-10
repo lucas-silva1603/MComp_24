@@ -262,7 +262,7 @@ end
 
 k = boundary(n_out(:,2),n_out(:,3),0.9);
 fronteira=[x(k),y(k)];  
-plot(fronteira(:,1), fronteira(:,2));
+%plot(fronteira(:,1), fronteira(:,2));
 
 fluxo_0=[];
 check1=[];
@@ -554,7 +554,7 @@ writematrix('0', 'dados.txt','WriteMode', 'append');
 
 writematrix('# Condições de fronteira essenciais', 'dados.txt','WriteMode', 'append');
 writematrix(length(potencial_nulo), 'dados.txt','WriteMode', 'append');
-writematrix(potencial_nulo, 'dados.txt','WriteMode', 'append');
+writematrix(potencial_nulo, 'dados.txt','Delimiter', 'space', 'WriteMode', 'append');
 
 % Escreve as fontes e cargas pontuais
 
@@ -565,7 +565,7 @@ writematrix('0', 'dados.txt','WriteMode', 'append');
 
 writematrix('# Fluxo imposto na fronteira', 'dados.txt','WriteMode', 'append');
 writematrix(length(output_fluxo), 'dados.txt','WriteMode', 'append');
-writematrix(output_fluxo, 'dados.txt','WriteMode', 'append');
+writematrix(output_fluxo, 'dados.txt','Delimiter', 'space', 'WriteMode', 'append');
 
 % Escreve a condição de fronteira mista
 

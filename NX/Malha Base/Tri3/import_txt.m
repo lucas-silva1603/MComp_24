@@ -1,4 +1,4 @@
-%function [nodes, elements] = importfile(txt_f)
+function [nos, elementos, potencial, fluxo] = importfile(txt_f)
 
 % -----------
 % Import File
@@ -16,9 +16,9 @@
 
 % Abre o ficheiro de dados para leitura
 
-txt_f = 'dados.txt';
-file = txt_f;
-%file = string(txt_f);
+%txt_f = 'dados.txt';
+%file = txt_f;
+file = string(txt_f);
 data = fopen(file,"r");
 formatspec = '%c';'%d"';
 
