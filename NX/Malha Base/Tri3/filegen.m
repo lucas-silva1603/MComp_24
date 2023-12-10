@@ -181,15 +181,6 @@ prop_material = double(1);
 
 % Fluxo imposto
 
-% Procura os nós que se encontram nas fronteiras da geometria e associa-os
-% ao respetivo elemento
-
-% Determina em que fronteira está cada nó e o seus respetivos elementos 
-
-% Nota: Um elemento encontra-se na fronteira caso dois ou mais dos seus nós
-% estejam na fronteira
-
-
 % Inicialização de variáveis
 
 fr_esquerda = [];
@@ -201,6 +192,9 @@ fr_circulo1=[];
 fr_circulo2=[];
 fr_elipse1 = [];
 fr_elipse2 = [];
+
+% Determina em que fronteira está cada nó
+
 
 for node=1:1:length(n_out)
 
@@ -223,7 +217,7 @@ for node=1:1:length(n_out)
     end
 
     if ny == -800
-        % Nó fronteira de cima
+        % Nó fronteira de baixo
         fr_baixo = [fr_baixo;n_out(node,1)]; % Associa o número do nó à fronteira de baixo
     end
 
@@ -246,7 +240,8 @@ for node=1:1:length(n_out)
         % Nó na fronteira circular superior
         fr_circulo2 = [fr_circulo2; n_out(node,1)];        
     end
-
+    
+    %{
     % Verificar fronteira para os elipses exteriores
     aaa = ((nx - 2700)^2)/(1200^2);
     aab = ((ny - 800)^2)/(600^2);
@@ -269,7 +264,7 @@ for node=1:1:length(n_out)
         % Nó na fronteira elipsoidal inferior
         fr_elipse2 = [fr_elipse2; n_out(node,1)];
     end
-    
+    %}
 end
 
 k = boundary(n_out(:,2),n_out(:,3),0.9);
@@ -283,23 +278,199 @@ check2=[];
 for i=1:1:length(k)
     a = ismember(k(i),fr_direita);
     if ismember(k(i),fr_direita) == 0
-
         check1 = [check1;k(i)];
     end
-    
 end
-
 
 for i=1:1:length(check1)
-
     if ismember(check1(i),fr_esquerda) == 0
-
         check2 = [check2;check1(i)];
-    end
-    
+    end    
 end
 
-fluxo_0 = check2; 
+fluxo_0 = cat(1,check2,fr_interior); % Nós da fronteira com fluxo 0
+
+% Determina a que elemento(s) pertencem os nós da fronteira
+
+% Nota: Um elemento encontra-se na fronteira caso dois ou mais dos seus nós
+% estejam na fronteira
+
+el_f_esq = (selecionar_elementos(el_out,fr_esquerda))';
+el_f_dir = (selecionar_elementos(el_out,fr_direita))';
+el_f_nula = (selecionar_elementos(el_out, fluxo_0))';
+
+% Associar elementos aos nós na fronteria
+
+% Vetores de output
+
+fe=[];
+fd=[];
+fn=[];
+nf=[];
+
+if element_type(1,1) == 3
+
+    for elemento=1:1:length(el_f_esq) % Fronteira esquerda
+        
+        el = el_f_esq(elemento,1);
+        n01=el_out(el, 4);
+        n02=el_out(el, 5);
+        n03=el_out(el, 6);
+        nf=[];
+
+        if ismember(n01, fr_esquerda) == true
+            nf=cat(1,nf, n01);
+        end
+        if ismember(n02, fr_esquerda) == true
+            nf=cat(1,nf, n02);
+        end
+        if ismember(n03, fr_esquerda) == true
+            nf=cat(1,nf, n03);
+        end
+
+        elemento_nos = (cat(1,el, nf))';
+        fe = [fe; elemento_nos];
+
+    end
+    
+    %{
+    for elemento=1:1:length(el_f_dir) % Fronteira direita
+        
+        el = el_f_dir(elemento,1);
+        n01=el_out(el, 4);
+        n02=el_out(el, 5);
+        n03=el_out(el, 6);
+        nf=[];
+
+        if ismember(n01, fr_direita) == true
+            nf=cat(1, nf,n01);
+        end
+        if ismember(n02, fr_direita) == true
+            nf=cat(1, nf,n02);
+        end
+        if ismember(n03, fr_direita) == true
+            nf=cat(1,nf, n03);
+        end
+
+        elemento_nos = (cat(1,el, nf))';
+        fd = [fd; elemento_nos];
+
+    end
+    
+    %}
+    for elemento=1:1:length(el_f_nula) % Fronteira nula
+        
+        el = el_f_nula(elemento,1);
+        n01=el_out(el, 4);
+        n02=el_out(el, 5);
+        n03=el_out(el, 6);
+        nf=[];
+        counter=0;
+        if ismember(n01, fluxo_0) == true
+            nf=cat(1,nf,n01);
+            counter= counter +1;
+        end
+        if ismember(n02, fluxo_0) == true
+            nf=cat(1,nf,n02);
+            counter= counter +1;
+        end
+        if ismember(n03, fluxo_0) == true
+            nf=cat(1,nf, n03);
+            counter= counter +1;
+        end
+        
+        if counter == 2
+            elemento_nos = (cat(1,el, nf))';
+            fn = [fn; elemento_nos];
+        end        
+
+    end
+
+elseif element_type(1,1) == 6
+
+    el = el_f_nula(elemento,1);
+        n01=el_out(el, 4);
+        n02=el_out(el, 5);
+        n03=el_out(el, 6);
+        n04=el_out(el, 7);
+        n05=el_out(el, 8);
+        n06=el_out(el, 9);
+        nf=[];
+        counter=0;
+        if ismember(n01, fluxo_0) == true
+            nf=cat(1,nf,n01);
+            counter= counter +1;
+        end
+        if ismember(n02, fluxo_0) == true
+            nf=cat(1,nf,n02);
+            counter= counter +1;
+        end
+        if ismember(n03, fluxo_0) == true
+            nf=cat(1,nf, n03);
+            counter= counter +1;
+        end
+        if ismember(n04, fluxo_0) == true
+            nf=cat(1,nf, n04);
+            counter= counter +1;
+        end
+        if ismember(n05, fluxo_0) == true
+            nf=cat(1,nf, n05);
+            counter= counter +1;
+        end
+        if ismember(n06, fluxo_0) == true
+            nf=cat(1,nf, n06);
+            counter= counter +1;
+        end
+        
+        if counter == 3
+            elemento_nos = (cat(1,el, nf))';
+            fn = [fn; elemento_nos];
+        end        
+end
+
+
+
+% Aplica fluxo imposto
+
+fluxo=[];
+for i=1:1:length(fe)
+    fluxo=[fluxo; 2];
+end
+
+% -------------------------------
+fluxo_imposto = cat(2, fe,fluxo); 
+% -------------------------------
+
+fluxo=[];
+for i=1:1:length(fn)
+    fluxo=[fluxo; 0];
+end
+
+fluxo_nulo = cat(2,fn,fluxo);
+
+output_fluxo = cat(1,fluxo_imposto,fluxo_nulo);
+
+
+% ------------------------------------
+output_fluxo = sortrows(output_fluxo); % Output para ficheiro txt
+% ------------------------------------
+
+
+% Aplica potencial nulo na fronteira da direita
+
+potencial=[];
+
+for i=1:1:length(fr_direita)
+    potencial=[potencial; 0];
+end
+
+potencial_nulo = cat(2,fr_direita,potencial);
+
+% ----------------------------------------
+potencial_nulo = sortrows(potencial_nulo); % Output para ficheiro txt
+% ----------------------------------------
+
+
 
 
 
@@ -354,7 +525,8 @@ writematrix('0', 'dados.txt','WriteMode', 'append');
 % Escreve as condições de fronteira esseciais
 
 writematrix('# Condições de fronteira essenciais', 'dados.txt','WriteMode', 'append');
-
+writematrix(length(potencial_nulo), 'dados.txt','WriteMode', 'append');
+writematrix(potencial_nulo, 'dados.txt','WriteMode', 'append');
 
 % Escreve as fontes e cargas pontuais
 
@@ -363,8 +535,9 @@ writematrix('0', 'dados.txt','WriteMode', 'append');
 
 % Escreve o fluxo imposto na fronteira (condição de fronteira natural)
 
-
-
+writematrix('# Fluxo imposto na fronteira', 'dados.txt','WriteMode', 'append');
+writematrix(length(output_fluxo), 'dados.txt','WriteMode', 'append');
+writematrix(output_fluxo, 'dados.txt','WriteMode', 'append');
 
 % Escreve a condição de fronteira mista
 

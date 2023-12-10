@@ -181,19 +181,125 @@ prop_material = double(1);
 
 % Fluxo imposto
 
-for node:1:1:length(n_out)
+% Procura os nós que se encontram nas fronteiras da geometria e associa-os
+% ao respetivo elemento
 
-    if n_out(node,2) = 
+% Determina em que fronteira está cada nó e o seus respetivos elementos 
 
-
-
-
-
-
+% Nota: Um elemento encontra-se na fronteira caso dois ou mais dos seus nós
+% estejam na fronteira
 
 
+% Inicialização de variáveis
+
+fr_esquerda = [];
+fr_direita = [];
+fr_cima = [];
+fr_baixo = [];
+fr_interior = [];
+fr_circulo1=[];
+fr_circulo2=[];
+fr_elipse1 = [];
+fr_elipse2 = [];
+
+for node=1:1:length(n_out)
+
+    nx = n_out(node, 2);
+    ny = n_out(node, 3);
+
+    if nx == 0
+        % Nó na fronteira esquerda
+        fr_esquerda = [fr_esquerda;n_out(node,1)]; % Associa o número do nó à fronteira esquerda
+    end
+
+    if nx == 4000
+        % Nó na fronteira direita
+        fr_direita = [fr_direita;n_out(node,1)]; % Associa o número do nó à fronteira direita
+    end
+
+    if ny == 800
+        % Nó fronteira de cima
+        fr_cima = [fr_cima;n_out(node,1)]; % Associa o número do nó à fronteira de cima
+    end
+
+    if ny == -800
+        % Nó fronteira de cima
+        fr_baixo = [fr_baixo;n_out(node,1)]; % Associa o número do nó à fronteira de baixo
+    end
+
+    % Verificar fronteira para circulo interior
+    
+    
+    if (nx - 2000)^2 + ((ny - 0)^2) == 200^2
+        % Nó na fronteira circular interior
+        fr_interior =  [fr_interior; n_out(node,1)];
+    end
+    
+    % Verificar fronteira para os circulos exteriores
+
+    if (nx - 1300)^2 + (ny - 800)^2 == 300^2
+        % Nó na fronteira circular superior
+        fr_circulo1 = [fr_circulo1; n_out(node,1)];        
+    end
+
+    if (nx - 1300)^2 + (ny + 800)^2 == 300^2
+        % Nó na fronteira circular superior
+        fr_circulo2 = [fr_circulo2; n_out(node,1)];        
+    end
+
+    % Verificar fronteira para os elipses exteriores
+    aaa = ((nx - 2700)^2)/(1200^2);
+    aab = ((ny - 800)^2)/(600^2);
+    aac = aaa + aab;
+    x01 = (nx-2700)*cos(pi/2)+(ny-800)*sin(pi/2);
+    y01 = -(nx-2700)*sin(pi/2)+(ny-800)*cos(pi/2);
+
+    x02 = (nx-2700)*cos(pi/2)+(ny+800)*sin(pi/2);
+    y02 = -(nx-2700)*sin(pi/2)+(ny+800)*cos(pi/2);
+
+    dist1 = (((x01)^2)/(1200^2))+(((y01)^2)/(600^2));
+    dist2 = (((x02)^2)/(1200^2))+(((y02)^2)/(600^2));
+
+    if dist1 == 1
+        % Nó na fronteira elipsoidal superior
+        fr_elipse1 = [fr_elipse1; n_out(node,1)];
+    end
+
+    if dist2 == 1
+        % Nó na fronteira elipsoidal inferior
+        fr_elipse2 = [fr_elipse2; n_out(node,1)];
+    end
+    
+end
+
+k = boundary(n_out(:,2),n_out(:,3),0.9);
+fronteira=[x(k),y(k)];  
+%plot(fronteira(:,1), fronteira(:,2));
+
+fluxo_0=[];
+check1=[];
+check2=[];
+
+for i=1:1:length(k)
+    a = ismember(k(i),fr_direita);
+    if ismember(k(i),fr_direita) == 0
+
+        check1 = [check1;k(i)];
+    end
+    
+end
 
 
+for i=1:1:length(check1)
+
+    if ismember(check1(i),fr_esquerda) == 0
+
+        check2 = [check2;check1(i)];
+    end
+    
+end
+
+fluxo_0 = check2; % Pontos da fronteira com fluxo 0
 
 
 
@@ -275,7 +381,7 @@ writematrix('0', 'dados.txt','WriteMode', 'append');
 
 % Fecha o ficheiro dados.txt
 
-fclose(flux_file);
+%fclose(flux_file);
 fclose(dados);
 
 
