@@ -8,7 +8,7 @@ else
     n = size(Robin_Bound,1);
 
     for i=1:n
-        if EType ==33         
+        if EType ==3        
             % Número dos nós
             no1= Robin_Bound(i,2);
             no2= Robin_Bound(i,3);
@@ -27,7 +27,7 @@ else
             fg(no1) = fg(no1) + d*gama/2;
             fg(no2) = fg(no2) + d*gama/2;        
         
-        elseif EType == 36
+        elseif EType == 6
             % Número dos nós
             no1= Robin_Bound(i,2);
             no2= Robin_Bound(i,3);

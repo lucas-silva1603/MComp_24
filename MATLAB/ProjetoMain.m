@@ -24,9 +24,9 @@ clc
     % teste
 % -------------------------------------------------------------------------
 % Dados iniciais (Colocar dados aqui)
-EType = 33;
+EType = 6;
     % Tem solução exata? 0 - não, 1 - sim
-exact = 0;
+exact = 1;
 
     % Obter dados da malha e condicões fronteira
 % [x, y, elem, boundaries] = read(file);
@@ -42,21 +42,21 @@ v0 = 2;
 
 % -------------------------------------------------------------------------
 % teste tri 3
-if EType == 33
+if EType == 3
     x=[0 1 1 0 2 2 1]';
     y=[1 2 1 0 2 1 0]';
     
-    elem = [33 1 3 2 1; 33 3 1 4 1;33 5 2 3 1;33 4 7 3 1;33 6 3 7 1;33 3 6 5 1];
+    elem = [3 1 3 2 1; 3 3 1 4 1;33 5 2 3 1;3 4 7 3 1;3 6 3 7 1;3 3 6 5 1];
     Essential_Boundary = [1 2; 4 3];
     Neumann_Bound = [1 1 2 0; 3 2 3 0];
     Applied_Forces = 0;
     Robin_Bound = [1 5 6 1 1];  
 end
 % -------------------------------------------------------------------------
-if EType == 36
+if EType == 6
     x=[1 0.7071 0 -0.7071 -1 -0.7071 0 0.7071 0.5 0 -0.5 0 0]';
     y=[0 0.7071 1 0.7071 0 -0.7071 -1 -0.7071 0 0.5 0 -0.5 0]';
-    elem = [36 1 3 13 2 10 9 4;36 5 13 3 11 10 4 4;36 5 7 13 6 12 11 4;36 7 1 13 8 9 12 4];
+    elem = [6 1 3 13 2 10 9 4;6 5 13 3 11 10 4 4;6 5 7 13 6 12 11 4;6 7 1 13 8 9 12 4];
     
     Essential_Boundary = 0;
     % Essential_Boundary = zeros(8,2);
@@ -88,9 +88,9 @@ EType = elem(1,1);
     % Assume-se que todos os elementos são iguais
 
     % Matriz de conectividades
-if EType == 33
+if EType == 3
     Connectivity = zeros(Nelt,3);
-elseif EType == 36
+elseif EType == 6
     Connectivity = zeros(Nelt,6);
 end
 % -------------------------------------------------------------------------
@@ -164,7 +164,7 @@ p_min_location = (p==pmin);
 % -------------------------------------------------------------------------
     % Mudar a ordem conectividade para desenhar os gráficos para triângulos de
     % 6 nós
-if EType == 36
+if EType == 6
     Connectivity = [Connectivity(:,1) Connectivity(:,4)...
         Connectivity(:,2) Connectivity(:,5) Connectivity(:,3) Connectivity(:,6)]; 
 end
@@ -192,7 +192,7 @@ xlabel('X');
 ylabel('Y');
 
     % Desenho da malha
-if elem(1,1) == 33 
+if elem(1,1) == 3 
     triplot([elem(:,2),elem(:,3),elem(:,4)], x, y);hold on
 end
 

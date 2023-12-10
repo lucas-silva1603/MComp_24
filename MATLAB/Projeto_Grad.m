@@ -11,7 +11,7 @@ vm = zeros(1,n);
 for i=1:n
 
     % verificar tipo de elemento
-    if elem(i,1) == 33
+    if elem(i,1) == 3
         % 33 - Triangular de 3 nós
 
         no1 = elem(i,2);
@@ -45,7 +45,7 @@ for i=1:n
         um(i) = -(d1dx*u(no1)+d2dx*u(no2)+d3dx*u(no3));
         vm(i) = -(d1dy*u(no1)+d2dy*u(no2)+d3dy*u(no3));
 % -------------------------------------------------------------------------
-    elseif elem(i,1) == 36
+    elseif elem(i,1) == 6
         no1 = elem(i,2); 
         no2 = elem(i,3); 
         no3 = elem(i,4); 

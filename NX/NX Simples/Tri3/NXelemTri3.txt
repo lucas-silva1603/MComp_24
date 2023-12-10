@@ -1,0 +1,43 @@
+﻿Information listing created by	User
+Date	10-Dec-2023 21:16:12
+Current work part	C:\Users\User\Documents\GitHub\MComp_24\NX\NX Simples\Tri3\GeometriaSimples_Tri3_fem.fem
+Node name	DESKTOP-RF
+
+
+ 
+------------------------------------------------------------
+ 
+              ELEMENT INFORMATION
+ 
+------------------------------------------------------------
+ 
+ 
+ELEMENT INFORMATION
+  Label                | Element Type   | Mesh           | Mesh Collector | Connected Nodes
+  1                    | CTRIA3         | 2d_mesh(1)     | Thin Shell(1)  | 21 12 1
+  2                    | CTRIA3         | 2d_mesh(1)     | Thin Shell(1)  | 21 1 17
+  3                    | CTRIA3         | 2d_mesh(1)     | Thin Shell(1)  | 12 13 2
+  4                    | CTRIA3         | 2d_mesh(1)     | Thin Shell(1)  | 12 2 1
+  5                    | CTRIA3         | 2d_mesh(1)     | Thin Shell(1)  | 13 14 3
+  6                    | CTRIA3         | 2d_mesh(1)     | Thin Shell(1)  | 13 3 2
+  7                    | CTRIA3         | 2d_mesh(1)     | Thin Shell(1)  | 14 15 4
+  8                    | CTRIA3         | 2d_mesh(1)     | Thin Shell(1)  | 14 4 3
+  9                    | CTRIA3         | 2d_mesh(1)     | Thin Shell(1)  | 15 16 5
+  10                   | CTRIA3         | 2d_mesh(1)     | Thin Shell(1)  | 15 5 4
+  11                   | CTRIA3         | 2d_mesh(1)     | Thin Shell(1)  | 16 18 6
+  12                   | CTRIA3         | 2d_mesh(1)     | Thin Shell(1)  | 16 6 5
+  13                   | CTRIA3         | 2d_mesh(1)     | Thin Shell(1)  | 5 6 19
+  14                   | CTRIA3         | 2d_mesh(1)     | Thin Shell(1)  | 5 19 7
+  15                   | CTRIA3         | 2d_mesh(1)     | Thin Shell(1)  | 4 5 7
+  16                   | CTRIA3         | 2d_mesh(1)     | Thin Shell(1)  | 4 7 8
+  17                   | CTRIA3         | 2d_mesh(1)     | Thin Shell(1)  | 3 4 8
+  18                   | CTRIA3         | 2d_mesh(1)     | Thin Shell(1)  | 3 8 9
+  19                   | CTRIA3         | 2d_mesh(1)     | Thin Shell(1)  | 2 3 9
+  20                   | CTRIA3         | 2d_mesh(1)     | Thin Shell(1)  | 2 9 10
+  21                   | CTRIA3         | 2d_mesh(1)     | Thin Shell(1)  | 1 2 10
+  22                   | CTRIA3         | 2d_mesh(1)     | Thin Shell(1)  | 1 10 11
+  23                   | CTRIA3         | 2d_mesh(1)     | Thin Shell(1)  | 17 1 11
+  24                   | CTRIA3         | 2d_mesh(1)     | Thin Shell(1)  | 17 11 20
+ 
+------------------------------------------------------------
+ 

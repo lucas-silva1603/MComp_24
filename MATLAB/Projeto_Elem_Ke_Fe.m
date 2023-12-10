@@ -2,7 +2,7 @@ function [Ke, fe, edofs] = Projeto_Elem_Ke_Fe(x,y,elem,EType)
 % Função para calcular Matriz de Rigidez e vetor de forças
 
 % verificar tipo de elemento
-if EType == 33
+if EType == 3
     % Triângulo de 3 nós
 
     no1 = elem(2);
@@ -13,7 +13,7 @@ if EType == 33
     % Matriz de rigidez e vetor de forças do elemento
     [Ke, fe] = Elem_TRI (x(no1),y(no1),x(no2),y(no2),x(no3),y(no3),elem(end));  
  
-elseif EType == 36
+elseif EType == 6
     % Triângulo de 6 nós
 
     no1=elem(2);
