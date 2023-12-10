@@ -84,7 +84,20 @@
 # Fontes e carregamentos distribuidos
 0
 # Condições de fronteira essenciais
+0
 # Fontes/cargas pontuais impostas
 0
+# Fluxo imposto na fronteira
+10
+2,54,49,50,2
+3,31,32,36,0
+5,32,33,37,0
+7,33,34,38,0
+11,28,53,30,0
+12,53,40,44,0
+14,40,41,45,0
+16,41,42,46,0
+18,42,43,47,0
+20,49,55,51,2
 # Condições de fronteira mistas  - Convecção natural
 0
