@@ -1,58 +1,58 @@
 
-*** 01:53:50 *** 
+*** 02:05:56 *** 
 Iniciando Exportador Nastran
 
-*** 01:53:50 *** 
+*** 02:05:56 *** 
 Gravando arquivo 
 C:\Users\PC\Documents\MComp_24\Simulações\Refinamentos\T6\1º\geometria_final_sim_1º_ref-solution_2.dat
  
-*** 01:53:50 *** 
+*** 02:05:56 *** 
 Gravando deque compatível SIMCENTER NASTRAN 2212.0
 
-*** 01:53:50 *** 
+*** 02:05:56 *** 
 Gravando seção de sistema Nastran
 
-*** 01:53:50 *** 
+*** 02:05:56 *** 
 Gravando Seção de Gerenciamento de Arquivo 
 
-*** 01:53:50 *** 
+*** 02:05:56 *** 
 Gravando seção de Controle Executivo
 
-*** 01:53:50 *** 
+*** 02:05:56 *** 
 Gravando seção de Controle de Caso
 
-*** 01:53:50 *** 
+*** 02:05:56 *** 
 Gravando seção de Dados em Massa
 
-*** 01:53:50 *** 
+*** 02:05:56 *** 
 Gravando Nós
 
-*** 01:53:51 *** 
+*** 02:05:56 *** 
 Gravando Elementos
 
-*** 01:53:51 *** 
+*** 02:05:56 *** 
 AVISO: No thickness defined for mesh 2d_mesh(1). Thickness will be specified by 
        associated physical property.
  
-*** 01:53:51 *** 
+*** 02:05:56 *** 
 Gravando Propriedades Físicas
 
-*** 01:53:51 *** 
+*** 02:05:56 *** 
 Gravando Materiais
 
-*** 01:53:51 *** 
+*** 02:05:56 *** 
 Gravando Conjuntos de Grau de Liberdade
 
-*** 01:53:51 *** 
+*** 02:05:56 *** 
 Gravando Cargas e Restrições
 
-*** 01:53:51 *** 
+*** 02:05:56 *** 
 Gravando Sistemas de Coordenadas
 
-*** 01:53:51 *** 
+*** 02:05:56 *** 
 Validando configuração da solução
 
-*** 01:53:51 *** 
+*** 02:05:56 *** 
 Resumo de cartões de Dados em Massa gravados
 
 +----------+----------+
@@ -70,9 +70,9 @@ Resumo de cartões de Dados em Massa gravados
 | SPC      | 21       |
 +----------+----------+
 
-*** 01:53:51 *** 
+*** 02:05:56 *** 
 1 aviso emitido
 
-*** 01:53:51 *** 
+*** 02:05:56 *** 
 Plataforma Nastran gravada com sucesso
 

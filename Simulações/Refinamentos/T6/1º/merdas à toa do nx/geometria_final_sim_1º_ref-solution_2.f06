@@ -112,7 +112,7 @@
      $*                                                                              
      $*    SOLVER INPUT FILE: GEOMETRIA_FINAL_SIM_1º_REF-SOLUTION_2.DAT              
      $*        CREATION DATE: 10-DEC-2023                                            
-     $*        CREATION TIME: 01:53:50                                               
+     $*        CREATION TIME: 02:05:56                                               
      $*             HOSTNAME: HP                                                     
      $*      NASTRAN LICENSE: DESKTOP BUNDLE                                         
      $*                                                                              
@@ -333,7 +333,7 @@
 0                                                                                                                                   
 0                             N O N - L I N E A R   I T E R A T I O N   M O D U L E   O U T P U T
 
-     STIFFNESS UPDATE TIME          0.03 SECONDS                                                               SUBCASE        1
+     STIFFNESS UPDATE TIME          0.01 SECONDS                                                               SUBCASE        1
             ITERATION TIME          0.00 SECONDS                                                        LOAD FACTOR   1.0000000
 
                         - - - CONVERGENCE  FACTORS - - -                      - - - LINE SEARCH DATA - - -

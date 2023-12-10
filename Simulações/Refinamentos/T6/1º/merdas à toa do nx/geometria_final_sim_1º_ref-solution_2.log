@@ -18,8 +18,8 @@ symbol=DELDIR='c:/program files/siemens/nx2212/nxnastran/scnas/nast/del' $(progr
 symbol=DEMODIR='c:/program files/siemens/nx2212/nxnastran/scnas/nast/demo' $(program default)
 symbol=SSSALTERDIR='c:/program files/siemens/nx2212/nxnastran/scnas/nast/misc/sssalter' $(program default)
 symbol=TPLDIR='c:/program files/siemens/nx2212/nxnastran/scnas/nast/tpl' $(program default)
-SDIR='c:/users/pc/appdata/local/temp/geometria_final_sim_1º_ref-solution_2.T17236_51'
-DBS='c:/users/pc/appdata/local/temp/geometria_final_sim_1º_ref-solution_2.T17236_51'
+SDIR='c:/users/pc/appdata/local/temp/geometria_final_sim_1º_ref-solution_2.T9164_56'
+DBS='c:/users/pc/appdata/local/temp/geometria_final_sim_1º_ref-solution_2.T9164_56'
 SCR=yes
 SMEM=20.0X
 NEWDEL='c:/program files/siemens/nx2212/nxnastran/scnas/em64tntl/SSS'
@@ -45,9 +45,9 @@ FPE:         no
 --------------------------------------------------------------------------------------
 Current resource limits:
  Physical memory:                    16151 MB
- Physical memory available:           7615 MB
+ Physical memory available:           7754 MB
  Paging file size:                   18583 MB
- Paging file size available:          7828 MB
+ Paging file size available:          7837 MB
  Virtual memory:                 134217727 MB
  Virtual memory available:       134213569 MB
 --------------------------------------------------------------------------------------
@@ -68,21 +68,21 @@ System configuration:
  Disk block size:  512 bytes (64 words)
  Remote shell cmd: Remote capabilities not available.
 --------------------------------------------------------------------------------------
-Simcenter Nastran started  Sun Dec 10 01:53:51 HpdG 2023
- 01:53:51  Beginning Analysis
+Simcenter Nastran started  Sun Dec 10 02:05:56 HpdG 2023
+ 02:05:56  Beginning Analysis
 
- 01:53:51  Simcenter NASTRAN Authorization Information - System Attributes
- 01:53:51  --------------------------------------------------------
- 01:53:51  Model: 11th Gen Intel(R) Core(TM) i7-11
- 01:53:51  Machine: Intel64 Family 6 Model 140 Stepp
- 01:53:51  OS: Windows 10
- 01:53:51  Version:
- 01:53:51  License File(s): 29000@Ls.dem.tecnico.ulisboa.pt
+ 02:05:56  Simcenter NASTRAN Authorization Information - System Attributes
+ 02:05:56  --------------------------------------------------------
+ 02:05:56  Model: 11th Gen Intel(R) Core(TM) i7-11
+ 02:05:56  Machine: Intel64 Family 6 Model 140 Stepp
+ 02:05:56  OS: Windows 10
+ 02:05:56  Version:
+ 02:05:56  License File(s): 29000@Ls.dem.tecnico.ulisboa.pt
 
- 01:53:51  app set SALT_LICENSE_SERVER=29000@Ls.dem.tecnico.ulisboa.pt
- 01:53:51  Application specified server location: 29000@Ls.dem.tecnico.ulisboa.pt
+ 02:05:56  app set SALT_LICENSE_SERVER=29000@Ls.dem.tecnico.ulisboa.pt
+ 02:05:56  Application specified server location: 29000@Ls.dem.tecnico.ulisboa.pt
 
- 01:53:51  ************** License Server/File Information **************
+ 02:05:56  ************** License Server/File Information **************
 
   Server/File                      : 29000@Ls.dem.tecnico.ulisboa.pt
   License File Sold To / Install   : 1465437 - Instituto Superior Te
@@ -92,13 +92,13 @@ Simcenter Nastran started  Sun Dec 10 01:53:51 HpdG 2023
   Flexera Daemon Version           : 11.19
   Vendor Daemon Version            : 11.1 SALT v2.1.0.0
 
- 01:53:51  *************************************************************
+ 02:05:56  *************************************************************
 
 
- 01:53:51  **************** License Session Information ****************
+ 02:05:56  **************** License Session Information ****************
 
   Toolkit Version          : 1.4.5.0
- 01:53:51  Application specified server location: 29000@Ls.dem.tecnico.ulisboa.pt
+ 02:05:56  Application specified server location: 29000@Ls.dem.tecnico.ulisboa.pt
   Server Setting Used      : 29000@Ls.dem.tecnico.ulisboa.pt
   Server Setting Location  : Application Specific Location.
 
@@ -106,32 +106,32 @@ Simcenter Nastran started  Sun Dec 10 01:53:51 HpdG 2023
   Bundle [ 0 ] : ACD10
   Bundle [ 1 ] : ACD11
 
- 01:53:51  *************************************************************
+ 02:05:56  *************************************************************
 
 
- 01:53:51  Simcenter NASTRAN Authorization Information - Checkout Successful
- 01:53:51  -----------------------------------------------------------------
- 01:53:51  License for module Simcenter Nastran Basic - NX Desktop (Bundle)  checked out successfully
+ 02:05:57  Simcenter NASTRAN Authorization Information - Checkout Successful
+ 02:05:57  -----------------------------------------------------------------
+ 02:05:57  License for module Simcenter Nastran Basic - NX Desktop (Bundle)  checked out successfully
 
- 01:53:51  Loading Shared Library C:\Program Files\Siemens\NX2212\nxcae_extras\tmg\exe\mayamoncomm.dll
+ 02:05:57  Loading Shared Library C:\Program Files\Siemens\NX2212\nxcae_extras\tmg\exe\mayamoncomm.dll
 
 Starting viewer with UGII_MONITOR_DIR set to 'C:\Program Files\Siemens\NX2212\nxcae_extras\tmg\exe'
 Starting monitor viewer at C:\Program Files\Siemens\NX2212\nxcae_extras\tmg\exe/xcsmon_viewer.exe
- 01:53:51  Viewer API version is:    11
- 01:53:51  Viewer API minor version is:     6
- 01:53:51  Monitor Version Info: Simcenter 3D Simulation Control Monitor 2212.5 Feb 21 2023 (Version 2212.176114)
+ 02:05:57  Viewer API version is:    11
+ 02:05:57  Viewer API minor version is:     6
+ 02:05:57  Monitor Version Info: Simcenter 3D Simulation Control Monitor 2212.5 Feb 21 2023 (Version 2212.176114)
 
- 01:53:52  Analysis started.
- 01:53:52  Geometry access/verification to CAD part initiated (if needed).
- 01:53:52  Geometry access/verification to CAD part successfully completed (if needed).
- 01:53:52  Finite element model generation started.
- 01:53:52  Finite element model generated 1580 degrees of freedom.
- 01:53:52  Finite element model generation successfully completed.
- 01:53:52  Application of Loads and Boundary Conditions to the finite element model started.
- 01:53:52  Application of Loads and Boundary Conditions to the finite element model successfully completed.
- 01:53:57  NSEXIT: EXIT(0)
- 01:53:58  Analysis complete  0
-Real:        7.451 seconds ( 0:00:07.451)
-User:        0.109 seconds ( 0:00:00.109)
-Sys:         0.328 seconds ( 0:00:00.328)
-Simcenter Nastran finished Sun Dec 10 01:53:59 HpdG 2023
+ 02:05:57  Analysis started.
+ 02:05:57  Geometry access/verification to CAD part initiated (if needed).
+ 02:05:57  Geometry access/verification to CAD part successfully completed (if needed).
+ 02:05:57  Finite element model generation started.
+ 02:05:57  Finite element model generated 1580 degrees of freedom.
+ 02:05:57  Finite element model generation successfully completed.
+ 02:05:57  Application of Loads and Boundary Conditions to the finite element model started.
+ 02:05:57  Application of Loads and Boundary Conditions to the finite element model successfully completed.
+ 02:06:01  NSEXIT: EXIT(0)
+ 02:06:03  Analysis complete  0
+Real:        6.555 seconds ( 0:00:06.555)
+User:        0.078 seconds ( 0:00:00.078)
+Sys:         0.187 seconds ( 0:00:00.187)
+Simcenter Nastran finished Sun Dec 10 02:06:03 HpdG 2023
