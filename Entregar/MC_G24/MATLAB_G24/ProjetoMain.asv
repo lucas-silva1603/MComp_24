@@ -24,22 +24,62 @@ clc
     % teste
 % -------------------------------------------------------------------------
 % Dados iniciais (Colocar dados aqui)
-[x,y, elem, Essential_Boundary, Neumann_Bound,Applied_Forces, Robin_Bound] = import_txt(txt_f);
+[x,y, elementos, potencial, fluxo,forças pontuais, robin] = import_txt(txt_f)
 
 % Tem solução exata? 0 - não, 1 - sim
-exact = 0; 
+exact = 0;
+    
 
-% Dados para cálculo da pressão (Pascal)
-    % Pressão inicial(atmosférica)
+    
+
+    % Obter dados da malha e condicões fronteira
+% [x, y, elem, boundaries] = read(file);
+
+    % Dados para cálculo da pressão (Pascal)
+        % Pressão inicial(atmosférica)
 p0 = 101325;
-
-% Densidade do líquido
+        % Densidade do líquido
 ro = 1000;
-
-% Velocidade inicial
+        % Velocidade inicial
 % v0 = max(Neumann_Bound(:,end)); %obter velocidade de entrada
+v0 = 2;
 
 % -------------------------------------------------------------------------
+% teste tri 3
+if EType == 3
+    x=[0 1 1 0 2 2 1]';
+    y=[1 2 1 0 2 1 0]';
+    
+    elem = [3 1 3 2 1; 3 3 1 4 1;33 5 2 3 1;3 4 7 3 1;3 6 3 7 1;3 3 6 5 1];
+    Essential_Boundary = [1 2; 4 3];
+    Neumann_Bound = [1 1 2 0; 3 2 3 0];
+    Applied_Forces = 0;
+    Robin_Bound = [1 5 6 1 1];  
+end
+% -------------------------------------------------------------------------
+if EType == 6
+    x=[1 0.7071 0 -0.7071 -1 -0.7071 0 0.7071 0.5 0 -0.5 0 0]';
+    y=[0 0.7071 1 0.7071 0 -0.7071 -1 -0.7071 0 0.5 0 -0.5 0]';
+    elem = [6 1 3 13 2 10 9 4;6 5 13 3 11 10 4 4;6 5 7 13 6 12 11 4;6 7 1 13 8 9 12 4];
+    
+    Essential_Boundary = 0;
+    % Essential_Boundary = zeros(8,2);
+    % for i = 1:8
+    %     Essential_Boundary(i,1) = i;
+    % end
+    Neumann_Bound = 0;
+    Applied_Forces = 0;
+    p=100;
+    gama=-2;
+    Robin_Bound = [
+        1 1 2 3 gama p;
+        2 3 4 5 gama p; 
+        3 5 6 7 gama p; 
+        4 7 8 1 gama p;
+        ];
+end
+
+
 % -------------------------------------------------------------------------
     % Tipo de elemento
 EType = 6;   
