@@ -24,10 +24,11 @@ clc
     % teste
 % -------------------------------------------------------------------------
 % Dados iniciais (Colocar dados aqui)
-[x,y, elem, Essential_Boundary, Neumann_Bound,Applied_Forces, Robin_Bound] = import_txt(txt_f);
+[x,y, elem, Essential_Boundary, Neumann_Bound,Applied_Forces, Robin_Bound] = import_txt('dados.txt')
 
+elem = elem(:,3:end);
 % Tem solução exata? 0 - não, 1 - sim
-exact = 0; 
+exact = 1; 
 
 % Dados para cálculo da pressão (Pascal)
     % Pressão inicial(atmosférica)
@@ -37,12 +38,12 @@ p0 = 101325;
 ro = 1000;
 
 % Velocidade inicial
-% v0 = max(Neumann_Bound(:,end)); %obter velocidade de entrada
+v0 = max(Neumann_Bound(:,end)); %obter velocidade de entrada
 
 % -------------------------------------------------------------------------
 % -------------------------------------------------------------------------
     % Tipo de elemento
-EType = 6;   
+EType = elem(1,1);   
     % Número de nós
 Nnds = size(x,1); 
 

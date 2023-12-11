@@ -5,6 +5,11 @@ if Neumann_Bound == 0
     % Se não houver condições de fronteira deste tipo passar
 else
     % Número de condições de Neumann
+    % Filtar fluxo nulos
+    Different0 = Neumann_Bound(:, end) ~= 0;
+
+    Neumann_Bound = Neumann_Bound(Different0, :);
+
     n = size(Neumann_Bound,1);
     
     for i=1:n
