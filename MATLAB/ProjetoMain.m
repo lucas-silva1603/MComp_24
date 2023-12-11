@@ -136,6 +136,31 @@ fr= fg;
 
 % Obter solução do potencial
 u=Kr\fr;
+<<<<<<< HEAD
+
+% -------------------------------------------------------------------------
+% Representação dos resultados
+% -------------------------------------------------------------------------
+    % Representação potencial
+figure(1);
+title('Potencial em 2D');
+xlabel('X');
+ylabel('Y');
+colorbar;  % Legenda de cor
+
+% Mudar a ordem conectividade para desenhar os gráficos
+if EType == 36
+    Connectivity = [Connectivity(:,1) Connectivity(:,4) Connectivity(:,2) Connectivity(:,5) Connectivity(:,3) Connectivity(:,6)]; 
+end
+
+patch('Faces', Connectivity, 'Vertices', [x,y], 'FaceVertexCData', u, 'FaceColor', 'interp', 'EdgeColor', 'k');hold;
+plot(x,y,'ro');
+
+
+% -------------------------------------------------------------------------
+    % Representação gradiente
+=======
+>>>>>>> d493a4fb53a4580310fedafa541c1b3f5271f37d
 
 % Obter componentes das velocidades nos centroides
 [xm,ym,um,vm] = Projeto_Grad(x,y,elem,u);

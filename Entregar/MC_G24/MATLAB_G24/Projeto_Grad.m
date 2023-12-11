@@ -42,8 +42,8 @@ for i=1:n
         d3dy = (x2-x1)/Ae2;
     
         % Interpolacao e derivadas
-        um(i) = -(d1dx*u(no1)+d2dx*u(no2)+d3dx*u(no3))/1000;
-        vm(i) = -(d1dy*u(no1)+d2dy*u(no2)+d3dy*u(no3))/1000;
+        um(i) = -(d1dx*u(no1)+d2dx*u(no2)+d3dx*u(no3));
+        vm(i) = -(d1dy*u(no1)+d2dy*u(no2)+d3dy*u(no3));
 % -------------------------------------------------------------------------
     elseif elem(i,1) == 6
         no1 = elem(i,2); 
@@ -64,7 +64,7 @@ for i=1:n
         
         xpint = XN'*psi ; 
         gradu = B'*u(edofs); 
-        fluxu = -gradu/1000; 
+        fluxu = -gradu; 
         
         xm(i) = xpint(1);
         ym(i) = xpint(2);

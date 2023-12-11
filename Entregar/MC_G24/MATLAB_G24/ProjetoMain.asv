@@ -24,8 +24,7 @@ clc
     % teste
 % -------------------------------------------------------------------------
 % Dados iniciais (Colocar dados aqui)
-[x,y, elem, Essential_Boundary, Neumann_Bound,Applied_Forces, Robin_Bound] = ...
-import_txt('dadosTri3Simples.txt');
+[x,y, elem, Essential_Boundary, Neumann_Bound,Applied_Forces, Robin_Bound] = import_txt('dadosTri6Base.txt');
 
 elem = elem(:,3:end);
 % Tem solução exata? 0 - não, 1 - sim
@@ -213,9 +212,9 @@ disp(['Velocidade mínima: ', num2str(vmin), ' em: (', ...
     num2str(xm(v_min_location)), ', ', num2str(ym(v_min_location)), ')']);
 disp(' ')
 
-disp(['Pressão máxima: ', num2str(pmax/100000), ' bar em: (', ...
+disp(['Pressão máxima: ', num2str(pmax), ' em: (', ...
     num2str(xm(p_max_location)), ', ', num2str(ym(p_max_location)), ')']);
-disp(['Pressão mínima: ', num2str(pmin/100000), ' bar em: (', ...
+disp(['Pressão mínima: ', num2str(pmin), ' em: (', ...
     num2str(xm(p_min_location)), ', ', num2str(ym(p_min_location)), ')']);
 disp(' ')
 
@@ -245,7 +244,7 @@ if exact == 1
     erru = abs(u - uex);
     erru_max = max(erru); %Erro absoluto máximo
     erru_max_location = (erru == erru_max);% Localização erro absoluto máximo
-    erru_rel_max = (erru_max/uex(erru_max_location))*100;% Erro relativo
+    erru_rel_max = erru_max/uex(erru_max_location)*100;% Erro relativo
     
     % Representar erro em 3D
     figure(5)
@@ -287,7 +286,7 @@ if exact == 1
     disp(['Erro relativo máximo de velocidade: ', num2str(errgrad_rel_max), '%']);
     disp(' ')
 
-    disp(['Erro absoluto máximo de pressão(bar): ', num2str(errp_max/100000)]);
+    disp(['Erro absoluto máximo de pressão: ', num2str(errp_max)]);
     disp(['Erro relativo máximo de pressão: ', num2str(errp_max_rel), '%']);
 end
 

@@ -17,7 +17,7 @@ else
             % Número dos nó com fluxo imposto
             no1= Neumann_Bound(i,2);
             no2= Neumann_Bound(i,3);
-            d = distance([x(no1),y(no1)], ...
+            d = distanceCalc([x(no1),y(no1)], ...
         [x(no2),y(no2)]);
         
             % Fluxo(gamma)
@@ -49,3 +49,8 @@ else
 
 end % Fim da condição
 end % Fim da função
+
+function [distance] = distanceCalc(p1,p2)
+    distance = sqrt((p1(1)-p2(1))^2+(p1(2)-p2(2))^2);
+
+end
