@@ -1,4 +1,4 @@
-function [nos, elementos, potencial, fluxo] = importfile(txt_f)
+function [x,y, elementos, potencial, fluxo] = import_txt(txt_f)
 
 % -----------
 % Import File
@@ -46,8 +46,8 @@ nos_raw = nos_raw';
 % -------------------------------
 nos = str2double(split(nos_raw));
 no_number = nos(:,1);
-x = nos(:,2);
-y = nos(:,3);
+x = nos(:,2)/1000;
+y = nos(:,3)/1000;
 % -------------------------------
 
 

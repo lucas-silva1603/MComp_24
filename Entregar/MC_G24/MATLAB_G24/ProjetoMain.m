@@ -6,7 +6,7 @@ clc
 % Dados
 
     % Ler o ficheiro da malha:
-% [x, y, elem, boundaries] = read(file);
+% [x,y, elementos, potencial, fluxo] = import_txt(txt_f)
     % x - Coordenada x dos nós
     % y - Coordenada y do nós
     % 
