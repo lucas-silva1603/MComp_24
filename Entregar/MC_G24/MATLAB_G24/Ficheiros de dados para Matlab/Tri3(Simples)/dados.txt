@@ -57,7 +57,7 @@
 3
 17 0
 20 0
-20 0
+21 0
 # Fontes/cargas pontuais impostas
 0
 # Fluxo imposto na fronteira
