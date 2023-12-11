@@ -112,7 +112,7 @@
      $*                                                                              
      $*    SOLVER INPUT FILE: GEOMETRIA_INTEIRA_SIM2-SOLUTION_1.DAT                  
      $*        CREATION DATE: 11-DEC-2023                                            
-     $*        CREATION TIME: 16:56:02                                               
+     $*        CREATION TIME: 22:13:55                                               
      $*             HOSTNAME: HP                                                     
      $*      NASTRAN LICENSE: DESKTOP BUNDLE                                         
      $*                                                                              
@@ -184,17 +184,17 @@
                  24      $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                   
                  25      $*                                                                                      
                  26      BEGIN BULK                                                                              
-0                             INPUT BULK DATA ENTRY COUNT =        3853
-0                       TOTAL COUNT=      3825
+0                             INPUT BULK DATA ENTRY COUNT =         963
+0                       TOTAL COUNT=       935
 
 
                                         M O D E L   S U M M A R Y
 
-                                   NUMBER OF GRID     POINTS   =     1496
+                                   NUMBER OF GRID     POINTS   =      231
  
  
-                                   NUMBER OF CHBDYE   ELEMENTS =      110
-                                   NUMBER OF CTRIA6   ELEMENTS =      688
+                                   NUMBER OF CHBDYE   ELEMENTS =       74
+                                   NUMBER OF CTRIA3   ELEMENTS =      378
  
  *** USER INFORMATION MESSAGE 4109 (OUTPBN2)
      THE LABEL IS NX2212.5 FOR FORTRAN UNIT 12
@@ -212,8 +212,8 @@
                     101                 1                 0                 0                 0                 0                 0
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
      (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       20 WORDS.)
-     (NUMBER OF FORTRAN RECORDS WRITTEN =    19274 RECORDS.)
-     (TOTAL DATA WRITTEN FOR DATA BLOCK =    92471 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =     4824 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =    23111 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK ICASE    WRITTEN ON FORTRAN UNIT  12, TRL =
                     102                28                 0                 0                 0                 0                 0
@@ -237,18 +237,18 @@
      (TOTAL DATA WRITTEN FOR DATA BLOCK =       50 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK GPL      WRITTEN ON FORTRAN UNIT  12, TRL =
-                    101              1496              1496                 0                 0                 0                 0
+                    101               231               231                 0                 0                 0                 0
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
-     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     2992 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      462 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
-     (TOTAL DATA WRITTEN FOR DATA BLOCK =     4519 WORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =      724 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK GPDT     WRITTEN ON FORTRAN UNIT  12, TRL =
-                    102              1496                 7                 0                 1                 0                 0
+                    102               231                 7                 0                 1                 0                 0
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
-     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    14960 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     2310 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =       19 RECORDS.)
-     (TOTAL DATA WRITTEN FOR DATA BLOCK =    14986 WORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =     2336 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK EPT      WRITTEN ON FORTRAN UNIT  12, TRL =
                     101                 0               512                 0                 0                 0                 0
@@ -271,46 +271,46 @@
      (TOTAL DATA WRITTEN FOR DATA BLOCK =       73 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK GEOM2    WRITTEN ON FORTRAN UNIT  12, TRL =
-                    101                 0                 0                 1                 0                 0              8192
+                    101                 0                 0                 0                32                 0              8192
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
-     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     9635 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     4917 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =       29 RECORDS.)
-     (TOTAL DATA WRITTEN FOR DATA BLOCK =    10445 WORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =     5475 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK GEOM3    WRITTEN ON FORTRAN UNIT  12, TRL =
                     102                 0              2048                 0                 8                 0                 0
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
-     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      443 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      299 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =       29 RECORDS.)
-     (TOTAL DATA WRITTEN FOR DATA BLOCK =      491 WORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =      347 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK GEOM4    WRITTEN ON FORTRAN UNIT  12, TRL =
                     103                 0                 0                 0               512                 0                 0
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
-     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       87 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       31 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
-     (TOTAL DATA WRITTEN FOR DATA BLOCK =      120 WORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =       64 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK GEOM1    WRITTEN ON FORTRAN UNIT  12, TRL =
                     104                 0                 0                 8                 0                 0                 0
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
-     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    16459 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     2544 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
-     (TOTAL DATA WRITTEN FOR DATA BLOCK =    16492 WORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =     2577 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK BGPDT    WRITTEN ON FORTRAN UNIT  12, TRL =
-                    105              1496                 0              1496                 1                 0              1496
+                    105               231                 0               231                 1                 0               231
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
-     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    17952 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     2772 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
-     (TOTAL DATA WRITTEN FOR DATA BLOCK =    20974 WORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =     3264 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK EQEXIN   WRITTEN ON FORTRAN UNIT  12, TRL =
-                    101              1496                 0                 0                 0                 0                 0
+                    101               231                 0                 0                 0                 0                 0
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
-     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     2992 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      462 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
-     (TOTAL DATA WRITTEN FOR DATA BLOCK =     6014 WORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =      954 WORDS.)
  ^^^ USER INFORMATION MESSAGE 9048 (NLSTATIC)    
 1                                                                          DECEMBER  11, 2023  SIMCENTER NASTRAN  2/14/23   PAGE     6
                                                                                                                                     
@@ -333,13 +333,13 @@
 0                                                                                                                                   
 0                             N O N - L I N E A R   I T E R A T I O N   M O D U L E   O U T P U T
 
-     STIFFNESS UPDATE TIME          0.02 SECONDS                                                               SUBCASE        1
+     STIFFNESS UPDATE TIME          0.01 SECONDS                                                               SUBCASE        1
             ITERATION TIME          0.00 SECONDS                                                        LOAD FACTOR   1.0000000
 
                         - - - CONVERGENCE  FACTORS - - -                      - - - LINE SEARCH DATA - - -
 0ITERATION      EUI         EPI         EWI      LAMBDA       DLMAG       FACTOR     E-FIRST     E-FINAL   NQNV  NLS  ENIC  NDV  MDV
 
-         1  9.9000E+01  1.5443E-12  1.5443E-12  1.0000E-01  4.5654E-12  1.0000E+00  1.2947E-14  1.2947E-14    0    0     0    0    1
+         1  9.9000E+01  1.4626E-13  1.4626E-13  1.0000E-01  2.8953E-12  1.0000E+00  2.2093E-15  2.2093E-15    0    0     0    0    1
  *** USER INFORMATION MESSAGE 6186 (NCONVG)
      *** SOLUTION HAS CONVERGED ***
          SUBID    1     LOOPID    1     LOAD STEP    1.000     LOAD FACTOR 1.00000000
@@ -352,18 +352,18 @@
  ^^^     
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK TOUGV1   WRITTEN ON FORTRAN UNIT  12, TRL =
-                    101                 0             11968                11                23                 0                 1
+                    101                 0              1848                11                23                 0                 1
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
-     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    11968 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     1848 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
-     (TOTAL DATA WRITTEN FOR DATA BLOCK =    12149 WORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =     2029 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK HOEF1    WRITTEN ON FORTRAN UNIT  12, TRL =
                     101                63                12                11                23                 0                 1
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
-     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     6192 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     3402 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =       34 RECORDS.)
-     (TOTAL DATA WRITTEN FOR DATA BLOCK =     7402 WORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =     4324 WORDS.)
 1                                                                          DECEMBER  11, 2023  SIMCENTER NASTRAN  2/14/23   PAGE     9
                                                                                                                                     
 0                                                                                                                                   
@@ -374,9 +374,9 @@
      DATA BLOCK OEF1X    WRITTEN ON FORTRAN UNIT  12, TRL =
                     101               101                 0                 0                 0                 0                 0
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
-     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     6192 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     3402 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =       34 RECORDS.)
-     (TOTAL DATA WRITTEN FOR DATA BLOCK =     7402 WORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =     4324 WORDS.)
  *** USER INFORMATION MESSAGE 4110 (OUTPBN2)
                                  END-OF-DATA SIMULATION ON FORTRAN UNIT 12
                                  (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      1 WORDS.)
