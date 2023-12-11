@@ -1,0 +1,78 @@
+
+*** 17:43:11 *** 
+Iniciando Exportador Nastran
+
+*** 17:43:11 *** 
+Gravando arquivo 
+C:\Users\PC\Documents\MComp_24\NX\geometria_finalsim_sim3-solution_1.dat
+ 
+*** 17:43:11 *** 
+Gravando deque compatível SIMCENTER NASTRAN 2212.0
+
+*** 17:43:11 *** 
+Gravando seção de sistema Nastran
+
+*** 17:43:11 *** 
+Gravando Seção de Gerenciamento de Arquivo 
+
+*** 17:43:11 *** 
+Gravando seção de Controle Executivo
+
+*** 17:43:11 *** 
+Gravando seção de Controle de Caso
+
+*** 17:43:11 *** 
+Gravando seção de Dados em Massa
+
+*** 17:43:11 *** 
+Gravando Nós
+
+*** 17:43:11 *** 
+Gravando Elementos
+
+*** 17:43:11 *** 
+AVISO: No thickness defined for mesh 2d_mesh(1). Thickness will be specified by 
+       associated physical property.
+ 
+*** 17:43:11 *** 
+Gravando Propriedades Físicas
+
+*** 17:43:11 *** 
+Gravando Materiais
+
+*** 17:43:11 *** 
+Gravando Conjuntos de Grau de Liberdade
+
+*** 17:43:11 *** 
+Gravando Cargas e Restrições
+
+*** 17:43:11 *** 
+Gravando Sistemas de Coordenadas
+
+*** 17:43:11 *** 
+Validando configuração da solução
+
+*** 17:43:11 *** 
+Resumo de cartões de Dados em Massa gravados
+
++----------+----------+
+|   NAME   |  NUMBER  |
++----------+----------+
+| CHBDYE   | 30       |
+| CTRIA6   | 52       |
+| GRID     | 137      |
+| LOAD     | 1        |
+| MAT4     | 1        |
+| NLPARM   | 1        |
+| PARAM    | 5        |
+| PSHELL   | 1        |
+| QBDY3    | 2        |
+| SPC      | 5        |
++----------+----------+
+
+*** 17:43:11 *** 
+1 aviso emitido
+
+*** 17:43:11 *** 
+Plataforma Nastran gravada com sucesso
+

@@ -1,0 +1,54 @@
+k=boundary(coordout(:,2),coordout(:,3),0.75);
+
+%{
+figure
+k=boundary(coordout(:,2),coordout(:,3),0.75);
+fronteira=[coordx(k),coordy(k)];
+plot(fronteira(:,1),fronteira(:,2))
+%}
+
+bord_supinf = [];
+bord_esquerda = [];
+bord_direita = [];
+
+for i=1:length(coordx)
+
+    if (coordx(i) == 4400) && ~((coordy(i) == 0  coordy(i) == 1500  ))
+        bord_supinf = [bord_supinf,i];
+    end
+
+    if (coordx(i) == 0) && ~((coordy(i) == 0  coordy(i) == 1500  ))
+        bord_supinf = [bord_supinf,i];
+    end
+end
+
+for i=1:length(coordx)
+
+    if coordx(i) == 4400
+        bord_direita = [bord_direita;i,coordy(i)];
+    end
+
+    if coordx(i) == 0
+        bord_esquerda = [bord_esquerda;i,coordy(i)];
+    end
+end
+
+bord_esquerda = sortrows(bord_esquerda,2);
+bord_direita = sortrows(bord_direita,2);
+
+front_essencial = [];
+for i=1:length(k)
+
+    if 0 == ismember(k(i), bord_supinf)
+        front_essencial = [front_essencial, k(i)];
+    end
+end
+front_sup = [];
+front_inf = [];
+for i=1:length(front_essencial)
+    if coordy(front_essencial(i)) > 750
+        front_sup = [front_sup, front_essencial(i)];
+    else
+        front_inf = [front_inf, front_essencial(i)];
+    end
+end
