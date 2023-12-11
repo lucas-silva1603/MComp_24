@@ -324,25 +324,19 @@ if element_type(1,1) == 3
         n02=el_out(el, 5);
         n03=el_out(el, 6);
         nf=[];
-        counter=0;
 
         if ismember(n01, fr_esquerda) == true
             nf=cat(1,nf, n01);
-            counter= counter +1;
         end
         if ismember(n02, fr_esquerda) == true
             nf=cat(1,nf, n02);
-            counter= counter +1;
         end
         if ismember(n03, fr_esquerda) == true
             nf=cat(1,nf, n03);
-            counter= counter +1;
         end
-        
-        if counter ==2
-            elemento_nos = (cat(1,el, nf))';
-            fe = [fe; elemento_nos];
-        end
+
+        elemento_nos = (cat(1,el, nf))';
+        fe = [fe; elemento_nos];
 
     end
     
@@ -415,10 +409,9 @@ elseif element_type(1,1) == 6
             counter= counter +1;
         end
         
-        if counter == 3
-            elemento_nos = (cat(1,el, nf))';
-            fe = [fe; elemento_nos];
-        end
+        
+        elemento_nos = (cat(1,el, nf))';
+        fe = [fe; elemento_nos];
         
     end
 
@@ -471,7 +464,7 @@ end
 % Aplica fluxo imposto
 
 fluxo=[];
-for i=1:1:size(fe,1)
+for i=1:1:length(el_f_esq)
     fluxo=[fluxo; 2];
 end
 
