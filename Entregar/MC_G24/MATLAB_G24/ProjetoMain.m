@@ -25,7 +25,7 @@ clc
 % -------------------------------------------------------------------------
 % Dados iniciais (Colocar dados aqui)
 [x,y, elem, Essential_Boundary, Neumann_Bound,Applied_Forces, Robin_Bound] = ...
-import_txt('dadosTri3Simples.txt');
+import_txt('dadosTri6Simples.txt');
 
 elem = elem(:,3:end);
 % Tem solução exata? 0 - não, 1 - sim

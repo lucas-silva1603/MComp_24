@@ -73,11 +73,19 @@ if size(Border,2)==4
             
 elseif size(Border,2) == 5
     % Caso elemento quadrático
+distance1 = distanceCalc([x(Border(2)),y(Border(2))], ...
+    [x(Border(3)),y(Border(3))]);
 
-Area = distanceCalc([x(Border(2)),y(Border(2))], ...
-    [x(Border(3)),y(Border(3))]) + ...
-    distanceCalc([x(Border(4)),y(Border(4))], ...
-    [x(Border(3)),y(Border(3))]);           
+distance2 = distanceCalc([x(Border(2)),y(Border(2))], ...
+    [x(Border(4)),y(Border(4))]); 
+
+distance3 = distanceCalc([x(Border(3)),y(Border(3))], ...
+    [x(Border(4)),y(Border(4))]); 
+
+
+d = sort([distance1,distance2,distance3]); 
+Area = d(1) + d(2);
+
 end
 
     % Area neste caso é o comprimento da linha do elemento em contacto com a 
