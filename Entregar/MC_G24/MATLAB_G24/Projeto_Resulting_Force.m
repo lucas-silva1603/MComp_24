@@ -10,6 +10,7 @@ Only_Borders = Neumann_Bound(:, end) == 0;
 Borders = Neumann_Bound(Only_Borders, :);
 
 Number_of_el_walls = size(Borders,1);
+display(Borders);
 
 if isequal(Neumann_Bound,0)
     % Se não houver condições Neuman sair da função

@@ -4,7 +4,7 @@ function [Kr, fr] = Projeto_Essential_Bound(Kr,fr,Essential_Boundary)
 if Essential_Boundary == 0
     % Se não houver condições de fronteira deste tipo passar
 else
-    boom = 1.0e+16;
+    boom = 1.0e+10;
     
     % Número de condições essenciais
     n = size(Essential_Boundary,1);

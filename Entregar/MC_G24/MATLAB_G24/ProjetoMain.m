@@ -24,11 +24,11 @@ clc
     % teste
 % -------------------------------------------------------------------------
 % Dados iniciais (Colocar dados aqui)
-[x,y, elem, Essential_Boundary, Neumann_Bound,Applied_Forces, Robin_Bound] = import_txt('dados.txt')
+[x,y, elem, Essential_Boundary, Neumann_Bound,Applied_Forces, Robin_Bound] = import_txt('dadosTri3Simples.txt');
 
 elem = elem(:,3:end);
 % Tem solução exata? 0 - não, 1 - sim
-exact = 1; 
+exact = 0; 
 
 % Dados para cálculo da pressão (Pascal)
     % Pressão inicial(atmosférica)

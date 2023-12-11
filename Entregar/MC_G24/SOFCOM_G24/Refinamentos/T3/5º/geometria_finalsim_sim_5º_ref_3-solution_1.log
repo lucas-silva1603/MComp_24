@@ -1,0 +1,137 @@
+Simcenter Nastran 2212.5000 (Intel64 Family 6 Model 140 Stepping 1 Windows 10) Control File:
+--------------------------------------------------------------------------------------
+Nastran BUFFSIZE=32769 $(c:/program files/siemens/nx2212/nxnastran/conf/nastran.rcf[1])
+Nastran BUFFPOOL=20.0X $(c:/program files/siemens/nx2212/nxnastran/conf/nastran.rcf[4])
+Nastran DIAGA=128 DIAGB=0 $(c:/program files/siemens/nx2212/nxnastran/conf/nastran.rcf[8])
+Nastran SYSTEM(442)=2 $(command line[5])
+Nastran REAL=2115371008 $(Memory limit for MPI and other specialized modules)
+JID='C:\Users\PC\Documents\MComp_24\Simulações\Refinamentos\T3\5º\geometria_finalsim_sim_5º_ref_3-solution_1.dat'
+OUT='./geometria_finalsim_sim_5º_ref_3-solution_1'
+MEM=952624128
+MACH='Intel64 Family 6 Model 140 Stepping 1'
+OPER='Windows 10'
+OSV=' '
+MODEL='11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz (HP)'
+CONFIG=8666
+NPROC=8
+symbol=DELDIR='c:/program files/siemens/nx2212/nxnastran/scnas/nast/del' $(program default)
+symbol=DEMODIR='c:/program files/siemens/nx2212/nxnastran/scnas/nast/demo' $(program default)
+symbol=SSSALTERDIR='c:/program files/siemens/nx2212/nxnastran/scnas/nast/misc/sssalter' $(program default)
+symbol=TPLDIR='c:/program files/siemens/nx2212/nxnastran/scnas/nast/tpl' $(program default)
+SDIR='c:/users/pc/appdata/local/temp/geometria_finalsim_sim_5º_ref_3-solution_1.T14056_36'
+DBS='c:/users/pc/appdata/local/temp/geometria_finalsim_sim_5º_ref_3-solution_1.T14056_36'
+SCR=yes
+SMEM=20.0X
+NEWDEL='c:/program files/siemens/nx2212/nxnastran/scnas/em64tntl/SSS'
+DEL='NXNDEF'
+AUTH='29000@Ls.dem.tecnico.ulisboa.pt'
+AUTHQUE=0
+MSGCAT='c:/program files/siemens/nx2212/nxnastran/scnas/em64tntl/analysis.msg'
+MSGDEST='f06'
+PROG=bundle
+NEWS='c:/program files/siemens/nx2212/nxnastran/scnas/nast/news.txt'
+UMATLIB='libnxumat.dll'
+UCRPLIB='libucreep.dll'
+USOLLIB='libusol.dll'
+--------------------------------------------------------------------------------------
+NXN_ISHELLPATH=C:\Program Files\Siemens\NX2212\nxnastran\bin
+NXN_JIDPATH=
+PATH=c:/program files/siemens/nx2212/nxnastran/scnas/em64tntl;c:/program files/siemens/nx2212/nxnastran/scnas/em64tntl/sysnoise;c:/program files/siemens/nx2212/nxnastran/scnas/em64tntl/softwareanalytics;c:/program files/siemens/nx2212/nxnastran/scnas/em64tntl/samcef;c:/program files/siemens/nx2212/nxnastran/scnas/em64tntl/impi/bin;c:/program files/siemens/nx2212/nxnastran/scnas/em64tntl/monitor;C:\Program Files\Siemens\NX2212\nxbin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Siemens\NX2212\CAPITALINTEGRATION\capitalnxremote\;C:\Users\PC\AppData\Local\Microsoft\WindowsApps;C:\Users\PC\AppData\Local\GitHubDesktop\bin
+Command Line: geometria_finalsim_sim_5º_ref_3-solution_1.dat prog=bundle old=no scratch=yes sys442=2
+Current Dir: C:\Users\PC\Documents\MComp_24\Simulações\Refinamentos\T3\5º
+Executable:  c:/program files/siemens/nx2212/nxnastran/scnas/em64tntl/analysis.exe
+NXN_MSG:     stderr
+FPE:         no
+--------------------------------------------------------------------------------------
+Current resource limits:
+ Physical memory:                    16151 MB
+ Physical memory available:           8145 MB
+ Paging file size:                   18583 MB
+ Paging file size available:          8376 MB
+ Virtual memory:                 134217727 MB
+ Virtual memory available:       134213560 MB
+--------------------------------------------------------------------------------------
+System configuration:
+ Hostname:         HP
+ Architecture:     em64tnt
+ Platform:         Intel64 Family 6 Model 140 Stepping 1 Windows 10  
+ Model:            11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+ Clock freq.:      1690 MHz
+ Number of CPUs:   8
+ Executable:       standard
+ Raw model ID:     8666
+ Config number:    8666
+ Physical memory:  16151 MB
+ Virtual memory:   18583 MB
+ Numeric format:   64-bit little-endian IEEE.
+ Bytes per word:   8
+ Disk block size:  512 bytes (64 words)
+ Remote shell cmd: Remote capabilities not available.
+--------------------------------------------------------------------------------------
+Simcenter Nastran started  Sun Dec 10 23:21:36 HpdG 2023
+ 23:21:36  Beginning Analysis
+
+ 23:21:36  Simcenter NASTRAN Authorization Information - System Attributes
+ 23:21:36  --------------------------------------------------------
+ 23:21:36  Model: 11th Gen Intel(R) Core(TM) i7-11
+ 23:21:36  Machine: Intel64 Family 6 Model 140 Stepp
+ 23:21:36  OS: Windows 10
+ 23:21:36  Version:
+ 23:21:36  License File(s): 29000@Ls.dem.tecnico.ulisboa.pt
+
+ 23:21:36  app set SALT_LICENSE_SERVER=29000@Ls.dem.tecnico.ulisboa.pt
+ 23:21:36  Application specified server location: 29000@Ls.dem.tecnico.ulisboa.pt
+
+ 23:21:36  ************** License Server/File Information **************
+
+  Server/File                      : 29000@Ls.dem.tecnico.ulisboa.pt
+  License File Sold To / Install   : 1465437 - Instituto Superior Te
+  License File Webkey Access Code  : 8M201A2GP2
+  License File Issuer              : SIEMENS
+  License File Type                : No Type
+  Flexera Daemon Version           : 11.19
+  Vendor Daemon Version            : 11.1 SALT v2.1.0.0
+
+ 23:21:36  *************************************************************
+
+
+ 23:21:36  **************** License Session Information ****************
+
+  Toolkit Version          : 1.4.5.0
+ 23:21:36  Application specified server location: 29000@Ls.dem.tecnico.ulisboa.pt
+  Server Setting Used      : 29000@Ls.dem.tecnico.ulisboa.pt
+  Server Setting Location  : Application Specific Location.
+
+  Number of bundles in use : 2
+  Bundle [ 0 ] : ACD10
+  Bundle [ 1 ] : ACD11
+
+ 23:21:36  *************************************************************
+
+
+ 23:21:36  Simcenter NASTRAN Authorization Information - Checkout Successful
+ 23:21:36  -----------------------------------------------------------------
+ 23:21:36  License for module Simcenter Nastran Basic - NX Desktop (Bundle)  checked out successfully
+
+ 23:21:36  Loading Shared Library C:\Program Files\Siemens\NX2212\nxcae_extras\tmg\exe\mayamoncomm.dll
+
+Starting viewer with UGII_MONITOR_DIR set to 'C:\Program Files\Siemens\NX2212\nxcae_extras\tmg\exe'
+Starting monitor viewer at C:\Program Files\Siemens\NX2212\nxcae_extras\tmg\exe/xcsmon_viewer.exe
+ 23:21:36  Viewer API version is:    11
+ 23:21:36  Viewer API minor version is:     6
+ 23:21:36  Monitor Version Info: Simcenter 3D Simulation Control Monitor 2212.5 Feb 21 2023 (Version 2212.176114)
+
+ 23:21:37  Analysis started.
+ 23:21:37  Geometry access/verification to CAD part initiated (if needed).
+ 23:21:37  Geometry access/verification to CAD part successfully completed (if needed).
+ 23:21:37  Finite element model generation started.
+ 23:21:37  Finite element model generated 19255 degrees of freedom.
+ 23:21:37  Finite element model generation successfully completed.
+ 23:21:37  Application of Loads and Boundary Conditions to the finite element model started.
+ 23:21:37  Application of Loads and Boundary Conditions to the finite element model successfully completed.
+ 23:21:41  NSEXIT: EXIT(0)
+ 23:21:42  Analysis complete  0
+Real:        6.727 seconds ( 0:00:06.727)
+User:        0.890 seconds ( 0:00:00.890)
+Sys:         0.343 seconds ( 0:00:00.343)
+Simcenter Nastran finished Sun Dec 10 23:21:43 HpdG 2023

@@ -28,13 +28,13 @@ else
 
         elseif EType == 6
             % Número dos nós
-            no1= Robin_Bound(i,2);
-            no2= Robin_Bound(i,3);
-            no3 = Robin_Bound(i,4);
+            no1= Neumann_Bound(i,2);
+            no2= Neumann_Bound(i,3);
+            no3 = Neumann_Bound(i,4);
             edofs =[no1 no2 no3]; % Guardar conectividade do lado
         
             % Buscar valor de gama e p
-            gama = Robin_Bound(i,5);
+            gama = Neumann_Bound(i,5);
             p = 0;
             
             % Obter valores a adicionar à matriz de rigidez e ao vetor de forças 
