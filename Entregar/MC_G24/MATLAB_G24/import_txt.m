@@ -1,4 +1,4 @@
-function [x,y, elementos, potencial, fluxo] = import_txt(txt_f)
+function [x,y, elementos, potencial, fluxo, fp, cr] = import_txt(txt_f)
 
 % -----------
 % Import File
@@ -68,11 +68,25 @@ next = i;
 
 elem_raw = elem_raw';
 
-% Output elementos
 
 % --------------------------------------
 elementos = str2double(split(elem_raw));
 % --------------------------------------
+
+% Extração forças distribuidas
+
+fdstrat = last_elem + 5;
+fd =[];
+for i=1:1:size(elementos,1)
+    fd = [fd;0];
+end
+
+% Output elementos
+
+% ------------------------------
+elementos = cat(2,elementos,fd);
+% ------------------------------
+
 
 
 % ----------------------------
@@ -97,6 +111,11 @@ potencial = str2double(split(p_raw));
 % -----------------------------------
 
 
+% Extração forças pontuais
+
+fp =  str2double(lines(pend + 2));
+
+
 % Fluxo imposto
 
 fstart = pend + 5;
@@ -112,4 +131,8 @@ end
 fluxo = str2double(split(f_raw));
 % -------------------------------
 
+
+% Extração condições de Robin (naturais)
+
+cr = str2double(lines(fend +2));
 

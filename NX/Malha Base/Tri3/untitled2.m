@@ -1,0 +1,1 @@
+[x,y, elementos, potencial, fluxo, fd] = import_txt('dados.txt')
